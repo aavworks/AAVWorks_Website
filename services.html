@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | AAV Works Private Limited - Railway S&T Design & Drawings</title>
+  <meta name="description" content="Explore AAV Works comprehensive railway signalling services: S&T Engineering, Turnkey Projects, RAMS System Assurance, and Rail Software Automation.">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/logo.svg">
+  <link rel="stylesheet" href="/src/css/main.css">
+  <link rel="stylesheet" href="/src/css/animations.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+        <div>
+          <span><strong>Corporate HQ:</strong> Boduppal, Hyderabad</span> &nbsp;|&nbsp;
+          <span><strong>Registered Office:</strong> Chirala, Andhra Pradesh</span>
+        </div>
+        <div>
+          <a href="mailto:info.aavworks@gmail.com">info.aavworks@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="floating-contact-btn" data-open-contact-modal data-subject="Services Inquiry" aria-label="Contact Us">
+    <span>Contact Us</span>
+  </button>
+
+  <!-- Sticky Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-main nav-wrapper">
+        <a href="index.html" class="brand-logo" aria-label="AAV Works Home">
+          <img src="/assets/images/logo.svg" alt="AAV Works Logo">
+        </a>
+        <nav class="desktop-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="services.html" class="nav-link active">Services</a>
+          <a href="products.html" class="nav-link">Products</a>
+          <a href="projects.html" class="nav-link">Projects</a>
+          <a href="careers.html" class="nav-link">Careers</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <a href="contact.html" class="btn btn-dark" style="padding: 10px 22px; font-size: 0.9rem;" data-open-contact-modal>
+            Get in Touch
+          </a>
+          <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Open Menu">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="drawerBackdrop" class="drawer-backdrop"></div>
+  <aside id="mobileDrawer" class="mobile-nav-drawer">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px;">
+      <img src="/assets/images/logo.svg" alt="AAV Works" style="height: 36px;">
+      <button id="drawerCloseBtn" class="modal-close-btn">&times;</button>
+    </div>
+    <nav style="display: flex; flex-direction: column; gap: 18px;">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="services.html" class="nav-link active">Services</a>
+      <a href="products.html" class="nav-link">Products</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="careers.html" class="nav-link">Careers</a>
+      <a href="contact.html" class="nav-link">Contact Us</a>
+    </nav>
+  </aside>
+
+  <!-- Page Header -->
+  <section style="background: var(--color-rail-midnight); color: #FFFFFF; padding: 72px 0;">
+    <div class="container">
+      <div style="max-width: 800px;">
+        <span class="section-tag" style="color: #F87171;">OUR SPECIALISED SERVICES</span>
+        <h1 style="color: #FFFFFF; font-size: clamp(2.4rem, 4.5vw, 3.5rem); margin-bottom: 20px;">
+          Complete Solutions Across <br><span style="color: var(--color-amber);">The Railway Lifecycle</span>
+        </h1>
+        <p style="font-size: 1.1rem; color: #CBD5E1; line-height: 1.7;">
+          From preliminary feasibility and circuit drafting to SIL-4 safety documentation and station commissioning, AAV Works delivers certified railway signalling and interlocking services for modern rail networks.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service 1: Engineering -->
+  <section id="engineering" class="section" style="background: #FFFFFF; border-bottom: 1px solid var(--color-border-subtle);">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1.15fr 1fr; gap: 48px; align-items: center;">
+        <div>
+          <span class="section-tag">CORE DISCIPLINE 01</span>
+          <h2>Railway Signalling &amp; <span style="color: var(--color-primary);">Circuit Engineering</span></h2>
+          <p style="font-size: 1.02rem; color: var(--color-text-secondary); line-height: 1.7; margin-top: 16px; margin-bottom: 20px;">
+            Our proficient engineering team specializes in crafting robust, fail-safe circuits that serve as the bedrock of Railway Signalling infrastructure. We excel across all major modern signalling technologies:
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 32px;">
+            <div style="padding: 16px; background: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+              <div style="font-weight: 700; color: var(--color-text-title); margin-bottom: 4px;">Electronic Interlocking (EI) Design</div>
+              <div style="font-size: 0.88rem; color: var(--color-text-secondary);">Scheme plans, Selection tables (Table of Control), VDU Control Layouts, Application Logic, and Interface Circuits.</div>
+            </div>
+            <div style="padding: 16px; background: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+              <div style="font-weight: 700; color: var(--color-text-title); margin-bottom: 4px;">Automatic Train Protection (ATP) &amp; Kavach / TCAS</div>
+              <div style="font-size: 0.88rem; color: var(--color-text-secondary);">Kavach / TCAS Designing, ETCS Level 1 &amp; 2 Designing, PTC, and Communication-Based Train Control (CBTC).</div>
+            </div>
+            <div style="padding: 16px; background: var(--color-bg-subtle); border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+              <div style="font-weight: 700; color: var(--color-text-title); margin-bottom: 4px;">Independent Verification (Proof Consultancy)</div>
+              <div style="font-size: 0.88rem; color: var(--color-text-secondary);">Licensed IRSE / IRSTELO consultants who have completed 100+ Independent Verification activities across Indian Railways.</div>
+            </div>
+          </div>
+          <button class="btn btn-primary" data-open-contact-modal data-subject="Service Inquiry: Circuit Engineering">
+            Inquire About Engineering Services
+          </button>
+        </div>
+        <div>
+          <div style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-xl); border: 1px solid var(--color-border-subtle);">
+            <img src="/assets/images/project_signalling.jpg" alt="Railway Signalling Engineering" style="width: 100%; aspect-ratio: 16/11; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service 2: Projects -->
+  <section id="projects" class="section" style="background: var(--color-bg-subtle); border-bottom: 1px solid var(--color-border-subtle);">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1.15fr; gap: 48px; align-items: center;">
+        <div>
+          <div style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-xl); border: 1px solid var(--color-border-subtle);">
+            <img src="/assets/images/project_station_redev.jpg" alt="Station Installation & Commissioning" style="width: 100%; aspect-ratio: 16/11; object-fit: cover;">
+          </div>
+        </div>
+        <div>
+          <span class="section-tag">CORE DISCIPLINE 02</span>
+          <h2>Turnkey Projects &amp; <span style="color: var(--color-amber-dark);">Station Commissioning</span></h2>
+          <p style="font-size: 1.02rem; color: var(--color-text-secondary); line-height: 1.7; margin-top: 16px; margin-bottom: 20px;">
+            Our dedicated project engineers have successfully installed and commissioned more than <strong>350+ stations</strong> across India, covering diverse OEM technologies including Medha, Kyosan, Ansaldo/Hitachi, and Siemens.
+          </p>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 28px;">
+            <div style="background: #FFFFFF; padding: 18px; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+              <div style="font-weight: 700; color: var(--color-text-title); margin-bottom: 4px;">Installation &amp; Erection</div>
+              <div style="font-size: 0.85rem; color: var(--color-text-secondary);">Track circuits, axle counters, point machines, and multi-aspect signals.</div>
+            </div>
+            <div style="background: #FFFFFF; padding: 18px; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+              <div style="font-weight: 700; color: var(--color-text-title); margin-bottom: 4px;">Site Acceptance Testing (SAT)</div>
+              <div style="font-size: 0.85rem; color: var(--color-text-secondary);">Rigorous functional testing, square sheets, and interlocking cross-verification.</div>
+            </div>
+            <div style="background: #FFFFFF; padding: 18px; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+              <div style="font-weight: 700; color: var(--color-text-title); margin-bottom: 4px;">Safety Audits &amp; Risk Mgmt</div>
+              <div style="font-size: 0.85rem; color: var(--color-text-secondary);">Zero-incident safety culture protecting personnel and rail assets.</div>
+            </div>
+            <div style="background: #FFFFFF; padding: 18px; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle);">
+              <div style="font-weight: 700; color: var(--color-text-title); margin-bottom: 4px;">Regulatory Documentation</div>
+              <div style="font-size: 0.85rem; color: var(--color-text-secondary);">CRS sanction dossiers and complete as-built documentation.</div>
+            </div>
+          </div>
+          <button class="btn btn-primary" data-open-contact-modal data-subject="Service Inquiry: Turnkey Projects">
+            Engage Project Commissioning Team
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service 3: System Assurance -->
+  <section id="assurance" class="section" style="background: #FFFFFF; border-bottom: 1px solid var(--color-border-subtle);">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1.15fr 1fr; gap: 48px; align-items: center;">
+        <div>
+          <span class="section-tag">CORE DISCIPLINE 03</span>
+          <h2>System Assurance &amp; <span style="color: var(--color-emerald-dark);">RAMS Management</span></h2>
+          <p style="font-size: 1.02rem; color: var(--color-text-secondary); line-height: 1.7; margin-top: 16px; margin-bottom: 20px;">
+            RAMS (Reliability, Availability, Maintainability, Safety) management in Railway Systems stands at the very center of our technical assurance services, complying strictly with international CENELEC standards.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 32px;">
+            <div style="padding: 16px; background: var(--color-bg-subtle); border-radius: var(--radius-md);">
+              <div style="font-weight: 700; color: var(--color-text-title); margin-bottom: 4px;">CENELEC Standards Compliance</div>
+              <div style="font-size: 0.88rem; color: var(--color-text-secondary);">EN 50126 (RAMS lifecycle), EN 50128 (Software for railway control), and EN 50129 (Safety electronic systems).</div>
+            </div>
+            <div style="padding: 16px; background: var(--color-bg-subtle); border-radius: var(--radius-md);">
+              <div style="font-weight: 700; color: var(--color-text-title); margin-bottom: 4px;">Hazard Log &amp; Safety Cases</div>
+              <div style="font-size: 0.88rem; color: var(--color-text-secondary);">FMECA, fault tree analysis, preliminary hazard analysis, and SIL-4 Safety Case preparation.</div>
+            </div>
+            <div style="padding: 16px; background: var(--color-bg-subtle); border-radius: var(--radius-md);">
+              <div style="font-weight: 700; color: var(--color-text-title); margin-bottom: 4px;">Proven Global MNC Engagements</div>
+              <div style="font-size: 0.88rem; color: var(--color-text-secondary);">PSD SIL 2 Documentation for Bharat Electronics Limited (BEL) and Eastern Dedicated Freight Corridor (EDFC) documentation for Siemens.</div>
+            </div>
+          </div>
+          <button class="btn btn-primary" data-open-contact-modal data-subject="Service Inquiry: RAMS Assurance">
+            Consult With RAMS Specialists
+          </button>
+        </div>
+        <div>
+          <div style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-xl); border: 1px solid var(--color-border-subtle);">
+            <img src="/assets/images/project_bridge_viaduct.jpg" alt="Railway System Assurance Viaduct" style="width: 100%; aspect-ratio: 16/11; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service 4: Software Services -->
+  <section id="software" class="section" style="background: var(--color-bg-subtle);">
+    <div class="container">
+      <div style="max-width: 760px; margin: 0 auto; text-align: center;">
+        <span class="section-tag" style="justify-content: center;">CORE DISCIPLINE 04</span>
+        <h2>Rail Software &amp; <span style="color: var(--color-primary);">Signalling Automation</span></h2>
+        <p style="font-size: 1.05rem; color: var(--color-text-secondary); line-height: 1.7; margin-top: 16px; margin-bottom: 32px;">
+          We build custom software tools that eliminate tedious, error-prone manual drafting tasks. From automated Boolean logic generation to interactive trainee traffic simulators, our software enhances rail efficiency and zero-defect deployments.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+          <a href="products.html" class="btn btn-dark">
+            Explore Proprietary S&amp;T Tools
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </a>
+          <button class="btn btn-outline" data-open-contact-modal data-subject="Custom Rail Software Request">
+            Custom Software Consultation
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Corporate Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="footer-logo">
+            <img src="/assets/images/logo-white.svg" alt="AAV Works Logo">
+          </a>
+          <p style="font-size: 0.9rem; line-height: 1.65; color: #94A3B8;">
+            AAV Works Private Limited delivers specialised Railway S&amp;T design, electronic interlocking, circuit drawings, and system assurance solutions.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-title">Pages</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Us</a></li>
+            <li><a href="services.html" class="footer-link">Services</a></li>
+            <li><a href="products.html" class="footer-link">Products</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Offices</h4>
+          <div class="footer-office-card">
+            <div class="footer-office-title">Corporate HQ</div>
+            <div class="footer-office-text">Boduppal, Hyderabad, Telangana - 500092.</div>
+          </div>
+          <div class="footer-office-card">
+            <div class="footer-office-title">Registered Office</div>
+            <div class="footer-office-text">Chinnaganjam / Chirala, Andhra Pradesh - 523181.</div>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Direct Inquiries</h4>
+          <div style="color: #CBD5E1; font-size: 0.85rem; margin-bottom: 8px;">
+            <a href="mailto:info.aavworks@gmail.com" style="color: #F87171;">info.aavworks@gmail.com</a>
+          </div>
+          <div style="color: #CBD5E1; font-size: 0.85rem;">
+            <a href="mailto:aavworkspvtltd@gmail.com" style="color: #F87171;">aavworkspvtltd@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 AAV Works Private Limited. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Contact Modal -->
+  <div id="contactModal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div>
+          <span class="section-tag" style="margin-bottom: 4px;">SERVICES INQUIRY</span>
+          <h3>Request S&amp;T Service Consultation</h3>
+        </div>
+        <button class="modal-close-btn" data-close-contact-modal>&times;</button>
+      </div>
+      <div class="modal-body">
+        <form class="aav-contact-form">
+          <div class="form-group">
+            <label class="form-label">Selected Discipline</label>
+            <input type="text" name="subject" class="form-input" value="S&amp;T Engineering Consultation">
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div class="form-group">
+              <label class="form-label">Your Name <span class="required">*</span></label>
+              <input type="text" name="name" class="form-input" required placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address <span class="required">*</span></label>
+              <input type="email" name="email" class="form-input" required placeholder="Enter Email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Project Scope Details <span class="required">*</span></label>
+            <textarea name="message" class="form-textarea" required placeholder="Provide details regarding your station layout, zone, or testing requirements..."></textarea>
+          </div>
+          <div style="display: flex; justify-content: flex-end; gap: 12px;">
+            <button type="button" class="btn btn-outline" data-close-contact-modal>Cancel</button>
+            <button type="submit" class="btn btn-primary">Submit Request</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="toastContainer" class="toast-container"></div>
+  <script type="module" src="/src/js/main.js"></script>
+  <script type="module" src="/src/js/contact-form.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+/* ==========================================================================
+   AAV WORKS - RAILWAY MOTION & ANIMATION LANGUAGE
+   High-Precision Railway Engineering Interactions
+   ========================================================================== */
+
+/* Fade-in Up Entrance */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Railway Signal Glow Effects */
+.signal-aspect-red {
+  box-shadow: 0 0 16px rgba(239, 68, 68, 0.75);
+}
+
+.signal-aspect-amber {
+  box-shadow: 0 0 16px rgba(245, 158, 11, 0.75);
+}
+
+.signal-aspect-green {
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.75);
+}
+
+/* Train Track Kinetic Line Drawing */
+@keyframes trackDash {
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+
+.track-kinetic-line {
+  stroke-dasharray: 8 6;
+  animation: trackDash 4s linear infinite;
+}
+
+/* Hover Accent Border Animation */
+.hover-border-glow {
+  position: relative;
+}
+
+.hover-border-glow::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(90deg, #C2122F, #F59E0B, #10B981);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.hover-border-glow:hover::before {
+  opacity: 1;
+}
+
+/* Float Animation */
+@keyframes softFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-soft-float {
+  animation: softFloat 4s ease-in-out infinite;
+}
+
+/* Train Speed Line Animation */
+@keyframes speedLine {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.speed-line {
+  position: absolute;
+  height: 2px;
+  width: 120px;
+  background: linear-gradient(90deg, transparent, #FFFFFF, transparent);
+  animation: speedLine 2.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
