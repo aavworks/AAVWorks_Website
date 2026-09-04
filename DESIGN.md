@@ -79,3 +79,4 @@ The visual identity embodies the speed, precision, and safety-critical excellenc
 - [x] Custom themed scrollbars and text selection.
 - [x] Contrast ratio strictly ≥ 4.5:1 for body and ≥ 3:1 for large display.
 - [x] Real domain terminology: IRSE, IRSTELO, RDSO, CENELEC SIL-4, RAMS, Table of Control (TOC), Electronic Interlocking (EI), Automatic Block Signalling (ABS).
+

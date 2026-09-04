@@ -244,3 +244,4 @@ export function showToast(message, type = 'info') {
 window.openContactModal = openContactModal;
 window.closeContactModal = closeContactModal;
 window.showToast = showToast;
+

@@ -31,3 +31,4 @@
 - **Platform**: Web (Responsive, Desktop 1920px to Mobile 360px)
 - **Architecture**: Modern Static Multi-Page Web Application with modular ES6 JavaScript, Vite build toolchain, custom SVG icons, and Tailwind utility framework.
 - **Deploy Target**: GitHub Pages / Static hosting (Netlify / Vercel compatible).
+

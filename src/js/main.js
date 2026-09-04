@@ -120,3 +120,4 @@ function initSignalSimulation() {
     });
   }, 4000);
 }
+

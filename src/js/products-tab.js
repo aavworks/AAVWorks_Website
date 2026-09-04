@@ -84,3 +84,4 @@ function initConsoleSimulator() {
     }, 450);
   });
 }
+

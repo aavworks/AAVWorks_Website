@@ -111,3 +111,4 @@ function initCareerModal() {
   window.openCareerModal = openModal;
   window.closeCareerModal = closeModal;
 }
+
