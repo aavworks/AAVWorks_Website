@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects & Case Studies | AAV Works Private Limited</title>
+  <meta name="description" content="Explore AAV Works featured railway signalling projects across Indian Railways: Electronic Interlocking, ABS corridors, station modernizations, and freight infrastructure.">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/logo.svg">
+  <link rel="stylesheet" href="/src/css/main.css">
+  <link rel="stylesheet" href="/src/css/animations.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+        <div>
+          <span><strong>Corporate HQ:</strong> Boduppal, Hyderabad</span> &nbsp;|&nbsp;
+          <span><strong>Registered Office:</strong> Chirala, Andhra Pradesh</span>
+        </div>
+        <div>
+          <a href="mailto:info.aavworks@gmail.com">info.aavworks@gmail.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="floating-contact-btn" data-open-contact-modal data-subject="Projects Portfolio Inquiry" aria-label="Contact Us">
+    <span>Contact Us</span>
+  </button>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-main nav-wrapper">
+        <a href="index.html" class="brand-logo" aria-label="AAV Works Home">
+          <img src="/assets/images/logo.svg" alt="AAV Works Logo">
+        </a>
+        <nav class="desktop-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="services.html" class="nav-link">Services</a>
+          <a href="products.html" class="nav-link">Products</a>
+          <a href="projects.html" class="nav-link active">Projects</a>
+          <a href="careers.html" class="nav-link">Careers</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <a href="contact.html" class="btn btn-dark" style="padding: 10px 22px; font-size: 0.9rem;" data-open-contact-modal>
+            Get in Touch
+          </a>
+          <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Open Menu">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="drawerBackdrop" class="drawer-backdrop"></div>
+  <aside id="mobileDrawer" class="mobile-nav-drawer">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px;">
+      <img src="/assets/images/logo.svg" alt="AAV Works" style="height: 36px;">
+      <button id="drawerCloseBtn" class="modal-close-btn">&times;</button>
+    </div>
+    <nav style="display: flex; flex-direction: column; gap: 18px;">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="products.html" class="nav-link">Products</a>
+      <a href="projects.html" class="nav-link active">Projects</a>
+      <a href="careers.html" class="nav-link">Careers</a>
+      <a href="contact.html" class="nav-link">Contact Us</a>
+    </nav>
+  </aside>
+
+  <section style="background: var(--color-rail-midnight); color: #FFFFFF; padding: 72px 0;">
+    <div class="container">
+      <div style="max-width: 800px;">
+        <span class="section-tag" style="color: #F87171;">PROVEN TRACK RECORD</span>
+        <h1 style="color: #FFFFFF; font-size: clamp(2.4rem, 4.5vw, 3.5rem); margin-bottom: 20px;">
+          Delivering Impact <br><span style="color: var(--color-amber);">Across Rail Networks</span>
+        </h1>
+        <p style="font-size: 1.1rem; color: #CBD5E1; line-height: 1.7;">
+          Over 350+ stations commissioned and hundreds of kilometers of Automatic Block Signalling designed and verified across India.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: #FFFFFF;">
+    <div class="container">
+      <!-- Project Cards Grid -->
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div id="south-station" class="project-card">
+          <div class="project-thumb">
+            <img src="/assets/images/project_station_redev.jpg" alt="Station Redevelopment Support - South India">
+          </div>
+          <div class="project-body">
+            <div class="project-meta">Southern Railway &bull; Redevelopment</div>
+            <h3 class="project-heading">Station Redevelopment Support</h3>
+            <p class="project-snippet">
+              Delivered complete S&amp;T scheme plans, yard re-modelling drawings, Selection Tables, and circuit designing to facilitate major station modernization without traffic interruption.
+            </p>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;">
+              <span style="font-size: 0.75rem; background: var(--color-bg-subtle); padding: 4px 8px; border-radius: 4px; font-weight: 600;">Electronic Interlocking</span>
+              <span style="font-size: 0.75rem; background: var(--color-bg-subtle); padding: 4px 8px; border-radius: 4px; font-weight: 600;">Yard Re-modelling</span>
+              <span style="font-size: 0.75rem; background: var(--color-bg-subtle); padding: 4px 8px; border-radius: 4px; font-weight: 600;">Proof Consultancy</span>
+            </div>
+            <button class="btn btn-outline" style="font-size: 0.85rem; padding: 8px 16px; margin-top: auto;" data-open-contact-modal data-subject="Case Study: Station Redevelopment">
+              Request Case Study
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div id="abs-design" class="project-card">
+          <div class="project-thumb">
+            <img src="/assets/images/project_signalling.jpg" alt="Automatic Block Signalling - Madar-Sakun Section">
+          </div>
+          <div class="project-body">
+            <div class="project-meta">North Western Railway &bull; 51.13 KM ABS</div>
+            <h3 class="project-heading">51km Electronic Interlocking ABS Corridor</h3>
+            <p class="project-snippet">
+              Successful commissioning support of Electronic Interlocking based Automatic Block Signalling (ABS) in Madar to Sakun Section, ensuring dense train headway management and fail-safe block controls.
+            </p>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;">
+              <span style="font-size: 0.75rem; background: var(--color-bg-subtle); padding: 4px 8px; border-radius: 4px; font-weight: 600;">ABS Signalling</span>
+              <span style="font-size: 0.75rem; background: var(--color-bg-subtle); padding: 4px 8px; border-radius: 4px; font-weight: 600;">Dual EI Racks</span>
+              <span style="font-size: 0.75rem; background: var(--color-bg-subtle); padding: 4px 8px; border-radius: 4px; font-weight: 600;">Axle Counters</span>
+            </div>
+            <button class="btn btn-outline" style="font-size: 0.85rem; padding: 8px 16px; margin-top: auto;" data-open-contact-modal data-subject="Case Study: 51km ABS Corridor">
+              Request Case Study
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div id="viaduct-infrastructure" class="project-card">
+          <div class="project-thumb">
+            <img src="/assets/images/project_bridge_viaduct.jpg" alt="Dedicated Freight Corridor Viaduct Design">
+          </div>
+          <div class="project-body">
+            <div class="project-meta">Western DFC &bull; High Load Freight</div>
+            <h3 class="project-heading">Heavy Haul DFC Viaduct Infrastructure</h3>
+            <p class="project-snippet">
+              Trackside signalling and telecommunication infrastructure engineering for high-speed freight bridges and approach tracks, including RAMS analysis and CENELEC SIL-4 hazard documentation.
+            </p>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;">
+              <span style="font-size: 0.75rem; background: var(--color-bg-subtle); padding: 4px 8px; border-radius: 4px; font-weight: 600;">RAMS SIL-4</span>
+              <span style="font-size: 0.75rem; background: var(--color-bg-subtle); padding: 4px 8px; border-radius: 4px; font-weight: 600;">Freight Viaduct</span>
+              <span style="font-size: 0.75rem; background: var(--color-bg-subtle); padding: 4px 8px; border-radius: 4px; font-weight: 600;">ATP / TCAS</span>
+            </div>
+            <button class="btn btn-outline" style="font-size: 0.85rem; padding: 8px 16px; margin-top: auto;" data-open-contact-modal data-subject="Case Study: DFC Viaduct Infrastructure">
+              Request Case Study
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <img src="/assets/images/project_rail_corridor.jpg" alt="Western Region Rail Corridor Design">
+          </div>
+          <div class="project-body">
+            <div class="project-meta">Western Region &bull; Corridor Doubling</div>
+            <h3 class="project-heading">Track Doubling &amp; Interlocking Modernization</h3>
+            <p class="project-snippet">
+              Designed complete interface circuits, Selection Tables, and FAT validation for 8 major junction stations during track doubling and electrification works.
+            </p>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;">
+              <span style="font-size: 0.75rem; background: var(--color-bg-subtle); padding: 4px 8px; border-radius: 4px; font-weight: 600;">Track Doubling</span>
+              <span style="font-size: 0.75rem; background: var(--color-bg-subtle); padding: 4px 8px; border-radius: 4px; font-weight: 600;">Selection Tables</span>
+            </div>
+            <button class="btn btn-outline" style="font-size: 0.85rem; padding: 8px 16px; margin-top: auto;" data-open-contact-modal data-subject="Case Study: Track Doubling">
+              Request Case Study
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <img src="/assets/images/about_tracks.jpg" alt="MNC Global Signalling Collaboration">
+          </div>
+          <div class="project-body">
+            <div class="project-meta">Global MNC &bull; Platform Screen Doors (PSD)</div>
+            <h3 class="project-heading">PSD SIL-2 System Safety Assurance</h3>
+            <p class="project-snippet">
+              Partnered with Bharat Electronics Limited (BEL) on PSD SIL 2 documentation, generic application engineering, preliminary hazard analysis, and operation modes documentation (OMPD).
+            </p>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;">
+              <span style="font-size: 0.75rem; background: var(--color-bg-subtle); padding: 4px 8px; border-radius: 4px; font-weight: 600;">PSD Metro</span>
+              <span style="font-size: 0.75rem; background: var(--color-bg-subtle); padding: 4px 8px; border-radius: 4px; font-weight: 600;">SIL-2 Safety Case</span>
+            </div>
+            <button class="btn btn-outline" style="font-size: 0.85rem; padding: 8px 16px; margin-top: auto;" data-open-contact-modal data-subject="Case Study: PSD Safety Assurance">
+              Request Case Study
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <img src="/assets/images/hero_train_main.jpg" alt="350+ Station Commissioning Footprint">
+          </div>
+          <div class="project-body">
+            <div class="project-meta">Pan-India &bull; 350+ Stations Benchmark</div>
+            <h3 class="project-heading">350+ Stations Commissioning Footprint</h3>
+            <p class="project-snippet">
+              Over 350 station electronic interlocking systems installed, wired, tested, and commissioned across Northern, Western, Central, Southern, and Eastern Railway zones.
+            </p>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;">
+              <span style="font-size: 0.75rem; background: var(--color-bg-subtle); padding: 4px 8px; border-radius: 4px; font-weight: 600;">350+ Stations</span>
+              <span style="font-size: 0.75rem; background: var(--color-bg-subtle); padding: 4px 8px; border-radius: 4px; font-weight: 600;">Multi-OEM EI</span>
+            </div>
+            <button class="btn btn-outline" style="font-size: 0.85rem; padding: 8px 16px; margin-top: auto;" data-open-contact-modal data-subject="Case Study: 350+ Stations Footprint">
+              Request Case Study
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="padding-top: 0; border: none;">
+        <div>&copy; 2026 AAV Works Private Limited. All rights reserved.</div>
+        <div><a href="contact.html" style="color: #94A3B8;">Contact Projects Department</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Contact Modal -->
+  <div id="contactModal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div>
+          <span class="section-tag" style="margin-bottom: 4px;">CASE STUDY INQUIRY</span>
+          <h3>Request Technical Case Study</h3>
+        </div>
+        <button class="modal-close-btn" data-close-contact-modal>&times;</button>
+      </div>
+      <div class="modal-body">
+        <form class="aav-contact-form">
+          <div class="form-group">
+            <label class="form-label">Project of Interest</label>
+            <input type="text" name="subject" class="form-input" value="Railway Project Inquiry">
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div class="form-group">
+              <label class="form-label">Your Name <span class="required">*</span></label>
+              <input type="text" name="name" class="form-input" required placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address <span class="required">*</span></label>
+              <input type="email" name="email" class="form-input" required placeholder="Enter Email">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message / Inquiry Scope</label>
+            <textarea name="message" class="form-textarea" placeholder="Tell us what technical details you require..."></textarea>
+          </div>
+          <div style="display: flex; justify-content: flex-end; gap: 12px;">
+            <button type="button" class="btn btn-outline" data-close-contact-modal>Cancel</button>
+            <button type="submit" class="btn btn-primary">Submit Request</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="toastContainer" class="toast-container"></div>
+  <script type="module" src="/src/js/main.js"></script>
+  <script type="module" src="/src/js/contact-form.js"></script>
+</body>
+</html>
+

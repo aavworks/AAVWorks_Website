@@ -3,294 +3,257 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | AAV Works Private Limited - Railway S&T Design & Drawings</title>
-  <meta name="description" content="Discover AAV Works Private Limited - our mission, vision, leadership, and unwavering commitment to safety, quality, and innovation in Railway Signalling & Telecommunication.">
+  <title>About Us | AAV Works Private Limited — Railway S&amp;T Design &amp; Drawings</title>
+  <meta name="description" content="Discover AAV Works Private Limited — our mission, vision, leadership, and unwavering commitment to safety, quality, and innovation in Railway Signalling &amp; Telecommunication.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="./assets/images/logo.svg">
-  <script type="module" crossorigin src="./assets/contact-form-BVSkrsKl.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/contact-form-Ck445xQk.css">
+  <script type="module" crossorigin src="./assets/main-CPlk-zu_.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-C6evm-u3.css">
 </head>
 <body>
-
-  <!-- Top Announcement Bar -->
-  <div class="top-bar">
-    <div class="container">
-      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
-        <div>
-          <span><strong>Corporate HQ:</strong> Boduppal, Hyderabad</span> &nbsp;|&nbsp;
-          <span><strong>Registered Office:</strong> Chirala, Andhra Pradesh</span>
-        </div>
-        <div>
-          <a href="mailto:info.aavworks@gmail.com">info.aavworks@gmail.com</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Persistent Floating Contact Trigger -->
-  <button class="floating-contact-btn" data-open-contact-modal data-subject="About AAV Works Inquiry" aria-label="Contact Us">
-    <span>Contact Us</span>
-  </button>
-
-  <!-- Sticky Header -->
-  <header class="site-header">
-    <div class="container">
-      <div class="header-main nav-wrapper">
-        <a href="index.html" class="brand-logo" aria-label="AAV Works Home">
-          <img src="./assets/images/logo.svg" alt="AAV Works Logo">
+  <div class="page">
+    <!-- Clean Consistent Header -->
+    <header class="site-header">
+      <div class="topbar">
+        <a href="index.html" aria-label="AAV Works Home">
+          <img class="brand" src="./assets/images/logo_full.png" alt="AAV Works Private Limited">
         </a>
-        <nav class="desktop-nav">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="about.html" class="nav-link active">About Us</a>
-          <a href="services.html" class="nav-link">Services</a>
-          <a href="products.html" class="nav-link">Products</a>
-          <a href="projects.html" class="nav-link">Projects</a>
-          <a href="careers.html" class="nav-link">Careers</a>
-          <a href="contact.html" class="nav-link">Contact</a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a class="active" href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="products.html">Products</a>
+          <a href="projects.html">Projects</a>
+          <a href="index.html#news">News</a>
+          <a href="careers.html">Careers</a>
+          <a href="contact.html">Contact</a>
         </nav>
-        <div style="display: flex; align-items: center; gap: 14px;">
-          <a href="contact.html" class="btn btn-dark" style="padding: 10px 22px; font-size: 0.9rem;" data-open-contact-modal>
-            Get in Touch
-          </a>
-          <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Open Menu">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
-          </button>
+        <a class="round-button dark contact-top" href="contact.html">Get in Touch <span class="arrow">→</span></a>
+        <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Open Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div id="drawerBackdrop" class="drawer-backdrop"></div>
+    <aside id="mobileDrawer" class="mobile-nav-drawer">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px;">
+        <img src="./assets/images/logo_full.png" alt="AAV Works" style="height: 30px;">
+        <button id="drawerCloseBtn" class="modal-close-btn">&times;</button>
+      </div>
+      <nav style="display: flex; flex-direction: column; gap: 18px;">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="index.html#news" class="nav-link">News</a>
+        <a href="careers.html" class="nav-link">Careers</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+    </aside>
+
+    <!-- Light Clean Subpage Header (No dark blue banner) -->
+    <section class="page-header-clean">
+      <div class="content">
+        <p class="eyebrow plain"><span class="hero-bar"></span> ABOUT AAV WORKS</p>
+        <h1>Architects of Modern <span class="hero-highlight">Railway Signalling</span></h1>
+        <p>Combining global engineering standards with deep indigenous expertise to deliver fail-safe, high-speed, and intelligent rail transit systems across India and beyond.</p>
+      </div>
+    </section>
+
+    <!-- About Section with split view and Quote -->
+    <section class="about-variant" id="about" style="border-bottom: 1px solid #edf0ee;">
+      <div class="about-variant-media">
+        <img src="./assets/images/about_bridge_landscape.png" alt="Railway Viaduct Landscape">
+        <div class="about-media-quote">
+          <p>"A safer,<br>smarter, more<br>connected tomorrow."</p>
+          <span class="stripe"></span>
         </div>
       </div>
-    </div>
-  </header>
-
-  <!-- Mobile Drawer -->
-  <div id="drawerBackdrop" class="drawer-backdrop"></div>
-  <aside id="mobileDrawer" class="mobile-nav-drawer">
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px;">
-      <img src="./assets/images/logo.svg" alt="AAV Works" style="height: 36px;">
-      <button id="drawerCloseBtn" class="modal-close-btn">&times;</button>
-    </div>
-    <nav style="display: flex; flex-direction: column; gap: 18px;">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="about.html" class="nav-link active">About Us</a>
-      <a href="services.html" class="nav-link">Services</a>
-      <a href="products.html" class="nav-link">Products</a>
-      <a href="projects.html" class="nav-link">Projects</a>
-      <a href="careers.html" class="nav-link">Careers</a>
-      <a href="contact.html" class="nav-link">Contact Us</a>
-    </nav>
-  </aside>
-
-  <!-- Page Hero Banner -->
-  <section style="background: var(--color-rail-midnight); color: #FFFFFF; padding: 72px 0; position: relative;">
-    <div class="container">
-      <div style="max-width: 760px;">
-        <span class="section-tag" style="color: #F87171;">ABOUT AAV WORKS</span>
-        <h1 style="color: #FFFFFF; font-size: clamp(2.4rem, 4.5vw, 3.5rem); margin-bottom: 20px;">
-          Architects of Modern <br><span style="color: var(--color-amber);">Railway Signalling</span>
-        </h1>
-        <p style="font-size: 1.1rem; color: #CBD5E1; line-height: 1.7;">
-          Combining global engineering standards with deep indigenous expertise to deliver fail-safe, high-speed, and intelligent rail transit systems across India and beyond.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Main Story Section -->
-  <section class="section" style="background: #FFFFFF;">
-    <div class="container">
-      <div style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: center;">
-        <div>
-          <span class="section-tag">OUR JOURNEY &amp; VALUES</span>
-          <h2>Driven by Engineering. <br><span style="color: var(--color-primary);">Guided by Purpose.</span></h2>
-          <p style="font-size: 1.02rem; color: var(--color-text-secondary); line-height: 1.7; margin-top: 18px; margin-bottom: 18px;">
+      <div class="about-variant-content">
+        <div class="about-variant-copy">
+          <p class="eyebrow">OUR STORY &amp; ETHOS</p>
+          <h2>Driven by Engineering.<br>Guided by <span style="color: var(--red);">Purpose.</span></h2>
+          <p>
             AAV Works Private Limited was founded by a dynamic, result-oriented consortium of senior railway signalling professionals with a shared vision: to elevate India’s railway infrastructure through uncompromising engineering rigor, digital automation, and SIL-4 safety assurance.
           </p>
-          <p style="font-size: 0.96rem; color: var(--color-text-secondary); line-height: 1.7; margin-bottom: 24px;">
-            Our core competence centers on Railway Signalling &amp; Telecommunication (S&amp;T), Electronic Interlocking (EI) application data, and embedded hardware development. We proudly stand as one of the specialized enterprises in India with profound expertise across all RDSO-approved Electronic Interlocking systems, boasting IRSE (Institution of Railway Signal Engineers) and IRSTELO certifications.
+          <p style="margin-top: 14px;">
+            Our core competence centers on Railway Signalling &amp; Telecommunication (S&amp;T), Electronic Interlocking (EI) application data, and embedded hardware development. We proudly stand as one of the specialized enterprises in India with profound expertise across all RDSO-approved Electronic Interlocking systems, boasting IRSE and IRSTELO certifications.
           </p>
-          <div class="rail-ribbon-stripe" style="margin-bottom: 16px;">
-            <span class="stripe-red"></span>
-            <span class="stripe-amber"></span>
-            <span class="stripe-green"></span>
-          </div>
-          <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-rail-navy);">
-            COMPLIANT WITH RDSO &bull; CENELEC EN 50126/128/129 &bull; SIL-4
+          <div style="margin-top: 24px; display: flex; align-items: center; gap: 14px;">
+            <a class="round-button dark" href="contact.html">Connect With Us <span class="arrow">→</span></a>
+            <a class="round-button" href="services.html">Explore Services <span class="arrow">→</span></a>
           </div>
         </div>
-        <div>
-          <div style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-xl); border: 1px solid var(--color-border-subtle);">
-            <img src="./assets/images/about_tracks.jpg" alt="Railway Track Engineering Perspective" style="width: 100%; aspect-ratio: 16/10; object-fit: cover;">
+        <div class="about-pillars">
+          <div class="pillar-item">
+            <span class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24M14.83 9.17l4.24-4.24M14.83 14.83l4.24 4.24M9.17 14.83l-4.24 4.24"/></svg></span>
+            <div><b>Safety First</b><span>Designing for fail-safe operations</span></div>
+          </div>
+          <div class="pillar-item">
+            <span class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+            <div><b>People Centric</b><span>Empowering talent &amp; communities</span></div>
+          </div>
+          <div class="pillar-item">
+            <span class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
+            <div><b>Innovation Led</b><span>Solving for what's next in rail tech</span></div>
+          </div>
+          <div class="pillar-item">
+            <span class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></span>
+            <div><b>Sustainable Impact</b><span>Cleaner, greener connections</span></div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Vision & Mission Cards -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 72px;">
-        <!-- Mission -->
-        <div style="padding: 36px; background: var(--color-bg-subtle); border-radius: var(--radius-lg); border: 1px solid var(--color-border-subtle);">
-          <div style="font-size: 0.78rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-primary); margin-bottom: 10px;">OUR MISSION</div>
-          <h3 style="margin-bottom: 16px;">Excellence in Every Circuit</h3>
-          <p style="color: var(--color-text-secondary); line-height: 1.68;">
-            To deliver high-standard systems and challenging solutions that provide superior value to our railway clients, ensuring utmost passenger safety while providing fulfilling, lifelong professional value to our engineers and collaborators.
-          </p>
-        </div>
+    <!-- Mission & Vision -->
+    <section class="section" style="background: #fbfbfa; border-bottom: 1px solid #edf0ee;">
+      <div class="content">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px;">
+          <!-- Mission -->
+          <div style="padding: 24px 26px; background: #ffffff; border-radius: 14px; border: 1px solid #edf0ee; box-shadow: 0 4px 16px rgba(9,20,31,0.03);">
+            <div style="font-size: 9.5px; font-weight: 750; letter-spacing: 2px; text-transform: uppercase; color: var(--red); margin-bottom: 8px;">OUR MISSION</div>
+            <h3 style="font-size: 16px; font-weight: 750; color: var(--ink); margin-bottom: 10px; letter-spacing: -0.4px;">Excellence in Every Circuit</h3>
+            <p style="color: #556370; line-height: 1.6; font-size: 12px;">
+              To deliver high-standard systems and challenging solutions that provide superior value to our railway clients, ensuring utmost passenger safety while providing fulfilling, lifelong professional value to our engineers and collaborators.
+            </p>
+          </div>
 
-        <!-- Vision -->
-        <div style="padding: 36px; background: var(--color-bg-subtle); border-radius: var(--radius-lg); border: 1px solid var(--color-border-subtle);">
-          <div style="font-size: 0.78rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--color-emerald-dark); margin-bottom: 10px;">OUR VISION</div>
-          <h3 style="margin-bottom: 16px;">A Safer, Smarter Rail Network</h3>
-          <p style="color: var(--color-text-secondary); line-height: 1.68;">
-            To be the recognized leader in providing intelligent, reliable, and economical technological solutions to the sustainable transportation and railway sector globally, setting new benchmarks in automated signalling design.
-          </p>
+          <!-- Vision -->
+          <div style="padding: 24px 26px; background: #ffffff; border-radius: 14px; border: 1px solid #edf0ee; box-shadow: 0 4px 16px rgba(9,20,31,0.03);">
+            <div style="font-size: 9.5px; font-weight: 750; letter-spacing: 2px; text-transform: uppercase; color: var(--green); margin-bottom: 8px;">OUR VISION</div>
+            <h3 style="font-size: 16px; font-weight: 750; color: var(--ink); margin-bottom: 10px; letter-spacing: -0.4px;">A Safer, Smarter Rail Network</h3>
+            <p style="color: #556370; line-height: 1.6; font-size: 12px;">
+              To be the recognized leader in providing intelligent, reliable, and economical technological solutions to the sustainable transportation and railway sector globally, setting new benchmarks in automated signalling design.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Leadership Section -->
-  <section class="section" style="background: var(--color-bg-subtle);">
-    <div class="container">
-      <div style="text-align: center; max-width: 640px; margin: 0 auto 56px;">
-        <span class="section-tag" style="justify-content: center;">EXECUTIVE LEADERSHIP</span>
-        <h2>Board of Directors &amp; <span style="color: var(--color-primary);">Domain Experts</span></h2>
-        <p style="color: var(--color-text-secondary); margin-top: 12px;">
-          Guided by veteran railway signalling directors, proof consultants, and operations leaders.
-        </p>
-      </div>
-
-      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;">
-        <!-- Leader 1 -->
-        <div style="background: #FFFFFF; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle); padding: 28px; text-align: center;">
-          <div style="width: 72px; height: 72px; border-radius: 50%; background: #FEE2E2; color: var(--color-primary); display: flex; align-items: center; justify-content: center; font-size: 1.6rem; font-weight: 800; margin: 0 auto 16px;">
-            MD
-          </div>
-          <h4 style="margin-bottom: 4px;">Managing Director</h4>
-          <div style="font-size: 0.8rem; font-weight: 700; color: var(--color-primary); margin-bottom: 12px;">Executive Leadership</div>
-          <p style="font-size: 0.85rem; color: var(--color-text-secondary); line-height: 1.5;">
-            Leveraging extensive mastery in Railway Signalling Solutions, spearheading strategic technological evolution and large-scale EPC execution.
+    <!-- Leadership Section -->
+    <section class="section" style="background: #ffffff; border-bottom: 1px solid #edf0ee;">
+      <div class="content">
+        <div style="text-align: center; max-width: 600px; margin: 0 auto 36px;">
+          <p class="eyebrow" style="justify-content: center;">EXECUTIVE LEADERSHIP</p>
+          <h2 style="font-size: 23px; font-weight: 750; letter-spacing: -0.6px; color: var(--ink); margin-top: 6px;">Board of Directors &amp; <span style="color: var(--red);">Domain Experts</span></h2>
+          <p style="color: #556370; font-size: 12px; line-height: 1.55; margin-top: 6px;">
+            Guided by veteran railway signalling directors, proof consultants, and operations leaders.
           </p>
         </div>
 
-        <!-- Leader 2 -->
-        <div style="background: #FFFFFF; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle); padding: 28px; text-align: center;">
-          <div style="width: 72px; height: 72px; border-radius: 50%; background: #FEF3C7; color: var(--color-amber-dark); display: flex; align-items: center; justify-content: center; font-size: 1.6rem; font-weight: 800; margin: 0 auto 16px;">
-            BD
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
+          <div style="background: #fbfbfa; border-radius: 12px; border: 1px solid #edf0ee; padding: 22px 18px; text-align: center;">
+            <div style="width: 48px; height: 48px; border-radius: 50%; background: #fee2e2; color: var(--red); display: flex; align-items: center; justify-content: center; font-size: 1rem; font-weight: 800; margin: 0 auto 12px; font-family: var(--font-mono);">
+              MD
+            </div>
+            <h4 style="font-size: 14px; font-weight: 750; color: var(--ink); margin-bottom: 3px;">Managing Director</h4>
+            <div style="font-size: 9.5px; font-weight: 700; color: var(--red); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px;">Executive Leadership</div>
+            <p style="font-size: 11.5px; color: #556370; line-height: 1.5;">
+              Mastery in Railway Signalling Solutions, spearheading strategic technological evolution and large-scale EPC execution.
+            </p>
           </div>
-          <h4 style="margin-bottom: 4px;">Director – Business Development</h4>
-          <div style="font-size: 0.8rem; font-weight: 700; color: var(--color-amber-dark); margin-bottom: 12px;">Strategy &amp; Partnerships</div>
-          <p style="font-size: 0.85rem; color: var(--color-text-secondary); line-height: 1.5;">
-            Leads strategic engagement across Zonal Railways, DFC, and Metro corporations, driving business expansion and partner alliances.
-          </p>
-        </div>
 
-        <!-- Leader 3 -->
-        <div style="background: #FFFFFF; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle); padding: 28px; text-align: center;">
-          <div style="width: 72px; height: 72px; border-radius: 50%; background: #D1FAE5; color: var(--color-emerald-dark); display: flex; align-items: center; justify-content: center; font-size: 1.6rem; font-weight: 800; margin: 0 auto 16px;">
-            OP
+          <div style="background: #fbfbfa; border-radius: 12px; border: 1px solid #edf0ee; padding: 22px 18px; text-align: center;">
+            <div style="width: 48px; height: 48px; border-radius: 50%; background: #fef3c7; color: var(--yellow); display: flex; align-items: center; justify-content: center; font-size: 1rem; font-weight: 800; margin: 0 auto 12px; font-family: var(--font-mono);">
+              BD
+            </div>
+            <h4 style="font-size: 14px; font-weight: 750; color: var(--ink); margin-bottom: 3px;">Director – Business Dev</h4>
+            <div style="font-size: 9.5px; font-weight: 700; color: #d97706; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px;">Strategy &amp; Alliances</div>
+            <p style="font-size: 11.5px; color: #556370; line-height: 1.5;">
+              Leads strategic engagement across Zonal Railways, DFC, and Metro corporations, driving corporate partnerships.
+            </p>
           </div>
-          <h4 style="margin-bottom: 4px;">Director – Operations</h4>
-          <div style="font-size: 0.8rem; font-weight: 700; color: var(--color-emerald-dark); margin-bottom: 12px;">Execution &amp; Site Commissioning</div>
-          <p style="font-size: 0.85rem; color: var(--color-text-secondary); line-height: 1.5;">
-            Drives on-site commissioning across 350+ stations, maintaining strict adherence to safety protocols, timely execution, and site acceptance testing.
-          </p>
-        </div>
 
-        <!-- Leader 4 -->
-        <div style="background: #FFFFFF; border-radius: var(--radius-md); border: 1px solid var(--color-border-subtle); padding: 28px; text-align: center;">
-          <div style="width: 72px; height: 72px; border-radius: 50%; background: #E2E8F0; color: var(--color-rail-slate); display: flex; align-items: center; justify-content: center; font-size: 1.6rem; font-weight: 800; margin: 0 auto 16px;">
-            EN
+          <div style="background: #fbfbfa; border-radius: 12px; border: 1px solid #edf0ee; padding: 22px 18px; text-align: center;">
+            <div style="width: 48px; height: 48px; border-radius: 50%; background: #d1fae5; color: var(--green); display: flex; align-items: center; justify-content: center; font-size: 1rem; font-weight: 800; margin: 0 auto 12px; font-family: var(--font-mono);">
+              OP
+            </div>
+            <h4 style="font-size: 14px; font-weight: 750; color: var(--ink); margin-bottom: 3px;">Director – Operations</h4>
+            <div style="font-size: 9.5px; font-weight: 700; color: #059669; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px;">Execution &amp; Testing</div>
+            <p style="font-size: 11.5px; color: #556370; line-height: 1.5;">
+              Drives on-site commissioning across 350+ stations, maintaining strict adherence to safety protocols and quality standards.
+            </p>
           </div>
-          <h4 style="margin-bottom: 4px;">Director – Engineering</h4>
-          <div style="font-size: 0.8rem; font-weight: 700; color: var(--color-rail-slate); margin-bottom: 12px;">Design, V&amp;V and Proof Consultancy</div>
-          <p style="font-size: 0.85rem; color: var(--color-text-secondary); line-height: 1.5;">
-            Senior IRSE certified engineer overseeing Verification &amp; Validation, TOC selection tables, and automated logic generation systems.
-          </p>
+
+          <div style="background: #fbfbfa; border-radius: 12px; border: 1px solid #edf0ee; padding: 22px 18px; text-align: center;">
+            <div style="width: 48px; height: 48px; border-radius: 50%; background: #e0f2fe; color: var(--teal); display: flex; align-items: center; justify-content: center; font-size: 1rem; font-weight: 800; margin: 0 auto 12px; font-family: var(--font-mono);">
+              EN
+            </div>
+            <h4 style="font-size: 14px; font-weight: 750; color: var(--ink); margin-bottom: 3px;">Director – Engineering</h4>
+            <div style="font-size: 9.5px; font-weight: 700; color: #0284c7; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px;">Design &amp; V&amp;V</div>
+            <p style="font-size: 11.5px; color: #556370; line-height: 1.5;">
+              Senior IRSE certified engineer overseeing Verification &amp; Validation, TOC selection tables, and automated logic generation.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Corporate Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <a href="index.html" class="footer-logo">
-            <img src="./assets/images/logo-white.svg" alt="AAV Works Logo">
-          </a>
-          <p style="font-size: 0.9rem; line-height: 1.65; color: #94A3B8; margin-bottom: 20px;">
-            AAV Works Private Limited delivers specialised Railway S&amp;T design, electronic interlocking, circuit drawings, and system assurance solutions.
-          </p>
+    <!-- Clean CTA Banner -->
+    <section class="cta-banner-section">
+      <div class="cta-banner-card">
+        <div class="cta-banner-text">
+          <h2>Let's Build a<br>Better Connected Tomorrow</h2>
+          <p>Partner with AAV Works for smarter, safer and more resilient rail networks.</p>
         </div>
-        <div>
-          <h4 class="footer-title">Navigation</h4>
-          <ul class="footer-links">
-            <li><a href="index.html" class="footer-link">Home</a></li>
-            <li><a href="about.html" class="footer-link">About Us</a></li>
-            <li><a href="services.html" class="footer-link">Services</a></li>
-            <li><a href="products.html" class="footer-link">Products</a></li>
-            <li><a href="contact.html" class="footer-link">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-title">Core Disciplines</h4>
-          <ul class="footer-links">
-            <li><a href="services.html#engineering" class="footer-link">Circuit Designing</a></li>
-            <li><a href="services.html#assurance" class="footer-link">CENELEC RAMS</a></li>
-            <li><a href="services.html#projects" class="footer-link">Station Commissioning</a></li>
-            <li><a href="services.html#software" class="footer-link">Algorithmic Interlocking</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="footer-title">Headquarters</h4>
-          <div class="footer-office-card">
-            <div class="footer-office-title">Corporate Office</div>
-            <div class="footer-office-text">H.No. 1-10, Bommak Brothers Colony, Boduppal, Hyderabad, Telangana - 500092.</div>
+        <div class="cta-banner-actions">
+          <a class="round-button white" href="contact.html">Get in Touch <span class="arrow">→</span></a>
+          <div class="cta-banner-words">
+            PEOPLE<br>RAILS<br>PROGRESS
+            <div class="stripe"></div>
           </div>
-          <div class="footer-office-card">
-            <div class="footer-office-title">Email</div>
-            <div class="footer-office-text"><a href="mailto:info.aavworks@gmail.com" style="color: #F87171;">info.aavworks@gmail.com</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer matching replica.html -->
+    <footer>
+      <div class="footer-main">
+        <div class="footer-brand">
+          <img src="./assets/images/logo_full.png" alt="AAV Works Private Limited">
+          <p>Railway S&amp;T Design &amp; Drawings.</p>
+        </div>
+        <div class="footer-col">
+          <div class="footer-heading">Corporate Office</div>
+          <p>H.No.1- 10, Bommak Brothers Colony, Boduppal, Dist: Medchal Malkajgiri, Hyderabad, Telangana - 500092.</p>
+        </div>
+        <div class="footer-col">
+          <div class="footer-heading">Registered Office</div>
+          <p>Gonasapudi Post, Chinaganjam Mandal, Chirala, Andhra Pradesh, India - 523181.</p>
+        </div>
+        <div class="footer-col">
+          <div class="footer-heading">Email</div>
+          info.aavworks@gmail.com<br>aavworkspltd@gmail.com
+        </div>
+        <div class="footer-social-col">
+          <div class="social">
+            <a href="#" aria-label="LinkedIn"><i>in</i></a>
+            <a href="#" aria-label="YouTube"><i>▶</i></a>
+            <a href="#" aria-label="X"><i>𝕏</i></a>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <div>&copy; 2026 AAV Works Private Limited. All rights reserved.</div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Contact Modal -->
-  <div id="contactModal" class="modal-overlay" role="dialog" aria-modal="true">
-    <div class="modal-window">
-      <div class="modal-header">
-        <div>
-          <span class="section-tag" style="margin-bottom: 4px;">GET IN TOUCH</span>
-          <h3>Send S&amp;T Engineering Enquiry</h3>
+        <span>© 2024 AAV Works Private Limited. All rights reserved.</span>
+        <nav>
+          <a href="#privacy">Privacy</a>
+          <span>|</span>
+          <a href="#terms">Terms</a>
+          <span>|</span>
+          <a href="#sitemap">Sitemap</a>
+        </nav>
+        <div class="sub-tagline">
+          <span>Designed for a Stronger Tomorrow.</span>
+          <span class="stripe"></span>
         </div>
-        <button class="modal-close-btn" data-close-contact-modal>&times;</button>
       </div>
-      <div class="modal-body">
-        <form class="aav-contact-form">
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-            <div class="form-group">
-              <label class="form-label">Full Name <span class="required">*</span></label>
-              <input type="text" name="name" class="form-input" required placeholder="Your Name">
-            </div>
-            <div class="form-group">
-              <label class="form-label">Email Address <span class="required">*</span></label>
-              <input type="email" name="email" class="form-input" required placeholder="name@email.com">
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Message <span class="required">*</span></label>
-            <textarea name="message" class="form-textarea" required placeholder="Tell us about your project requirements..."></textarea>
-          </div>
-          <div style="display: flex; justify-content: flex-end; gap: 12px;">
-            <button type="button" class="btn btn-outline" data-close-contact-modal>Cancel</button>
-            <button type="submit" class="btn btn-primary">Send Enquiry</button>
-          </div>
-        </form>
-      </div>
-    </div>
+    </footer>
   </div>
 
-  <div id="toastContainer" class="toast-container"></div>
 </body>
 </html>

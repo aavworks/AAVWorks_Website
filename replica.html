@@ -1,0 +1,2574 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AAV Works Private Limited — Railway S&amp;T Design &amp; Drawings</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --font-mono: 'Space Grotesk', -apple-system, monospace;
+      --ink: #09141f;
+      --muted: #556370;
+      --paper: #fbfbfa;
+      --line: #d9dddc;
+      --red: #ed2832;
+      --yellow: #ffd228;
+      --green: #1ed64a;
+      --teal: #0ea5e9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      min-width: 0;
+      background: #ffffff;
+      color: var(--ink);
+      font-family: var(--font-main);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: geometricPrecision;
+      overflow-x: hidden;
+    }
+
+    .page {
+      position: relative;
+      width: 100%;
+      min-width: 0;
+      margin: 0;
+      overflow: visible;
+    }
+
+    .content {
+      width: min(1320px, calc(100% - 96px));
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #7b8389;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 2.6px;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 16px;
+      height: 2px;
+      background: var(--red);
+      display: inline-block;
+    }
+
+    .eyebrow.plain::before {
+      display: none;
+    }
+
+    .view-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: #111d27;
+      font-size: 11.5px;
+      font-weight: 750;
+      text-decoration: none;
+      letter-spacing: 0.2px;
+      transition: color 0.2s ease;
+    }
+
+    .view-link:hover {
+      color: var(--red);
+    }
+
+    .view-link .arrow {
+      font-size: 13px;
+      line-height: 1;
+      transition: transform 0.2s ease;
+    }
+
+    .view-link:hover .arrow {
+      transform: translateX(4px);
+    }
+
+    .round-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 0 20px;
+      height: 38px;
+      border-radius: 19px;
+      border: 1px solid #c9cfd3;
+      background: #ffffff;
+      color: #111d27;
+      font-size: 10.5px;
+      font-weight: 750;
+      text-decoration: none;
+      letter-spacing: 0.3px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .round-button:hover {
+      border-color: #0c1822;
+      background: #f7f9f8;
+    }
+
+    .round-button.dark {
+      background: #0d1721;
+      border-color: #0d1721;
+      color: #ffffff;
+    }
+
+    .round-button.dark:hover {
+      background: #1a2a38;
+      border-color: #1a2a38;
+    }
+
+    .round-button .arrow {
+      font-size: 12px;
+      line-height: 1;
+      transform: translateY(-.5px);
+    }
+
+    .stripe {
+      display: inline-block;
+      height: 3.5px;
+      background: linear-gradient(90deg, #e62635 25%, #f5b800 25% 50%, #16bd46 50% 75%, #0ea5e9 75%);
+      border-radius: 2px;
+    }
+
+    /* =========================================
+       HERO STAGE (Fixed-Ratio Desktop Canvas 1024x471)
+       ========================================= */
+    .hero-stage {
+      position: relative;
+      width: 100%;
+      height: 471px;
+      overflow: hidden;
+      background: #ffffff;
+    }
+
+    .hero-stage > .hero {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1024px;
+      min-width: 1024px;
+      height: 471px;
+      overflow: hidden;
+      transform-origin: top left;
+      background: #ffffff;
+    }
+
+    .hero-visual {
+      position: absolute;
+      z-index: 1;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+
+    .hero-photo {
+      position: absolute;
+      inset: 0;
+      background: url("public/assets/images/hero_train_bg.png") right center / contain no-repeat;
+    }
+
+    .topbar {
+      position: relative;
+      z-index: 4;
+      display: flex;
+      align-items: center;
+      height: 56px;
+      margin: 0 48px;
+    }
+
+    .brand {
+      display: block;
+      width: 175px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      margin-left: 64px;
+    }
+
+    .nav a {
+      color: #3b454e;
+      text-decoration: none;
+      font-size: 9.8px;
+      font-weight: 650;
+      letter-spacing: 0.3px;
+      position: relative;
+      padding: 4px 0;
+      transition: color 0.15s ease;
+    }
+
+    .nav a:hover,
+    .nav a.active {
+      color: #0c1822;
+    }
+
+    .nav a.active::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 1.8px;
+      background: var(--red);
+      border-radius: 1px;
+    }
+
+    .contact-top {
+      margin-left: auto;
+      height: 32px;
+      padding: 0 16px;
+      font-size: 9px;
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 3;
+      margin-top: 16px;
+      margin-left: 48px;
+      max-width: 440px;
+    }
+
+    .hero-bar {
+      display: inline-block;
+      width: 14px;
+      height: 2px;
+      background: var(--red);
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+
+    .hero-copy .eyebrow {
+      margin-bottom: 8px;
+      letter-spacing: 1.8px;
+      font-size: 8.5px;
+      font-weight: 750;
+      color: #4a545e;
+    }
+
+    .hero-copy h1 {
+      font-size: 34px;
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -1.3px;
+      color: #0d1721;
+      margin-bottom: 12px;
+    }
+
+    .hero-highlight {
+      background: linear-gradient(90deg, #b91c1c 0%, #ea580c 45%, #f97316 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+
+    .hero-copy .intro {
+      font-size: 10px;
+      line-height: 1.55;
+      color: #55606a;
+      max-width: 330px;
+      margin-bottom: 16px;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 22px;
+    }
+
+    .hero-actions .round-button.dark {
+      background: #0d1721;
+      color: #ffffff;
+      height: 34px;
+      padding: 0 18px;
+      font-size: 9.5px;
+      border: none;
+    }
+
+    .hero-actions .round-button.watch-story {
+      background: transparent;
+      border: none;
+      color: #3b454e;
+      font-size: 9.5px;
+      font-weight: 700;
+      padding: 0;
+      gap: 8px;
+      cursor: pointer;
+    }
+
+    .play-btn-circle {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: #ffffff;
+      box-shadow: 0 2px 8px rgba(12, 24, 34, 0.12);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #0d1721;
+      font-size: 9px;
+      padding-left: 2px;
+      transition: transform 0.2s ease;
+    }
+
+    .hero-actions .round-button.watch-story:hover .play-btn-circle {
+      transform: scale(1.08);
+    }
+
+    /* Hero Old-Style Classic Stats Strip */
+    .hero-stats-classic {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid #edf0ee;
+      max-width: 440px;
+    }
+
+    .hero-stat-col {
+      flex: 1;
+    }
+
+    .hero-stat-number {
+      font-size: 24px;
+      font-weight: 800;
+      color: #0c1822;
+      line-height: 1;
+      letter-spacing: -0.6px;
+      font-variant-numeric: tabular-nums;
+      display: flex;
+      align-items: baseline;
+    }
+
+    .hero-stat-plus {
+      color: var(--red);
+      font-weight: 700;
+      font-size: 18px;
+      margin-left: 1.5px;
+    }
+
+    .hero-stat-label {
+      font-size: 8px;
+      font-weight: 650;
+      color: #687480;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      line-height: 1.3;
+      margin-top: 4px;
+    }
+
+    .hero-stat-divider {
+      width: 1px;
+      height: 28px;
+      background: #e2e8f0;
+      flex-shrink: 0;
+    }
+
+    .hero-bottom-tag {
+      position: absolute;
+      z-index: 3;
+      left: 48px;
+      bottom: 12px;
+      font-size: 7.5px;
+      font-weight: 750;
+      letter-spacing: 1.8px;
+      color: #8c97a0;
+      text-transform: uppercase;
+    }
+
+    .hero-tag-smarter {
+      position: absolute;
+      top: 90px;
+      right: 280px;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      font-size: 8px;
+      font-weight: 750;
+      letter-spacing: 1.8px;
+      color: #788591;
+      text-transform: uppercase;
+      pointer-events: none;
+    }
+
+    .hero-tag-people {
+      position: absolute;
+      top: 175px;
+      right: 48px;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      font-size: 7.5px;
+      font-weight: 750;
+      letter-spacing: 2px;
+      color: #94a3b8;
+      text-transform: uppercase;
+      pointer-events: none;
+    }
+
+    .hero-tag-generations {
+      position: absolute;
+      bottom: 50px;
+      right: 48px;
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      font-size: 7.5px;
+      font-weight: 750;
+      letter-spacing: 2px;
+      color: #94a3b8;
+      text-transform: uppercase;
+      pointer-events: none;
+    }
+
+    .hero-tag-dash {
+      width: 16px;
+      height: 1.5px;
+      background: #94a3b8;
+      margin-top: 4px;
+    }
+
+    /* =========================================
+       2. ABOUT SECTION (FLUSH TO LEFT EDGE WITH TRANSPARENCY)
+       ========================================= */
+    .about-variant {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 80px 0 88px 0;
+      background: #ffffff;
+      gap: clamp(36px, 4.5vw, 64px);
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    .about-variant-media {
+      flex: 0 0 clamp(420px, 42vw, 640px);
+      width: clamp(420px, 42vw, 640px);
+      position: relative;
+      line-height: 0;
+      filter: drop-shadow(0 16px 36px rgba(12, 24, 34, 0.08));
+    }
+
+    .about-variant-media img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+
+    .about-media-quote {
+      position: absolute;
+      left: 36px;
+      bottom: 28px;
+      background: rgba(12, 20, 28, 0.76);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      color: #ffffff;
+      padding: 16px 20px;
+      border-radius: 12px;
+      max-width: 240px;
+      z-index: 2;
+      line-height: 1.4;
+    }
+
+    .about-media-quote p {
+      font-size: 14.5px;
+      font-weight: 600;
+      line-height: 1.35;
+      color: #ffffff;
+      letter-spacing: -0.2px;
+      margin: 0;
+    }
+
+    .about-media-quote .stripe {
+      width: 48px;
+      margin-top: 10px;
+      display: block;
+    }
+
+    .about-variant-content {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: clamp(24px, 3.5vw, 48px);
+      align-items: center;
+      max-width: 920px;
+      padding-right: clamp(24px, 4vw, 64px);
+    }
+
+    .about-variant-copy {
+      padding-right: 8px;
+    }
+
+    .about-variant-copy h2 {
+      margin-top: 14px;
+      font-size: 38px;
+      font-weight: 750;
+      letter-spacing: -1.4px;
+      line-height: 1.12;
+      color: #0c1822;
+    }
+
+    .about-variant-copy p {
+      margin-top: 18px;
+      color: #5c666e;
+      font-size: 14.5px;
+      line-height: 1.6;
+    }
+
+    .about-variant-copy .round-button {
+      margin-top: 26px;
+      display: inline-flex;
+      height: 40px;
+      padding: 0 22px;
+      font-size: 11px;
+    }
+
+    .about-pillars {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .pillar-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .pillar-icon {
+      width: 42px;
+      height: 42px;
+      flex: 0 0 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      background: #f4f6f5;
+      color: #1a252f;
+    }
+
+    .pillar-icon svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .pillar-item b {
+      display: block;
+      font-size: 15px;
+      font-weight: 700;
+      color: #0c1822;
+      line-height: 1.2;
+    }
+
+    .pillar-item span {
+      display: block;
+      margin-top: 3px;
+      font-size: 12.5px;
+      color: #68727a;
+      line-height: 1.35;
+    }
+
+    /* =========================================
+       3. SERVICES & PRODUCTS SECTION (UNIFIED, NO RAIL, NO TABS)
+       ========================================= */
+    .services {
+      padding: 92px 0 100px;
+      background: radial-gradient(ellipse at 50% 12%, rgba(243, 246, 250, 0.85) 0%, #ffffff 75%);
+      border-top: 1px solid #edf0f2;
+      position: relative;
+    }
+
+    .services-topbar {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 36px;
+      margin-bottom: 40px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .services-heading-wrap {
+      max-width: 600px;
+    }
+
+    .services-heading-wrap h2 {
+      font-size: 38px;
+      font-weight: 800;
+      letter-spacing: -1.4px;
+      line-height: 1.12;
+      color: #09141f;
+      margin-top: 12px;
+      margin-bottom: 14px;
+    }
+
+    .services-gradient-text {
+      background: linear-gradient(90deg, #dc2626 0%, #ea580c 50%, #f97316 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+    }
+
+    .services-intro {
+      color: #556370;
+      font-size: 13.5px;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .services-corner-tag {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 3px;
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 2.4px;
+      color: #94a3b8;
+      text-transform: uppercase;
+      padding-top: 8px;
+    }
+
+    .services-corner-tag .corner-dash {
+      width: 20px;
+      height: 2px;
+      background: #94a3b8;
+      margin-top: 6px;
+    }
+
+    /* 4 Service Cards Grid (Clean, prominent, zero rail behind) */
+    .services-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .service-lifecycle-card {
+      position: relative;
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 26px 22px 22px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 8px 24px rgba(12, 24, 36, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      border: 1px solid rgba(226, 232, 240, 0.85);
+      min-height: 250px;
+      overflow: hidden;
+    }
+
+    .service-lifecycle-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 36px rgba(12, 24, 36, 0.1);
+    }
+
+    .card-glow-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3.5px;
+      opacity: 0.85;
+    }
+
+    .card-glow-bar.red { background: linear-gradient(90deg, #ef4444, #dc2626); }
+    .card-glow-bar.yellow { background: linear-gradient(90deg, #f59e0b, #d97706); }
+    .card-glow-bar.green { background: linear-gradient(90deg, #10b981, #059669); }
+    .card-glow-bar.blue { background: linear-gradient(90deg, #0ea5e9, #0284c7); }
+
+    .service-lifecycle-card.card-projects {
+      background: linear-gradient(180deg, #ffffff 0%, #fff9f9 100%);
+      border-color: rgba(239, 68, 68, 0.18);
+    }
+
+    .service-lifecycle-card.card-assurance {
+      background: linear-gradient(180deg, #ffffff 0%, #fffdf5 100%);
+      border-color: rgba(245, 158, 11, 0.18);
+    }
+
+    .service-lifecycle-card.card-software {
+      background: linear-gradient(180deg, #ffffff 0%, #f6fbf8 100%);
+      border-color: rgba(16, 185, 129, 0.18);
+    }
+
+    .service-lifecycle-card.card-engineering {
+      background: linear-gradient(180deg, #ffffff 0%, #f5f9fe 100%);
+      border-color: rgba(14, 165, 233, 0.18);
+    }
+
+    .card-top-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+    }
+
+    .card-squircle-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .card-squircle-icon.icon-red {
+      background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+      color: #ffffff;
+    }
+    .card-squircle-icon.icon-yellow {
+      background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+      color: #ffffff;
+    }
+    .card-squircle-icon.icon-green {
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      color: #ffffff;
+    }
+    .card-squircle-icon.icon-blue {
+      background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+      color: #ffffff;
+    }
+
+    .card-squircle-icon svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .card-badge-num {
+      font-family: var(--font-mono);
+      font-size: 14px;
+      font-weight: 700;
+      color: #94a3b8;
+      letter-spacing: 0.5px;
+    }
+
+    .service-lifecycle-card h3 {
+      font-size: 18px;
+      font-weight: 800;
+      color: #09141f;
+      margin: 0 0 10px;
+      line-height: 1.25;
+      letter-spacing: -0.3px;
+    }
+
+    .service-lifecycle-card p {
+      color: #556370;
+      font-size: 12.5px;
+      line-height: 1.55;
+      margin: 0 0 20px;
+      flex: 1;
+    }
+
+    .card-action-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      height: 32px;
+      padding: 0 14px;
+      border-radius: 100px;
+      text-decoration: none;
+      font-size: 11.5px;
+      font-weight: 700;
+      transition: all 0.2s ease;
+      align-self: flex-start;
+    }
+
+    .card-action-btn .btn-arrow {
+      transition: transform 0.2s ease;
+    }
+
+    .card-action-btn:hover .btn-arrow {
+      transform: translateX(3px);
+    }
+
+    .card-action-btn.btn-red { background: #fee2e2; color: #dc2626; }
+    .card-action-btn.btn-red:hover { background: #dc2626; color: #ffffff; }
+
+    .card-action-btn.btn-yellow { background: #fef3c7; color: #b45309; }
+    .card-action-btn.btn-yellow:hover { background: #d97706; color: #ffffff; }
+
+    .card-action-btn.btn-green { background: #dcfce7; color: #15803d; }
+    .card-action-btn.btn-green:hover { background: #16a34a; color: #ffffff; }
+
+    .card-action-btn.btn-blue { background: #e0f2fe; color: #0369a1; }
+    .card-action-btn.btn-blue:hover { background: #0284c7; color: #ffffff; }
+
+    /* 4 Waypoint Stations Row (Clean milestone badges under cards) */
+    .services-waypoints-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+      margin-top: 24px;
+    }
+
+    .waypoint-station-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding-top: 4px;
+    }
+
+    .waypoint-pin {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      margin-bottom: 6px;
+      position: relative;
+    }
+
+    .waypoint-pin .pin-core {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+
+    .waypoint-station-item.wp-red .pin-core { background: #dc2626; box-shadow: 0 0 8px rgba(220, 38, 38, 0.4); }
+    .waypoint-station-item.wp-yellow .pin-core { background: #d97706; box-shadow: 0 0 8px rgba(217, 119, 6, 0.4); }
+    .waypoint-station-item.wp-green .pin-core { background: #16a34a; box-shadow: 0 0 8px rgba(22, 163, 74, 0.4); }
+    .waypoint-station-item.wp-blue .pin-core { background: #0284c7; box-shadow: 0 0 8px rgba(2, 132, 199, 0.4); }
+
+    .waypoint-label-text b {
+      display: block;
+      font-size: 11.5px;
+      font-weight: 800;
+      color: #09141f;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+
+    .waypoint-label-text span {
+      display: block;
+      font-size: 8.5px;
+      font-weight: 700;
+      color: #7b8893;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-top: 3px;
+      line-height: 1.2;
+    }
+
+    /* Merged In-Line Proprietary Products Section (Directly visible, no tabs) */
+    .services-products-unified {
+      margin-top: 56px;
+      padding-top: 44px;
+      border-top: 1px solid #edf0f3;
+    }
+
+    .sp-unified-top {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    .sp-unified-top h3 {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.6px;
+      color: #09141f;
+      margin-top: 6px;
+    }
+
+    .sp-unified-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+    }
+
+    .sp-card-unified {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 18px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      box-shadow: 0 4px 14px rgba(12, 24, 36, 0.03);
+      transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+    }
+
+    .sp-card-unified:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(12, 24, 36, 0.08);
+      border-color: #cbd5e1;
+    }
+
+    .sp-card-unified-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .sp-icon-box {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+    }
+
+    .sp-icon-box.red { background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); color: #ffffff; }
+    .sp-icon-box.yellow { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); color: #ffffff; }
+    .sp-icon-box.green { background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: #ffffff; }
+    .sp-icon-box.blue { background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%); color: #ffffff; }
+
+    .sp-icon-box svg {
+      width: 20px;
+      height: 20px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 2;
+    }
+
+    .sp-badge-pill {
+      font-family: var(--font-mono);
+      font-size: 8.5px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      padding: 2px 7px;
+      border-radius: 6px;
+      background: #f1f5f9;
+      color: #475569;
+    }
+
+    .sp-card-unified b {
+      display: block;
+      font-size: 14px;
+      font-weight: 800;
+      color: #09141f;
+      line-height: 1.25;
+    }
+
+    .sp-card-unified small {
+      display: block;
+      margin-top: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      color: #64748b;
+      line-height: 1.35;
+    }
+
+    .services-bottom-tag {
+      margin-top: 44px;
+      display: inline-flex;
+      flex-direction: column;
+      gap: 3px;
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 2.2px;
+      color: #94a3b8;
+      text-transform: uppercase;
+    }
+
+    .services-bottom-tag .bottom-dash {
+      width: 20px;
+      height: 2px;
+      background: #94a3b8;
+      margin-bottom: 6px;
+    }
+
+    @media (max-width: 1100px) {
+      .services-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .services-waypoints-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .sp-unified-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .services-topbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .sp-unified-top {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .sp-unified-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 540px) {
+      .services-cards-grid {
+        grid-template-columns: 1fr;
+      }
+      .services-waypoints-grid {
+        grid-template-columns: 1fr;
+      }
+      .sp-unified-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* =========================================
+       5. FEATURED PROJECTS SECTION (ENLARGED & PROFESSIONAL)
+       ========================================= */
+    .projects-cards-section {
+      padding: 96px 0 104px;
+      background: #ffffff;
+      border-top: 1px solid #edf0ee;
+    }
+
+    .projects-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 32px;
+      margin-bottom: 38px;
+    }
+
+    .projects-heading-col h2 {
+      font-size: 38px;
+      font-weight: 750;
+      letter-spacing: -1.3px;
+      line-height: 1.15;
+      color: #0c1822;
+      margin-top: 12px;
+    }
+
+    .projects-subtitle {
+      max-width: 520px;
+      color: #5c666e;
+      font-size: 14.5px;
+      line-height: 1.55;
+      margin-top: 10px;
+    }
+
+    .projects-header-actions {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-shrink: 0;
+    }
+
+    .projects-carousel-wrapper {
+      position: relative;
+      width: 100%;
+    }
+
+    .projects-carousel {
+      display: flex;
+      gap: 24px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 12px;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    .projects-carousel::-webkit-scrollbar {
+      display: none;
+    }
+
+    .proj-card {
+      flex: 0 0 calc((100% - 48px) / 3);
+      min-width: 320px;
+      scroll-snap-align: start;
+      background: #ffffff;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid #e7ebe9;
+      box-shadow: 0 4px 20px rgba(12, 24, 34, 0.04);
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .proj-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 42px rgba(12, 24, 34, 0.09);
+      border-color: #d2d8d5;
+    }
+
+    .proj-img-wrap {
+      position: relative;
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+      background: #eef2f0;
+    }
+
+    .proj-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .proj-card:hover .proj-img-wrap img {
+      transform: scale(1.05);
+    }
+
+    .proj-badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(12, 24, 34, 0.76);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      color: #ffffff;
+      font-size: 9.5px;
+      font-weight: 750;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      padding: 6px 12px;
+      border-radius: 20px;
+      line-height: 1;
+    }
+
+    .proj-info {
+      padding: 22px 24px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-between;
+      gap: 16px;
+      background: #ffffff;
+    }
+
+    .proj-info-main h4 {
+      font-size: 17.5px;
+      font-weight: 750;
+      color: #0c1822;
+      margin: 0;
+      line-height: 1.3;
+      letter-spacing: -0.3px;
+    }
+
+    .proj-info-main p {
+      font-size: 13.5px;
+      color: #5c666e;
+      margin: 8px 0 0;
+      line-height: 1.5;
+    }
+
+    .proj-meta-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 14px;
+      border-top: 1px solid #f0f3f2;
+    }
+
+    .proj-location {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #727c84;
+    }
+
+    .proj-location svg {
+      width: 14px;
+      height: 14px;
+      color: var(--red);
+    }
+
+    .proj-arrow-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 1px solid #dde2e4;
+      background: #f8faf9;
+      display: grid;
+      place-items: center;
+      font-size: 13px;
+      color: #12202c;
+      transition: all 0.2s ease;
+    }
+
+    .proj-card:hover .proj-arrow-btn {
+      background: #0c1822;
+      color: #ffffff;
+      border-color: #0c1822;
+      transform: translateX(3px);
+    }
+
+    .carousel-arrows {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .carousel-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid #dce0e2;
+      background: #ffffff;
+      color: #0c1822;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      font-size: 16px;
+      line-height: 1;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+
+    .carousel-btn:hover {
+      background: #0c1822;
+      color: #ffffff;
+      border-color: #0c1822;
+      transform: scale(1.05);
+    }
+
+    /* =========================================
+       6. LATEST NEWS SECTION (DEDICATED FULL-WIDTH)
+       ========================================= */
+    .news-section {
+      padding: 96px 0 100px;
+      background: #fafbfa;
+      border-top: 1px solid #edf0ee;
+    }
+
+    .news-section .section-top {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 36px;
+      margin-bottom: 40px;
+    }
+
+    .news-section .section-heading h2 {
+      font-size: 38px;
+      font-weight: 750;
+      letter-spacing: -1.3px;
+      line-height: 1.15;
+      color: #0c1822;
+      margin-top: 12px;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .news-card-pro {
+      position: relative;
+      background: #ffffff;
+      border: 1px solid #e7ebe9;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 4px 18px rgba(12, 24, 34, 0.035);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    .news-card-pro::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #ed2832, #ffd228, #1ed64a, #0ea5e9);
+      opacity: 0;
+      transition: opacity 0.25s ease;
+      z-index: 2;
+    }
+
+    .news-card-pro:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(12, 24, 34, 0.08);
+      border-color: #d1d8d5;
+    }
+
+    .news-card-pro:hover::before {
+      opacity: 1;
+    }
+
+    .news-card-pro-body {
+      padding: 30px 28px 26px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .news-card-top-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .news-tag {
+      display: inline-flex;
+      align-items: center;
+      font-size: 10px;
+      font-weight: 750;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+
+    .news-tag.red { background: #fef2f2; color: #dc2626; }
+    .news-tag.teal { background: #f0fdfa; color: #0d9488; }
+    .news-tag.green { background: #f0fdf4; color: #16a34a; }
+
+    .news-card-pro time {
+      font-size: 11px;
+      font-weight: 600;
+      color: #7b8389;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .news-card-pro h3 {
+      font-size: 18px;
+      font-weight: 750;
+      color: #0c1822;
+      line-height: 1.35;
+      letter-spacing: -0.4px;
+      margin: 12px 0 8px;
+    }
+
+    .news-card-pro p {
+      font-size: 13.5px;
+      color: #5c666e;
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    .news-footer-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #0c1822;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .news-footer-link .arrow {
+      transition: transform 0.2s ease;
+    }
+
+    .news-card-pro:hover .news-footer-link {
+      color: var(--red);
+    }
+
+    .news-card-pro:hover .news-footer-link .arrow {
+      transform: translateX(4px);
+    }
+
+    /* =========================================
+       7. OUR CLIENTS SECTION (MARQUEE ANIMATION)
+       ========================================= */
+    .clients-section {
+      padding: 96px 0 104px;
+      background: #ffffff;
+      border-top: 1px solid #edf0ee;
+    }
+
+    .clients-section .section-top {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 36px;
+      margin-bottom: 48px;
+    }
+
+    .clients-section .section-heading h2 {
+      font-size: 38px;
+      font-weight: 750;
+      letter-spacing: -1.3px;
+      line-height: 1.15;
+      color: #0c1822;
+      margin-top: 12px;
+    }
+
+    .clients-marquee-outer {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding: 12px 0;
+    }
+
+    .clients-marquee-outer::before,
+    .clients-marquee-outer::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 90px;
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    .clients-marquee-outer::before {
+      left: 0;
+      background: linear-gradient(90deg, #ffffff 0%, rgba(255,255,255,0) 100%);
+    }
+
+    .clients-marquee-outer::after {
+      right: 0;
+      background: linear-gradient(270deg, #ffffff 0%, rgba(255,255,255,0) 100%);
+    }
+
+    .clients-track {
+      display: flex;
+      gap: 20px;
+      width: max-content;
+      animation: clientMarqueeScroll 28s linear infinite;
+    }
+
+    .clients-marquee-outer:hover .clients-track {
+      animation-play-state: paused;
+    }
+
+    @keyframes clientMarqueeScroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .client-tile {
+      flex: 0 0 210px;
+      height: 110px;
+      background: #ffffff;
+      border: 1px solid #e7ebe9;
+      border-radius: 16px;
+      padding: 18px 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 4px 14px rgba(12, 24, 34, 0.025);
+      transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    .client-tile:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 28px rgba(12, 24, 34, 0.07);
+      border-color: #0c1822;
+    }
+
+    .client-tile img {
+      max-width: 80%;
+      max-height: 48px;
+      object-fit: contain;
+      filter: grayscale(80%) opacity(0.85);
+      transition: filter 0.25s ease;
+    }
+
+    .client-tile:hover img {
+      filter: grayscale(0%) opacity(1);
+    }
+
+    .client-tile span {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: #3b454d;
+      letter-spacing: 0.2px;
+    }
+
+    .client-trust-stats {
+      margin-top: 56px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      padding-top: 48px;
+      border-top: 1px solid #f0f3f2;
+    }
+
+    .trust-stat-box {
+      text-align: center;
+      padding: 0 16px;
+      position: relative;
+    }
+
+    .trust-stat-box:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 15%;
+      height: 70%;
+      width: 1px;
+      background: #e7ebe9;
+    }
+
+    .trust-stat-box b {
+      display: block;
+      font-size: 32px;
+      font-weight: 750;
+      color: #0c1822;
+      letter-spacing: -1px;
+      line-height: 1;
+    }
+
+    .trust-stat-box span {
+      display: block;
+      margin-top: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #68727a;
+      line-height: 1.35;
+    }
+
+    /* =========================================
+       8. CTA BANNER SECTION
+       ========================================= */
+    .cta-banner-section {
+      width: min(1320px, calc(100% - 96px));
+      margin: 0 auto 88px;
+    }
+
+    .cta-banner-card {
+      position: relative;
+      background:
+        linear-gradient(90deg, rgba(6, 16, 26, 0.94) 0%, rgba(6, 16, 26, 0.78) 50%, rgba(6, 16, 26, 0.92) 100%),
+        url("public/assets/images/cta_rail_bridge.jpg") center/cover no-repeat;
+      border-radius: 24px;
+      padding: 56px 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #ffffff;
+      overflow: hidden;
+      box-shadow: 0 16px 40px rgba(6, 16, 26, 0.12);
+    }
+
+    .cta-banner-text h2 {
+      font-size: 36px;
+      font-weight: 750;
+      letter-spacing: -1.3px;
+      line-height: 1.15;
+      color: #ffffff;
+    }
+
+    .cta-banner-text p {
+      margin-top: 10px;
+      font-size: 14.5px;
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    .cta-banner-actions {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+    }
+
+    .cta-banner-actions .round-button.white {
+      background: #ffffff;
+      color: #0c1822;
+      height: 42px;
+      padding: 0 24px;
+      font-size: 11.5px;
+      font-weight: 700;
+      border-radius: 21px;
+      border: none;
+    }
+
+    .cta-banner-words {
+      font-size: 10px;
+      font-weight: 750;
+      letter-spacing: 2.5px;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.9);
+      padding-left: 24px;
+      border-left: 1px solid rgba(255, 255, 255, 0.25);
+      text-transform: uppercase;
+    }
+
+    .cta-banner-words .stripe {
+      width: 50px;
+      margin-top: 8px;
+    }
+
+    /* =========================================
+       9. LIGHT CLEAN FOOTER
+       ========================================= */
+    footer {
+      background: #ffffff;
+      border-top: 1px solid #edf0ee;
+      padding: 64px 0 0;
+      color: #5c666e;
+    }
+
+    .footer-main {
+      width: min(1320px, calc(100% - 96px));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 1.1fr 1.1fr 1fr 0.6fr;
+      gap: 28px;
+      padding-bottom: 52px;
+    }
+
+    .footer-main > *:not(:first-child) {
+      padding-left: 20px;
+      border-left: 1px solid #edf0ee;
+    }
+
+    .footer-brand img {
+      width: 170px;
+      height: auto;
+      display: block;
+    }
+
+    .footer-brand p {
+      margin-top: 12px;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 1.8px;
+      color: #7b8389;
+      text-transform: uppercase;
+    }
+
+    .footer-heading {
+      font-size: 11px;
+      font-weight: 750;
+      letter-spacing: 1.8px;
+      color: #0c1822;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .footer-col {
+      font-size: 12.5px;
+      line-height: 1.6;
+      color: #5c666e;
+    }
+
+    .footer-col p {
+      margin: 0;
+    }
+
+    .footer-social-col .social {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer-social-col .social a {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 1px solid #dce0e2;
+      display: grid;
+      place-items: center;
+      color: #12202c;
+      text-decoration: none;
+      font-size: 13px;
+      transition: all 0.2s ease;
+    }
+
+    .footer-social-col .social a:hover {
+      background: #0c1822;
+      color: #ffffff;
+      border-color: #0c1822;
+    }
+
+    .footer-bottom {
+      width: min(1320px, calc(100% - 96px));
+      margin: 0 auto;
+      border-top: 1px solid #edf0ee;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 11px;
+      color: #7b8389;
+    }
+
+    .footer-bottom nav {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .footer-bottom nav a {
+      color: #7b8389;
+      text-decoration: none;
+      transition: color 0.15s ease;
+    }
+
+    .footer-bottom nav a:hover {
+      color: #0c1822;
+    }
+
+    .sub-tagline {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 10.5px;
+      font-weight: 600;
+      color: #3b454e;
+    }
+
+    .sub-tagline .stripe {
+      width: 32px;
+    }
+
+    /* =========================================
+       RESPONSIVE MEDIA QUERIES
+       ========================================= */
+    @media (max-width: 1080px) {
+      .projects-carousel .proj-card {
+        flex: 0 0 calc((100% - 24px) / 2);
+      }
+      .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .client-trust-stats {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 32px;
+      }
+      .trust-stat-box:nth-child(2)::after {
+        display: none;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .content, .footer-main, .footer-bottom, .cta-banner-section {
+        width: calc(100% - 40px);
+      }
+      .about-variant {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 56px 0;
+      }
+      .about-variant-media {
+        flex: none;
+        width: 100%;
+      }
+      .about-variant-content {
+        grid-template-columns: 1fr;
+        padding: 0 24px;
+      }
+      .services .section-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+      }
+      .service-cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .projects-header,
+      .news-section .section-top,
+      .clients-section .section-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+      }
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-main {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+      .footer-main > *:not(:first-child) {
+        padding-left: 0;
+        border-left: none;
+      }
+      .footer-bottom {
+        height: auto;
+        padding: 20px 0;
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .content, .footer-main, .footer-bottom, .cta-banner-section {
+        width: calc(100% - 32px);
+      }
+      .projects-carousel .proj-card {
+        flex: 0 0 100%;
+        min-width: 100%;
+      }
+      .service-cards {
+        grid-template-columns: 1fr;
+      }
+      .client-trust-stats {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .trust-stat-box::after {
+        display: none !important;
+      }
+      .cta-banner-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+      .cta-banner-words {
+        padding-left: 0;
+        border-left: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <!-- HERO STAGE (1024x471) -->
+    <div class="hero-stage">
+      <section class="hero">
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-photo"></div>
+        </div>
+
+        <div class="hero-bottom-tag">━ CONNECTING POSSIBILITIES</div>
+
+        <header class="topbar">
+          <img class="brand" src="public/assets/images/logo_full.png" alt="AAV Works Private Limited">
+          <nav class="nav" aria-label="Main navigation">
+            <a class="active" href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#products">Products</a>
+            <a href="#projects">Projects</a>
+            <a href="#news">News</a>
+            <a href="#careers">Careers</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <a class="round-button dark contact-top" href="#contact">Get in Touch <span class="arrow">→</span></a>
+        </header>
+
+        <div class="hero-copy" id="home">
+          <p class="eyebrow plain"><span class="hero-bar"></span> BUILDING TOMORROW</p>
+          <h1>Engineering Railways<br>for a Better <span class="hero-highlight">Tomorrow</span></h1>
+          <p class="intro">From concept to commissioning, we deliver end-to-end signalling and telecom solutions that keep people and goods moving safely, efficiently and sustainably.</p>
+          <div class="hero-actions">
+            <a class="round-button dark" href="#services">Explore Our Work <span class="arrow">→</span></a>
+            <a class="round-button watch-story" href="#video">
+              <span class="play-btn-circle">▶</span>
+              <span>Watch Our Story</span>
+            </a>
+          </div>
+
+          <!-- Hero Bottom Stats: Old Style Stats -->
+          <div class="hero-stats-classic">
+            <div class="hero-stat-col">
+              <div class="hero-stat-number">10<span class="hero-stat-plus">+</span></div>
+              <div class="hero-stat-label">Years of<br>Experience</div>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat-col">
+              <div class="hero-stat-number">100<span class="hero-stat-plus">+</span></div>
+              <div class="hero-stat-label">Projects<br>Delivered</div>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat-col">
+              <div class="hero-stat-number">50<span class="hero-stat-plus">+</span></div>
+              <div class="hero-stat-label">Expert Team<br>Members</div>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat-col">
+              <div class="hero-stat-number">15<span class="hero-stat-plus">+</span></div>
+              <div class="hero-stat-label">Awards &amp;<br>Recognitions</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Architectural tags from reference layout -->
+        <div class="hero-tag-smarter">
+          <span>SAFER</span>
+          <span>SMARTER</span>
+          <span>MORE CONNECTED</span>
+          <span class="hero-tag-dash"></span>
+        </div>
+        <div class="hero-tag-people">
+          <span>PEOPLE</span>
+          <span>PLACES</span>
+          <span>PROGRESS</span>
+        </div>
+        <div class="hero-tag-generations">
+          <span>RAILWAYS</span>
+          <span>FOR GENERATIONS</span>
+          <span class="hero-tag-dash"></span>
+        </div>
+      </section>
+    </div>
+
+    <!-- 2. ABOUT SECTION (TOUCHING LEFT EDGE COMPLETELY) -->
+    <section class="about-variant" id="about">
+      <div class="about-variant-media">
+        <img src="public/assets/images/about_bridge_landscape.png" alt="Railway Viaduct Landscape">
+        <div class="about-media-quote">
+          <p>"A safer,<br>smarter, more<br>connected tomorrow."</p>
+          <span class="stripe"></span>
+        </div>
+      </div>
+      <div class="about-variant-content">
+        <div class="about-variant-copy">
+          <p class="eyebrow">About AAV Works</p>
+          <h2>Driven by Engineering.<br>Guided by <span style="color: var(--red);">Purpose.</span></h2>
+          <p>AAV Works Private Limited is a specialised railway S&amp;T design and drawing company focused on delivering reliable, efficient and future-ready solutions for modern rail infrastructure.</p>
+          <a class="round-button" href="#company">Learn More <span class="arrow">→</span></a>
+        </div>
+        <div class="about-pillars">
+          <div class="pillar-item">
+            <span class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24M14.83 9.17l4.24-4.24M14.83 14.83l4.24 4.24M9.17 14.83l-4.24 4.24"/></svg></span>
+            <div><b>Safety First</b><span>Designing for a safer tomorrow</span></div>
+          </div>
+          <div class="pillar-item">
+            <span class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+            <div><b>People Centric</b><span>Empowering talent and communities</span></div>
+          </div>
+          <div class="pillar-item">
+            <span class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
+            <div><b>Innovation Led</b><span>Solving for what's next</span></div>
+          </div>
+          <div class="pillar-item">
+            <span class="pillar-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></span>
+            <div><b>Sustainable Impact</b><span>Cleaner, greener connections</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+            <!-- 3. SERVICES & PRODUCTS SECTION -->
+    <section class="services" id="services">
+      <div class="content">
+        <!-- Topbar with Heading -->
+        <div class="services-topbar">
+          <div class="services-heading-wrap">
+            <p class="eyebrow plain"><span class="hero-bar"></span> OUR SERVICES &amp; PRODUCTS</p>
+            <h2>Complete Solutions<br>Across the <span class="services-gradient-text">Railway Lifecycle</span></h2>
+            <p class="services-intro">From concept to commissioning, we provide end-to-end railway solutions designed for a safer, smarter and more connected tomorrow.</p>
+          </div>
+
+          <div class="services-corner-tag">
+            <span>PEOPLE</span>
+            <span>PLACES</span>
+            <span>PROGRESS</span>
+            <span class="corner-dash"></span>
+          </div>
+        </div>
+
+        <!-- 4 Service Cards Grid (Prominent, clean, zero rail behind) -->
+        <div class="services-cards-grid">
+          <!-- Card 01: Projects -->
+          <article class="service-lifecycle-card card-projects">
+            <div class="card-glow-bar red"></div>
+            <div class="card-top-row">
+              <div class="card-squircle-icon icon-red">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="4" y="3" width="16" height="15" rx="3.5"/>
+                  <path d="M4 11h16"/>
+                  <path d="M12 3v8"/>
+                  <circle cx="8" cy="14.5" r="1.5" fill="currentColor"/>
+                  <circle cx="16" cy="14.5" r="1.5" fill="currentColor"/>
+                  <path d="M8 18l-2 3M16 18l2 3"/>
+                </svg>
+              </div>
+              <span class="card-badge-num">01</span>
+            </div>
+            <h3>Projects</h3>
+            <p>End-to-end railway signalling solutions including design, procurement, installation, drawings and commissioning.</p>
+            <a href="#contact" class="card-action-btn btn-red" aria-label="Learn more about Projects">
+              <span>Explore</span>
+              <span class="btn-arrow">→</span>
+            </a>
+          </article>
+
+          <!-- Card 02: System Assurance -->
+          <article class="service-lifecycle-card card-assurance">
+            <div class="card-glow-bar yellow"></div>
+            <div class="card-top-row">
+              <div class="card-squircle-icon icon-yellow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <polyline points="9 12 11 14 15 10"/>
+                </svg>
+              </div>
+              <span class="card-badge-num">02</span>
+            </div>
+            <h3>System Assurance</h3>
+            <p>RAMS support, technical documentation and safety documentation as per industry standards.</p>
+            <a href="#contact" class="card-action-btn btn-yellow" aria-label="Learn more about System Assurance">
+              <span>Explore</span>
+              <span class="btn-arrow">→</span>
+            </a>
+          </article>
+
+          <!-- Card 03: Software Services -->
+          <article class="service-lifecycle-card card-software">
+            <div class="card-glow-bar green"></div>
+            <div class="card-top-row">
+              <div class="card-squircle-icon icon-green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                  <line x1="14" y1="4" x2="10" y2="20"/>
+                </svg>
+              </div>
+              <span class="card-badge-num">03</span>
+            </div>
+            <h3>Software Services</h3>
+            <p>Signalling software solutions to automate and enhance rail operations.</p>
+            <a href="#contact" class="card-action-btn btn-green" aria-label="Learn more about Software Services">
+              <span>Explore</span>
+              <span class="btn-arrow">→</span>
+            </a>
+          </article>
+
+          <!-- Card 04: Engineering -->
+          <article class="service-lifecycle-card card-engineering">
+            <div class="card-glow-bar blue"></div>
+            <div class="card-top-row">
+              <div class="card-squircle-icon icon-blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="3"/>
+                  <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                </svg>
+              </div>
+              <span class="card-badge-num">04</span>
+            </div>
+            <h3>Engineering</h3>
+            <p>S&amp;T design, circuit designing, independent verification and installation testing support.</p>
+            <a href="#contact" class="card-action-btn btn-blue" aria-label="Learn more about Engineering">
+              <span>Explore</span>
+              <span class="btn-arrow">→</span>
+            </a>
+          </article>
+        </div>
+
+        <!-- 4 Waypoint Milestones (Clean and prominent) -->
+        <div class="services-waypoints-grid">
+          <!-- Waypoint 01: PLAN -->
+          <div class="waypoint-station-item wp-red">
+            <div class="waypoint-pin">
+              <span class="pin-core"></span>
+            </div>
+            <div class="waypoint-label-text">
+              <b>PLAN</b>
+              <span>IDEAS INTO IMPACT</span>
+            </div>
+          </div>
+
+          <!-- Waypoint 02: ENSURE -->
+          <div class="waypoint-station-item wp-yellow">
+            <div class="waypoint-pin">
+              <span class="pin-core"></span>
+            </div>
+            <div class="waypoint-label-text">
+              <b>ENSURE</b>
+              <span>SAFETY AT EVERY STEP</span>
+            </div>
+          </div>
+
+          <!-- Waypoint 03: ENABLE -->
+          <div class="waypoint-station-item wp-green">
+            <div class="waypoint-pin">
+              <span class="pin-core"></span>
+            </div>
+            <div class="waypoint-label-text">
+              <b>ENABLE</b>
+              <span>INTELLIGENT OPERATIONS</span>
+            </div>
+          </div>
+
+          <!-- Waypoint 04: DELIVER -->
+          <div class="waypoint-station-item wp-blue">
+            <div class="waypoint-pin">
+              <span class="pin-core"></span>
+            </div>
+            <div class="waypoint-label-text">
+              <b>DELIVER</b>
+              <span>A STRONGER TOMORROW</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Integrated Proprietary Products Section (Merged directly into flow, no tabs) -->
+        <div class="services-products-unified" id="products">
+          <div class="sp-unified-top">
+            <div>
+              <p class="eyebrow plain"><span class="hero-bar"></span> PROPRIETARY DIGITAL TOOLS</p>
+              <h3>Software Platforms Powering Modern Rail</h3>
+            </div>
+            <a class="view-link" href="#contact">Request Demo / Evaluation <span class="arrow">→</span></a>
+          </div>
+
+          <div class="sp-unified-grid">
+            <!-- Product 1 -->
+            <div class="sp-card-unified">
+              <div class="sp-card-unified-head">
+                <span class="sp-icon-box red">
+                  <svg viewBox="0 0 24 24"><polygon points="12 2 2 8.5 2 15.5 12 22 22 15.5 22 8.5 12 2"></polygon></svg>
+                </span>
+                <span class="sp-badge-pill">SIL-4</span>
+              </div>
+              <div>
+                <b>SENSIO</b>
+                <small>Signalling Intelligence Engine</small>
+              </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="sp-card-unified">
+              <div class="sp-card-unified-head">
+                <span class="sp-icon-box yellow">
+                  <svg viewBox="0 0 24 24"><polygon points="12 2 2 8.5 2 15.5 12 22 22 15.5 22 8.5 12 2"></polygon></svg>
+                </span>
+                <span class="sp-badge-pill">SCADA</span>
+              </div>
+              <div>
+                <b>SENTRIS</b>
+                <small>Control &amp; Centralized Monitoring</small>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="sp-card-unified">
+              <div class="sp-card-unified-head">
+                <span class="sp-icon-box green">
+                  <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                </span>
+                <span class="sp-badge-pill">SIMULATOR</span>
+              </div>
+              <div>
+                <b>SENS Traffic Simulator</b>
+                <small>Simulate. Optimise. Operate.</small>
+              </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="sp-card-unified">
+              <div class="sp-card-unified-head">
+                <span class="sp-icon-box red">
+                  <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                </span>
+                <span class="sp-badge-pill">GIS MAP</span>
+              </div>
+              <div>
+                <b>SENS Cable Tracker</b>
+                <small>Trace with Confidence</small>
+              </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="sp-card-unified">
+              <div class="sp-card-unified-head">
+                <span class="sp-icon-box blue">
+                  <svg viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                </span>
+                <span class="sp-badge-pill">AUTO-CAD</span>
+              </div>
+              <div>
+                <b>SENS Algen &amp; L2L</b>
+                <small>Intelligent Line Solutions</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section Footer Tag -->
+        <div class="services-bottom-tag">
+          <span class="bottom-dash"></span>
+          <span>BUILT FOR</span>
+          <span>GENERATIONS AHEAD</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. FEATURED PROJECTS SECTION (ENLARGED & PROFESSIONAL) -->
+    <section class="projects-cards-section" id="projects">
+      <div class="content">
+        <div class="projects-header">
+          <div class="projects-heading-col">
+            <p class="eyebrow">Featured Projects</p>
+            <h2>Delivering Impact Across Rail Networks</h2>
+            <p class="projects-subtitle">Proven track record in high-density corridors, electronic interlocking (EI), automatic block signalling, and critical railway civil-S&amp;T infrastructure.</p>
+          </div>
+          <div class="projects-header-actions">
+            <a class="view-link" href="#all-projects">View All Projects <span class="arrow">→</span></a>
+            <div class="carousel-arrows">
+              <button class="carousel-btn prev-btn" aria-label="Previous Projects">⟨</button>
+              <button class="carousel-btn next-btn" aria-label="Next Projects">⟩</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-carousel-wrapper">
+          <div class="projects-carousel">
+            <article class="proj-card">
+              <div class="proj-img-wrap">
+                <img src="public/assets/images/proj_station_redev.jpg" alt="Station Redevelopment Support">
+                <span class="proj-badge">Station Redevelopment</span>
+              </div>
+              <div class="proj-info">
+                <div class="proj-info-main">
+                  <h4>Station Redevelopment &amp; Yard Remodelling</h4>
+                  <p>Comprehensive Signal Interlocking Plan (SIP), dog charts, and turnkey drawing validation for high-capacity junction stations.</p>
+                </div>
+                <div class="proj-meta-row">
+                  <span class="proj-location">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    South India • Zonal Railways
+                  </span>
+                  <span class="proj-arrow-btn">→</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="proj-card">
+              <div class="proj-img-wrap">
+                <img src="public/assets/images/proj_signalling_abs.jpg" alt="Signalling Design &amp; Drawings">
+                <span class="proj-badge">Signalling Design</span>
+              </div>
+              <div class="proj-info">
+                <div class="proj-info-main">
+                  <h4>Automatic Block Signalling (ABS) Corridor</h4>
+                  <p>Design, circuit diagrams, application logic, and technical assurance for 85+ RKM dense mainline block sections.</p>
+                </div>
+                <div class="proj-meta-row">
+                  <span class="proj-location">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    Pan India • Dedicated Corridors
+                  </span>
+                  <span class="proj-arrow-btn">→</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="proj-card">
+              <div class="proj-img-wrap">
+                <img src="public/assets/images/proj_viaduct_infra.jpg" alt="Infrastructure Design Support">
+                <span class="proj-badge">Viaduct &amp; Bridges</span>
+              </div>
+              <div class="proj-info">
+                <div class="proj-info-main">
+                  <h4>High-Speed Viaduct &amp; Civil-S&amp;T Integration</h4>
+                  <p>Multi-span elevated rail viaduct design support, cable trough routing schematics, and structural coordination.</p>
+                </div>
+                <div class="proj-meta-row">
+                  <span class="proj-location">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    National High-Speed Projects
+                  </span>
+                  <span class="proj-arrow-btn">→</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="proj-card">
+              <div class="proj-img-wrap">
+                <img src="public/assets/images/about_tracks.jpg" alt="Electronic Interlocking Validation">
+                <span class="proj-badge">Interlocking Validation</span>
+              </div>
+              <div class="proj-info">
+                <div class="proj-info-main">
+                  <h4>Electronic Interlocking (EI) Software Verification</h4>
+                  <p>Independent verification and validation (IV&amp;V) of bit chart logic, station data tables, and fail-safe safety protocols.</p>
+                </div>
+                <div class="proj-meta-row">
+                  <span class="proj-location">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                    Central &amp; Western Corridors
+                  </span>
+                  <span class="proj-arrow-btn">→</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. LATEST NEWS SECTION (DEDICATED FULL-WIDTH) -->
+    <section class="news-section" id="news">
+      <div class="content">
+        <div class="section-top">
+          <div class="section-heading">
+            <p class="eyebrow">Latest News</p>
+            <h2>Updates &amp; Milestones</h2>
+          </div>
+          <p class="section-description" style="max-width: 440px; color: #5f6972; font-size: 13.5px; line-height: 1.55;">Discover recent milestone deliveries, industry conference showcases, and our ongoing innovations in railway technology.</p>
+          <a class="view-link" href="#all-news">View All News <span class="arrow">→</span></a>
+        </div>
+
+        <div class="news-grid">
+          <article class="news-card-pro">
+            <div class="news-card-pro-body">
+              <div>
+                <div class="news-card-top-meta">
+                  <span class="news-tag red">Exhibition</span>
+                  <time>MAR 12, 2024</time>
+                </div>
+                <h3>AAV Works Showcases Next-Gen S&amp;T Design Tools at InnoRail 2024</h3>
+                <p>Presented our in-house railway interlocking simulator and automated design drawing tools to top railway board officials and international delegates.</p>
+              </div>
+              <a class="news-footer-link" href="#news-innorail">Read Full Story <span class="arrow">→</span></a>
+            </div>
+          </article>
+
+          <article class="news-card-pro">
+            <div class="news-card-pro-body">
+              <div>
+                <div class="news-card-top-meta">
+                  <span class="news-tag teal">Commissioning</span>
+                  <time>FEB 05, 2024</time>
+                </div>
+                <h3>Commissioning Support for High-Speed ABS Signalling Route</h3>
+                <p>Successfully completed comprehensive design verification, test circuit schematics, and live site commissioning support for an 85 RKM corridor.</p>
+              </div>
+              <a class="news-footer-link" href="#news-abs">Read Full Story <span class="arrow">→</span></a>
+            </div>
+          </article>
+
+          <article class="news-card-pro">
+            <div class="news-card-pro-body">
+              <div>
+                <div class="news-card-top-meta">
+                  <span class="news-tag green">Team &amp; Tech</span>
+                  <time>JAN 18, 2024</time>
+                </div>
+                <h3>Annual Engineering Excellence &amp; Technology Upskilling Program</h3>
+                <p>Empowering our railway S&amp;T design engineers with advanced training on modern electronic interlocking, RAMS standards, and automation algorithms.</p>
+              </div>
+              <a class="news-footer-link" href="#news-team">Read Full Story <span class="arrow">→</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. OUR CLIENTS SECTION (DEDICATED FULL-WIDTH WITH MARQUEE ANIMATION) -->
+    <section class="clients-section" id="clients">
+      <div class="content">
+        <div class="section-top">
+          <div class="section-heading">
+            <p class="eyebrow">Our Clients</p>
+            <h2>Trusted Partnerships</h2>
+          </div>
+          <p class="section-description" style="max-width: 440px; color: #5f6972; font-size: 13.5px; line-height: 1.55;">Proud to partner with national railway authorities, leading public sector undertakings, and premier rail EPC contractors across India.</p>
+          <a class="view-link" href="#all-clients">View All Clients <span class="arrow">→</span></a>
+        </div>
+
+        <div class="clients-marquee-outer">
+          <div class="clients-track">
+            <!-- Set 1 -->
+            <div class="client-tile">
+              <img src="public/assets/images/client-ir.svg" alt="Indian Railways">
+              <span>Indian Railways</span>
+            </div>
+            <div class="client-tile">
+              <img src="public/assets/images/client-rvnl.svg" alt="Rail Vikas Nigam Limited">
+              <span>RVNL</span>
+            </div>
+            <div class="client-tile">
+              <img src="public/assets/images/client-ircon.svg" alt="IRCON International Limited">
+              <span>IRCON International</span>
+            </div>
+            <div class="client-tile">
+              <img src="public/assets/images/client-titagarh.svg" alt="Titagarh Rail Systems">
+              <span>Titagarh Rail Systems</span>
+            </div>
+            <div class="client-tile">
+              <img src="public/assets/images/client-ir.svg" alt="Dedicated Freight Corridor">
+              <span>DFCCIL</span>
+            </div>
+            <div class="client-tile">
+              <img src="public/assets/images/client-rvnl.svg" alt="Metro Rail Consortium">
+              <span>Metro Rail Projects</span>
+            </div>
+            <!-- Set 2 (Duplicates for seamless infinite loop) -->
+            <div class="client-tile">
+              <img src="public/assets/images/client-ir.svg" alt="Indian Railways">
+              <span>Indian Railways</span>
+            </div>
+            <div class="client-tile">
+              <img src="public/assets/images/client-rvnl.svg" alt="Rail Vikas Nigam Limited">
+              <span>RVNL</span>
+            </div>
+            <div class="client-tile">
+              <img src="public/assets/images/client-ircon.svg" alt="IRCON International Limited">
+              <span>IRCON International</span>
+            </div>
+            <div class="client-tile">
+              <img src="public/assets/images/client-titagarh.svg" alt="Titagarh Rail Systems">
+              <span>Titagarh Rail Systems</span>
+            </div>
+            <div class="client-tile">
+              <img src="public/assets/images/client-ir.svg" alt="Dedicated Freight Corridor">
+              <span>DFCCIL</span>
+            </div>
+            <div class="client-tile">
+              <img src="public/assets/images/client-rvnl.svg" alt="Metro Rail Consortium">
+              <span>Metro Rail Projects</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trust Metrics -->
+        <div class="client-trust-stats">
+          <div class="trust-stat-box">
+            <b>100+</b>
+            <span>Railway Design Approvals</span>
+          </div>
+          <div class="trust-stat-box">
+            <b>5+</b>
+            <span>Zonal Railways Served</span>
+          </div>
+          <div class="trust-stat-box">
+            <b>100%</b>
+            <span>Safety &amp; Norms Compliance</span>
+          </div>
+          <div class="trust-stat-box">
+            <b>99.6%</b>
+            <span>On-Time Milestone Delivery</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CTA BANNER SECTION -->
+    <section class="cta-banner-section" id="careers">
+      <div class="cta-banner-card">
+        <div class="cta-banner-text">
+          <h2>Let's Build a<br>Better Connected Tomorrow</h2>
+          <p>Partner with AAV Works for smarter, safer and more resilient rail networks.</p>
+        </div>
+        <div class="cta-banner-actions">
+          <a class="round-button white" href="#contact">Get in Touch <span class="arrow">→</span></a>
+          <div class="cta-banner-words">
+            PEOPLE<br>RAILS<br>PROGRESS
+            <div class="stripe"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. LIGHT CLEAN FOOTER -->
+    <footer>
+      <div class="footer-main">
+        <div class="footer-brand">
+          <img src="public/assets/images/logo_full.png" alt="AAV Works Private Limited">
+          <p>Railway S&amp;T Design &amp; Drawings.</p>
+        </div>
+        <div class="footer-col">
+          <div class="footer-heading">Corporate Office</div>
+          <p>H.No.1- 10, Bommak Brothers Colony, Boduppal, Dist: Medchal Malkajgiri, Hyderabad, Telangana - 500092.</p>
+        </div>
+        <div class="footer-col">
+          <div class="footer-heading">Registered Office</div>
+          <p>Gonasapudi Post, Chinaganjam Mandal, Chirala, Andhra Pradesh, India - 523181.</p>
+        </div>
+        <div class="footer-col">
+          <div class="footer-heading">Email</div>
+          info.aavworks@gmail.com<br>aavworkspltd@gmail.com
+        </div>
+        <div class="footer-social-col">
+          <div class="social">
+            <a href="#" aria-label="LinkedIn"><i>in</i></a>
+            <a href="#" aria-label="YouTube"><i>▶</i></a>
+            <a href="#" aria-label="X"><i>𝕏</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024 AAV Works Private Limited. All rights reserved.</span>
+        <nav>
+          <a href="#privacy">Privacy</a>
+          <span>|</span>
+          <a href="#terms">Terms</a>
+          <span>|</span>
+          <a href="#sitemap">Sitemap</a>
+        </nav>
+        <div class="sub-tagline">
+          <span>Designed for a Stronger Tomorrow.</span>
+          <span class="stripe"></span>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      // Scale-to-fit Hero Stage (1024x471 ratio)
+      var referenceWidth = 1024;
+      var referenceHeight = 471;
+      var heroStage = document.querySelector(".hero-stage");
+      var hero = heroStage ? heroStage.querySelector(".hero") : null;
+
+      function fitHeroArtwork() {
+        if (!heroStage || !hero) return;
+        var scale = document.documentElement.clientWidth / referenceWidth;
+        hero.style.transform = "scale(" + scale + ")";
+        heroStage.style.height = Math.ceil(referenceHeight * scale) + "px";
+      }
+
+      
+
+      window.addEventListener("resize", fitHeroArtwork);
+      fitHeroArtwork();
+
+      // Featured Projects Interactive Carousel
+      var carousel = document.querySelector(".projects-carousel");
+      var prevBtn = document.querySelector(".carousel-btn.prev-btn");
+      var nextBtn = document.querySelector(".carousel-btn.next-btn");
+
+      if (carousel && prevBtn && nextBtn) {
+        prevBtn.addEventListener("click", function () {
+          var firstCard = carousel.querySelector(".proj-card");
+          var cardWidth = firstCard ? firstCard.offsetWidth + 24 : 340;
+          carousel.scrollBy({ left: -cardWidth, behavior: "smooth" });
+        });
+        nextBtn.addEventListener("click", function () {
+          var firstCard = carousel.querySelector(".proj-card");
+          var cardWidth = firstCard ? firstCard.offsetWidth + 24 : 340;
+          carousel.scrollBy({ left: cardWidth, behavior: "smooth" });
+        });
+      }
+    }());
+  </script>
+</body>
+</html>
