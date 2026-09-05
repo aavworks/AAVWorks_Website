@@ -6676,7 +6676,11 @@ footer {
 }
 
 .contact-header-block {
-  margin-bottom: 14px;
+  margin-bottom: 20px;
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 3;
+  z-index: 10;
 }
 
 .contact-eyebrow {
@@ -6720,11 +6724,15 @@ footer {
 .contact-map-offices-stage {
   position: relative;
   width: 100%;
+  min-height: 400px;
   min-height: 380px;
+  min-height: 340px;
   display: flex;
   align-items: center;
+  align-items: flex-start;
   justify-content: flex-end;
-  margin: 6px 0 14px;
+  margin: 10px 0 16px;
+  margin: 16px 0 16px;
 }
 
 /* India Vector Map Container (Large Backdrop on the Left) */
@@ -6733,8 +6741,20 @@ footer {
   left: -20px;
   top: 50%;
   transform: translateY(-50%);
-  width: 440px;
-  height: 470px;
+  width: 410px;
+  height: 430px;
+  left: -16px;
+  top: 0;
+  bottom: 0;
+  width: 360px;
+  height: 100%;
+  max-height: 380px;
+  margin: auto 0;
+  left: 0;
+  top: 16px;
+  width: 290px;
+  height: 330px;
+  transform: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6746,8 +6766,12 @@ footer {
   width: 100%;
   height: 100%;
   max-height: 470px;
+  max-height: 380px;
+  max-height: 330px;
   object-fit: contain;
   filter: drop-shadow(0 8px 24px rgba(15, 23, 42, 0.08));
+  filter: drop-shadow(0 4px 16px rgba(15, 23, 42, 0.06));
+  filter: drop-shadow(0 4px 16px rgba(15, 23, 42, 0.05));
   user-select: none;
 }
 
@@ -7512,10 +7536,14 @@ footer {
   }
   .contact-map-offices-stage {
     min-height: 360px;
+    min-height: 350px;
   }
   .india-map-backdrop-wrap {
     width: 360px;
     height: 400px;
+    width: 330px;
+    height: 100%;
+    max-height: 350px;
   }
 }
 
