@@ -14,6 +14,7 @@ export default defineConfig({
         services: resolve(__dirname, 'services.html'),
         products: resolve(__dirname, 'products.html'),
         projects: resolve(__dirname, 'projects.html'),
+        news: resolve(__dirname, 'news.html'),
         careers: resolve(__dirname, 'careers.html'),
         contact: resolve(__dirname, 'contact.html'),
       },

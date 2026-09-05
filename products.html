@@ -7,7 +7,7 @@
   <meta name="description" content="Discover AAV Works proprietary Railway S&amp;T tools: SENSIO (Interlocking I/O), SENTRIS (A-FAT Validator), Traffic Simulator, Cable Tracker, and Algen &amp; L2L.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="/assets/images/logo.svg">
   <link rel="stylesheet" href="/src/css/main.css">
 </head>
@@ -17,7 +17,7 @@
     <header class="site-header">
       <div class="topbar">
         <a href="index.html" aria-label="AAV Works Home">
-          <img class="brand" src="/assets/images/logo_full.png" alt="AAV Works Private Limited">
+          <img class="brand" src="/assets/images/logo.svg" alt="AAV Works Private Limited">
         </a>
         <nav class="nav" aria-label="Main navigation">
           <a href="index.html">Home</a>
@@ -25,7 +25,7 @@
           <a href="services.html">Services</a>
           <a class="active" href="products.html">Products</a>
           <a href="projects.html">Projects</a>
-          <a href="index.html#news">News</a>
+          <a href="news.html">News</a>
           <a href="careers.html">Careers</a>
           <a href="contact.html">Contact</a>
         </nav>
@@ -40,7 +40,7 @@
     <div id="drawerBackdrop" class="drawer-backdrop"></div>
     <aside id="mobileDrawer" class="mobile-nav-drawer">
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px;">
-        <img src="/assets/images/logo_full.png" alt="AAV Works" style="height: 30px;">
+        <img src="/assets/images/logo.svg" alt="AAV Works" style="height: 30px;">
         <button id="drawerCloseBtn" class="modal-close-btn">&times;</button>
       </div>
       <nav style="display: flex; flex-direction: column; gap: 18px;">
@@ -49,69 +49,133 @@
         <a href="services.html" class="nav-link">Services</a>
         <a href="products.html" class="nav-link active">Products</a>
         <a href="projects.html" class="nav-link">Projects</a>
-        <a href="index.html#news" class="nav-link">News</a>
+        <a href="news.html" class="nav-link">News</a>
         <a href="careers.html" class="nav-link">Careers</a>
         <a href="contact.html" class="nav-link">Contact Us</a>
       </nav>
     </aside>
 
-    <!-- Light Clean Subpage Header -->
+    <!-- Architectural Subpage Header -->
     <section class="page-header-clean">
       <div class="content">
         <p class="eyebrow plain"><span class="hero-bar"></span> PROPRIETARY S&amp;T INNOVATIONS</p>
-        <h1>Tools That Power <span class="hero-highlight">Modern Railways</span></h1>
-        <p>At AAV Works, we engineer breakthrough software and hardware tools that redefine safety, automation, and speed for the Indian and international railway industry.</p>
+        <h1>High-Reliability Hardware &amp; Software for <span class="hero-highlight">Mission-Critical Rail Networks</span></h1>
+        <p>At AAV Works, we engineer breakthrough hardware modules and intelligent automation platforms that redefine safety, accelerate Table of Control verification, and ensure zero-defect interlocking deployments.</p>
+        
+        <!-- Anchor Navigation Bar -->
+        <div class="subpage-anchor-bar">
+          <a href="#sensio" class="anchor-pill-link">
+            <span class="pill-num">01</span>
+            <span>SENSIO (Vital I/O)</span>
+          </a>
+          <a href="#sentris" class="anchor-pill-link">
+            <span class="pill-num">02</span>
+            <span>SENTRIS (A-FAT)</span>
+          </a>
+          <a href="#simulator" class="anchor-pill-link">
+            <span class="pill-num">03</span>
+            <span>Traffic Simulator</span>
+          </a>
+          <a href="#trackers" class="anchor-pill-link">
+            <span class="pill-num">04</span>
+            <span>Cable &amp; CAD Tools</span>
+          </a>
+          <a href="#matrix" class="anchor-pill-link">
+            <span class="pill-num">05</span>
+            <span>Comparison Matrix</span>
+          </a>
+        </div>
       </div>
     </section>
 
     <!-- Product 1: SENSIO -->
-    <section id="sensio" class="product-detail-card" style="background: #ffffff;">
+    <section id="sensio" class="product-modern-section">
       <div class="content">
-        <div class="product-detail-grid">
-          <div class="product-detail-copy">
-            <span class="product-badge-tag red">High-Density Interlocking I/O • SIL-4</span>
-            <h2>SENSIO</h2>
-            <p>
-              SENSIO offers robust and high-performance solutions for efficient input reading and output delivery to the main electronic interlocking system. Designed with a lightning-fast response cycle of <strong>200ms</strong>, it ensures rapid and precise gear automation.
-            </p>
-            <div class="product-specs-grid">
-              <div class="product-spec-item">
-                <b>Dual Redundant Comm</b>
-                <span>Ethernet / RS-485 interfaces for zero single-point failure.</span>
+        <div class="product-modern-card">
+          <div class="prod-card-topbar">
+            <div class="prod-badge-wrap">
+              <span class="service-tag-chip tag-red">HARDWARE MODULE • SIL-4 ARCHITECTURE</span>
+              <span class="prod-cat-text">Vital Interlocking Digital I/O</span>
+            </div>
+            <div class="prod-cycle-tag">
+              <span>SCAN CYCLE: &lt; 200 MS</span>
+            </div>
+          </div>
+
+          <div class="prod-card-content-grid">
+            <div class="prod-info-col">
+              <h2 class="prod-main-title">SENSIO</h2>
+              <p class="prod-lead-desc">
+                SENSIO offers high-reliability input acquisition and vital output delivery to the station electronic interlocking system. Engineered with an ultra-fast scan cycle of <strong>200ms</strong>, it ensures rapid and precise field gear automation with optical isolation.
+              </p>
+
+              <div class="prod-specs-grid">
+                <div class="prod-spec-box">
+                  <div class="pspec-icon red">⚡</div>
+                  <div>
+                    <b>Dual Redundant Comm</b>
+                    <p>Ethernet / RS-485 interfaces with automatic zero-loss failover channels.</p>
+                  </div>
+                </div>
+
+                <div class="prod-spec-box">
+                  <div class="pspec-icon yellow">🛡️</div>
+                  <div>
+                    <b>10kV Lightning Surge</b>
+                    <p>Optical galvanic isolation engineered for harsh railway traction surges.</p>
+                  </div>
+                </div>
+
+                <div class="prod-spec-box">
+                  <div class="pspec-icon green">⏱️</div>
+                  <div>
+                    <b>Sub-200ms Response</b>
+                    <p>Real-time vital input scanning and output command execution latency.</p>
+                  </div>
+                </div>
+
+                <div class="prod-spec-box">
+                  <div class="pspec-icon blue">🔒</div>
+                  <div>
+                    <b>CENELEC SIL-4 Level</b>
+                    <p>Complies strictly with CENELEC EN 50126, EN 50128, and EN 50129 standards.</p>
+                  </div>
+                </div>
               </div>
-              <div class="product-spec-item">
-                <b>Lightning Isolation</b>
-                <span>Surge protected up to 10kV for severe rail environmental spikes.</span>
-              </div>
-              <div class="product-spec-item">
-                <b>Fast Response Cycle</b>
-                <span>Sub-200ms input scanning &amp; command execution latency.</span>
-              </div>
-              <div class="product-spec-item">
-                <b>SIL-4 Architecture</b>
-                <span>Complies strictly with CENELEC EN 50126/128/129 standards.</span>
+
+              <div class="prod-actions-row">
+                <a href="contact.html" class="round-button dark">Request Technical Datasheet <span class="arrow">→</span></a>
+                <a href="#matrix" class="round-button">View Comparative Specs</a>
               </div>
             </div>
-            <a href="contact.html" class="round-button dark">Request Technical Datasheet <span class="arrow">→</span></a>
-          </div>
-          <div>
-            <div class="product-visual-card">
-              <div class="product-visual-head">
-                <div class="product-visual-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polygon points="12 2 2 8.5 2 15.5 12 22 22 15.5 22 8.5 12 2"></polygon></svg>
+
+            <div class="prod-visual-col">
+              <div class="prod-visual-display dark-hardware">
+                <div class="pvis-top">
+                  <span class="pvis-chip">19" RACK MOUNT</span>
+                  <span class="pvis-status-indicator">STATUS: ARMED</span>
                 </div>
-                <span class="sp-badge-pill" style="color: #ffffff; border-color: rgba(255,255,255,0.3);">I/O MODULE</span>
-              </div>
-              <h3 style="font-size: 16px; font-weight: 750; margin-bottom: 6px;">Hardware Intelligence</h3>
-              <p style="font-size: 12px; color: #9ca3af; line-height: 1.55;">High-reliability vital digital interface with modular rack-mounting and dynamic status LED indicators for field technicians.</p>
-              <div class="product-visual-stats">
-                <div class="product-stat-metric">
-                  <b>200 ms</b>
-                  <span>Scan Cycle Time</span>
+                <div class="pvis-icon-stage">
+                  <div class="hardware-schematic-box">
+                    <div class="chip-socket">
+                      <span>SENSIO VITAL ASIC</span>
+                    </div>
+                    <div class="bus-lines"></div>
+                  </div>
                 </div>
-                <div class="product-stat-metric">
-                  <b>SIL-4</b>
-                  <span>Safety Level</span>
+                <div class="pvis-metrics-row">
+                  <div class="pvis-metric-item">
+                    <span class="m-val">200 ms</span>
+                    <span class="m-lbl">Scan Cycle</span>
+                  </div>
+                  <div class="pvis-metric-item">
+                    <span class="m-val">SIL-4</span>
+                    <span class="m-lbl">CENELEC</span>
+                  </div>
+                  <div class="pvis-metric-item">
+                    <span class="m-val">10 kV</span>
+                    <span class="m-lbl">Surge Guard</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -121,110 +185,92 @@
     </section>
 
     <!-- Product 2: SENTRIS -->
-    <section id="sentris" class="product-detail-card" style="background: #fbfbfa;">
+    <section id="sentris" class="product-modern-section">
       <div class="content">
-        <div class="product-detail-grid reverse">
-          <div>
-            <div class="product-visual-card" style="background: #0d1721;">
-              <div class="product-visual-head">
-                <div class="product-visual-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
-                </div>
-                <span class="sp-badge-pill" style="color: #ffffff; border-color: rgba(255,255,255,0.3);">AUTOMATED FAT</span>
-              </div>
-              <h3 style="font-size: 16px; font-weight: 750; margin-bottom: 6px;">Factory Acceptance Validator</h3>
-              <p style="font-size: 12px; color: #9ca3af; line-height: 1.55;">Generates automatic pass/fail reports against Table of Control criteria without prone manual check errors.</p>
-              <div class="product-visual-stats">
-                <div class="product-stat-metric">
-                  <b>100%</b>
-                  <span>Route Coverage</span>
-                </div>
-                <div class="product-stat-metric">
-                  <b>&lt; 4 hrs</b>
-                  <span>Yard Test Time</span>
-                </div>
-              </div>
+        <div class="product-modern-card reverse">
+          <div class="prod-card-topbar">
+            <div class="prod-badge-wrap">
+              <span class="service-tag-chip tag-yellow">SOFTWARE ENGINE • VALIDATION &amp; VERIFICATION</span>
+              <span class="prod-cat-text">Automated Factory Acceptance Testing (A-FAT)</span>
+            </div>
+            <div class="prod-cycle-tag">
+              <span>TEST TIME: &lt; 4 HOURS</span>
             </div>
           </div>
-          <div class="product-detail-copy">
-            <span class="product-badge-tag yellow">Automated FAT Testing Tool</span>
-            <h2>SENTRIS</h2>
-            <p>
-              Automated Factory Acceptance Testing (A-FAT) application ensuring flawless Verification &amp; Validation of Electronic Interlocking data. Eliminates weeks of manual simulation through automated test vector injection.
-            </p>
-            <div class="product-specs-grid">
-              <div class="product-spec-item">
-                <b>Auto TOC Cross-Check</b>
-                <span>Validates route locking, overlap, and conflict conditions automatically.</span>
-              </div>
-              <div class="product-spec-item">
-                <b>Audit Trail Signoff</b>
-                <span>PDF test compliance logs formatted for RDSO &amp; Zonal Railway inspectors.</span>
-              </div>
-              <div class="product-spec-item">
-                <b>Multi-OEM Support</b>
-                <span>Engineered for Kyosan, Medha, Ansaldo/Hitachi, and Siemens logic formats.</span>
-              </div>
-              <div class="product-spec-item">
-                <b>Continuous Regression</b>
-                <span>Instant test suite re-execution upon any application data alteration.</span>
-              </div>
-            </div>
-            <a href="contact.html" class="round-button dark">Schedule SENTRIS Live Demo <span class="arrow">→</span></a>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Product 3: Traffic Simulator -->
-    <section id="simulator" class="product-detail-card" style="background: #ffffff;">
-      <div class="content">
-        <div class="product-detail-grid">
-          <div class="product-detail-copy">
-            <span class="product-badge-tag green">Interactive Dispatcher Training</span>
-            <h2>SENS Traffic Simulator</h2>
-            <p>
-              Comprehensive rail network simulator allowing operations managers and interlocking designers to stress-test timetable schedules, signal clearance sequences, and headway optimizations under peak line traffic.
-            </p>
-            <div class="product-specs-grid">
-              <div class="product-spec-item">
-                <b>Micro-Simulation Physics</b>
-                <span>Accurate acceleration, braking profiles, and gradient resistance modeling.</span>
-              </div>
-              <div class="product-spec-item">
-                <b>Incident Insertion</b>
-                <span>Simulates train delays, point failures, and signal aspect drops in real time.</span>
-              </div>
-              <div class="product-spec-item">
-                <b>Headway Optimization</b>
-                <span>Block section analytics to maximize line capacity on busy corridors.</span>
-              </div>
-              <div class="product-spec-item">
-                <b>Training Console VDU</b>
-                <span>Realistic control terminal matching operational station dispatcher desks.</span>
+          <div class="prod-card-content-grid">
+            <div class="prod-visual-col">
+              <div class="prod-visual-display dark-software">
+                <div class="pvis-top">
+                  <span class="pvis-chip">A-FAT ENGINE</span>
+                  <span class="pvis-status-indicator green">PASS 100%</span>
+                </div>
+                <div class="software-terminal-stage">
+                  <div class="terminal-line"><span class="t-prompt">&gt;</span> Parsing Table of Control: Station Yard 04...</div>
+                  <div class="terminal-line"><span class="t-success">✓</span> Route 01-12 Conflicting Moves: Verified</div>
+                  <div class="terminal-line"><span class="t-success">✓</span> Flank Protection &amp; Overlap Lock: Passed</div>
+                  <div class="terminal-line"><span class="t-info">ℹ</span> RDSO Audit PDF Generated: Zero Errors</div>
+                </div>
+                <div class="pvis-metrics-row">
+                  <div class="pvis-metric-item">
+                    <span class="m-val">100%</span>
+                    <span class="m-lbl">TOC Coverage</span>
+                  </div>
+                  <div class="pvis-metric-item">
+                    <span class="m-val">&lt; 4 hrs</span>
+                    <span class="m-lbl">Execution</span>
+                  </div>
+                  <div class="pvis-metric-item">
+                    <span class="m-val">0 Slips</span>
+                    <span class="m-lbl">Human Error</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <a href="contact.html" class="round-button dark">Request Simulator Access <span class="arrow">→</span></a>
-          </div>
-          <div>
-            <div class="product-visual-card">
-              <div class="product-visual-head">
-                <div class="product-visual-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+
+            <div class="prod-info-col">
+              <h2 class="prod-main-title">SENTRIS</h2>
+              <p class="prod-lead-desc">
+                Automated Factory Acceptance Testing (A-FAT) suite ensuring rigorous, error-free Verification &amp; Validation of Electronic Interlocking data. Eliminates weeks of tedious manual simulation through automated test vector injection.
+              </p>
+
+              <div class="prod-specs-grid">
+                <div class="prod-spec-box">
+                  <div class="pspec-icon yellow">📊</div>
+                  <div>
+                    <b>Auto TOC Cross-Check</b>
+                    <p>Validates route locking, overlap isolation, and conflict conditions automatically.</p>
+                  </div>
                 </div>
-                <span class="sp-badge-pill" style="color: #ffffff; border-color: rgba(255,255,255,0.3);">SIMULATION</span>
+
+                <div class="prod-spec-box">
+                  <div class="pspec-icon green">📄</div>
+                  <div>
+                    <b>Audit Trail Signoff</b>
+                    <p>Tamper-proof PDF test compliance logs formatted for RDSO &amp; Zonal Railway inspectors.</p>
+                  </div>
+                </div>
+
+                <div class="prod-spec-box">
+                  <div class="pspec-icon blue">⚙️</div>
+                  <div>
+                    <b>Multi-OEM Logic</b>
+                    <p>Native parsing for Kyosan, Medha, Ansaldo/Hitachi, and Siemens application formats.</p>
+                  </div>
+                </div>
+
+                <div class="prod-spec-box">
+                  <div class="pspec-icon red">🔄</div>
+                  <div>
+                    <b>Continuous Regression</b>
+                    <p>Instantaneous test suite re-execution upon any application data or yard layout revision.</p>
+                  </div>
+                </div>
               </div>
-              <h3 style="font-size: 16px; font-weight: 750; margin-bottom: 6px;">Network Operations Engine</h3>
-              <p style="font-size: 12px; color: #9ca3af; line-height: 1.55;">Real-time train movements visualizer with automatic timetable conflicts identification and throughput graphs.</p>
-              <div class="product-visual-stats">
-                <div class="product-stat-metric">
-                  <b>50+</b>
-                  <span>Simultaneous Trains</span>
-                </div>
-                <div class="product-stat-metric">
-                  <b>Real-Time</b>
-                  <span>Interlocking Sync</span>
-                </div>
+
+              <div class="prod-actions-row">
+                <a href="contact.html" class="round-button dark">Schedule SENTRIS Live Demo <span class="arrow">→</span></a>
+                <a href="#matrix" class="round-button">View Comparative Specs</a>
               </div>
             </div>
           </div>
@@ -232,29 +278,215 @@
       </div>
     </section>
 
-    <!-- Product 4 & 5: Cable Tracker & Algen L2L -->
-    <section class="section" style="background: #fbfbfa; border-bottom: 1px solid #edf0ee;">
+    <!-- Product 3: Traffic Simulator -->
+    <section id="simulator" class="product-modern-section">
       <div class="content">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
-          <!-- Cable Tracker -->
-          <div style="padding: 22px 24px; background: #ffffff; border-radius: 14px; border: 1px solid #edf0ee; box-shadow: 0 4px 16px rgba(9,20,31,0.03);">
-            <span class="product-badge-tag red">GIS &amp; Field Traceability</span>
-            <h3 style="font-size: 16px; font-weight: 750; color: var(--ink); margin-bottom: 8px;">SENS Cable Tracker</h3>
-            <p style="color: #556370; line-height: 1.55; font-size: 12px; margin-bottom: 16px;">
+        <div class="product-modern-card">
+          <div class="prod-card-topbar">
+            <div class="prod-badge-wrap">
+              <span class="service-tag-chip tag-green">NETWORK PHYSICS • DISPATCHER TRAINING</span>
+              <span class="prod-cat-text">Interactive Rail Simulator</span>
+            </div>
+            <div class="prod-cycle-tag">
+              <span>CONCURRENT TRAINS: 50+</span>
+            </div>
+          </div>
+
+          <div class="prod-card-content-grid">
+            <div class="prod-info-col">
+              <h2 class="prod-main-title">SENS Traffic Simulator</h2>
+              <p class="prod-lead-desc">
+                High-fidelity microscopic rail network simulator allowing interlocking designers and operations managers to stress-test timetable schedules, signal clearance sequences, and emergency failure modes under peak traffic conditions.
+              </p>
+
+              <div class="prod-specs-grid">
+                <div class="prod-spec-box">
+                  <div class="pspec-icon green">🚆</div>
+                  <div>
+                    <b>Micro-Simulation Physics</b>
+                    <p>Accurate acceleration, braking profiles, curvature resistance, and gradient modeling.</p>
+                  </div>
+                </div>
+
+                <div class="prod-spec-box">
+                  <div class="pspec-icon red">⚠️</div>
+                  <div>
+                    <b>Incident Injection</b>
+                    <p>Simulates train delays, point failures, and signal aspect drops in live simulation.</p>
+                  </div>
+                </div>
+
+                <div class="prod-spec-box">
+                  <div class="pspec-icon yellow">📈</div>
+                  <div>
+                    <b>Headway Analytics</b>
+                    <p>Block section occupancy graphs to maximize corridor throughput on busy freight lines.</p>
+                  </div>
+                </div>
+
+                <div class="prod-spec-box">
+                  <div class="pspec-icon blue">🖥️</div>
+                  <div>
+                    <b>Dispatcher VDU Console</b>
+                    <p>Authentic control terminal matching operational station master dispatching desks.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="prod-actions-row">
+                <a href="contact.html" class="round-button dark">Request Simulator Sandbox <span class="arrow">→</span></a>
+                <a href="#matrix" class="round-button">View Comparative Specs</a>
+              </div>
+            </div>
+
+            <div class="prod-visual-col">
+              <div class="prod-visual-display dark-sim">
+                <div class="pvis-top">
+                  <span class="pvis-chip">DISPATCHER VDU</span>
+                  <span class="pvis-status-indicator blue">LIVE SIMULATION</span>
+                </div>
+                <div class="sim-display-track">
+                  <div class="sim-rail-line">
+                    <span class="train-token t1">12678 EXP</span>
+                    <span class="signal-indicator green"></span>
+                    <span class="train-token t2">FREIGHT 42</span>
+                    <span class="signal-indicator red"></span>
+                  </div>
+                </div>
+                <div class="pvis-metrics-row">
+                  <div class="pvis-metric-item">
+                    <span class="m-val">50+</span>
+                    <span class="m-lbl">Trains / Model</span>
+                  </div>
+                  <div class="pvis-metric-item">
+                    <span class="m-val">Real-Time</span>
+                    <span class="m-lbl">Interlocking Sync</span>
+                  </div>
+                  <div class="pvis-metric-item">
+                    <span class="m-val">0.1 s</span>
+                    <span class="m-lbl">Resolution</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product 4 & 5: Cable Tracker & CAD Compiler -->
+    <section id="trackers" class="products-duo-section">
+      <div class="content">
+        <div class="products-duo-grid">
+          <!-- Cable Tracker Card -->
+          <div class="product-duo-card">
+            <div class="pduo-topbar">
+              <span class="service-tag-chip tag-red">GIS &amp; FIELD TRACEABILITY</span>
+              <span class="pduo-tag">INFRASTRUCTURE</span>
+            </div>
+            <h3>SENS Cable Tracker</h3>
+            <p class="pduo-desc">
               Geographical Information System (GIS) and QR-code enabled software suite that maps, tracks, and documents copper and OFC cable routes along railway corridors. Prevents accidental dig-cuts during civil construction works.
             </p>
-            <a href="contact.html" class="round-button dark">Learn More <span class="arrow">→</span></a>
+            <ul class="pduo-checklist">
+              <li><span>✓</span> Sub-meter GPS trench alignment logging</li>
+              <li><span>✓</span> Cross-sectional trough cable assignment diagrams</li>
+              <li><span>✓</span> Joint bay &amp; location box QR-code tagging</li>
+              <li><span>✓</span> Clash detection with civil bridge &amp; viaduct works</li>
+            </ul>
+            <div class="pduo-action">
+              <a href="contact.html" class="round-button dark">Request Cable Tracker Demo <span class="arrow">→</span></a>
+            </div>
           </div>
 
-          <!-- Algen & L2L -->
-          <div style="padding: 22px 24px; background: #ffffff; border-radius: 14px; border: 1px solid #edf0ee; box-shadow: 0 4px 16px rgba(9,20,31,0.03);">
-            <span class="product-badge-tag blue">AutoCAD &amp; Logic Compiler</span>
-            <h3 style="font-size: 16px; font-weight: 750; color: var(--ink); margin-bottom: 8px;">SENS Algen &amp; L2L</h3>
-            <p style="color: #556370; line-height: 1.55; font-size: 12px; margin-bottom: 16px;">
-              Intelligent CAD plugin and Boolean logic compiler that translates track layout schematic drawings directly into certified interlocking equations, cutting drawing drafting time by up to 60%.
+          <!-- Algen & L2L Card -->
+          <div class="product-duo-card">
+            <div class="pduo-topbar">
+              <span class="service-tag-chip tag-blue">CAD AUTOMATION &amp; COMPILER</span>
+              <span class="pduo-tag">DRAFTING TOOL</span>
+            </div>
+            <h3>SENS Algen &amp; L2L</h3>
+            <p class="pduo-desc">
+              Intelligent CAD plugin and Boolean logic compiler that translates track layout schematic drawings directly into certified interlocking equations, cutting drawing drafting time by up to 60% with zero transcription mistakes.
             </p>
-            <a href="contact.html" class="round-button dark">Learn More <span class="arrow">→</span></a>
+            <ul class="pduo-checklist">
+              <li><span>✓</span> Direct AutoCAD drawing entity parsing</li>
+              <li><span>✓</span> Automated Boolean interlocking logic generation</li>
+              <li><span>✓</span> Compatibility with Medha, Kyosan &amp; Siemens formats</li>
+              <li><span>✓</span> 60% reduction in drawing delivery cycle time</li>
+            </ul>
+            <div class="pduo-action">
+              <a href="contact.html" class="round-button dark">Request CAD Plugin Demo <span class="arrow">→</span></a>
+            </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Comparison Matrix -->
+    <section id="matrix" class="comparison-matrix-section">
+      <div class="content">
+        <div class="matrix-header-center">
+          <span class="eyebrow plain" style="justify-content: center;"><span class="hero-bar"></span> SPECIFICATIONS</span>
+          <h2 class="matrix-main-title">Proprietary Products <span class="proj-title-accent">Comparison Matrix</span></h2>
+          <p class="matrix-main-desc">Side-by-side technical capabilities, safety integrity levels, and integration benchmarks.</p>
+        </div>
+
+        <div class="table-responsive-wrapper">
+          <table class="tech-comparison-table">
+            <thead>
+              <tr>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>Safety Level</th>
+                <th>Processing Latency</th>
+                <th>OEM Compatibility</th>
+                <th>Standards</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>SENSIO</b></td>
+                <td>Vital Digital I/O Unit</td>
+                <td><span class="table-pill red">SIL-4 CENELEC</span></td>
+                <td>&lt; 200 ms Scan</td>
+                <td>Universal (Relay / EI)</td>
+                <td>EN 50126/128/129</td>
+              </tr>
+              <tr>
+                <td><b>SENTRIS</b></td>
+                <td>Automated FAT Suite</td>
+                <td><span class="table-pill yellow">V&amp;V Rigor</span></td>
+                <td>&lt; 4 Hours / Yard</td>
+                <td>Medha, Kyosan, Siemens, Hitachi</td>
+                <td>RDSO IRS-S-76</td>
+              </tr>
+              <tr>
+                <td><b>SENS Traffic Simulator</b></td>
+                <td>Network Physics Engine</td>
+                <td><span class="table-pill green">Dispatcher Safety</span></td>
+                <td>0.1s Micro-Physics</td>
+                <td>Station VDU Standards</td>
+                <td>Indian Railways Operating Manual</td>
+              </tr>
+              <tr>
+                <td><b>SENS Cable Tracker</b></td>
+                <td>GIS Trench Traceability</td>
+                <td><span class="table-pill blue">Physical Asset Guard</span></td>
+                <td>Real-Time GPS</td>
+                <td>OFC &amp; Copper Cables</td>
+                <td>RDSO Trenching Norms</td>
+              </tr>
+              <tr>
+                <td><b>SENS Algen &amp; L2L</b></td>
+                <td>CAD Boolean Compiler</td>
+                <td><span class="table-pill purple">Design Assurance</span></td>
+                <td>Instantaneous</td>
+                <td>AutoCAD / DWG / DXF</td>
+                <td>IR Interlocking Principles</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
@@ -280,7 +512,7 @@
     <footer>
       <div class="footer-main">
         <div class="footer-brand">
-          <img src="/assets/images/logo_full.png" alt="AAV Works Private Limited">
+          <img src="/assets/images/logo.svg" alt="AAV Works Private Limited">
           <p>Railway S&amp;T Design &amp; Drawings.</p>
         </div>
         <div class="footer-col">

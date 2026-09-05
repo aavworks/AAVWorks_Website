@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,7 +7,7 @@
   <meta name="description" content="Explore AAV Works featured railway signalling projects across Indian Railways: Electronic Interlocking, ABS corridors, station modernizations, and freight infrastructure.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="/assets/images/logo.svg">
   <link rel="stylesheet" href="/src/css/main.css">
 </head>
@@ -17,7 +17,7 @@
     <header class="site-header">
       <div class="topbar">
         <a href="index.html" aria-label="AAV Works Home">
-          <img class="brand" src="/assets/images/logo_full.png" alt="AAV Works Private Limited">
+          <img class="brand" src="/assets/images/logo.svg" alt="AAV Works Private Limited">
         </a>
         <nav class="nav" aria-label="Main navigation">
           <a href="index.html">Home</a>
@@ -25,7 +25,7 @@
           <a href="services.html">Services</a>
           <a href="products.html">Products</a>
           <a class="active" href="projects.html">Projects</a>
-          <a href="index.html#news">News</a>
+          <a href="news.html">News</a>
           <a href="careers.html">Careers</a>
           <a href="contact.html">Contact</a>
         </nav>
@@ -40,7 +40,7 @@
     <div id="drawerBackdrop" class="drawer-backdrop"></div>
     <aside id="mobileDrawer" class="mobile-nav-drawer">
       <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px;">
-        <img src="/assets/images/logo_full.png" alt="AAV Works" style="height: 30px;">
+        <img src="/assets/images/logo.svg" alt="AAV Works" style="height: 30px;">
         <button id="drawerCloseBtn" class="modal-close-btn">&times;</button>
       </div>
       <nav style="display: flex; flex-direction: column; gap: 18px;">
@@ -49,92 +49,249 @@
         <a href="services.html" class="nav-link">Services</a>
         <a href="products.html" class="nav-link">Products</a>
         <a href="projects.html" class="nav-link active">Projects</a>
-        <a href="index.html#news" class="nav-link">News</a>
+        <a href="news.html" class="nav-link">News</a>
         <a href="careers.html" class="nav-link">Careers</a>
         <a href="contact.html" class="nav-link">Contact Us</a>
       </nav>
     </aside>
 
-    <!-- Light Clean Subpage Header -->
+    <!-- Architectural Subpage Header -->
     <section class="page-header-clean">
       <div class="content">
-        <p class="eyebrow plain"><span class="hero-bar"></span> PROVEN TRACK RECORD</p>
-        <h1>Delivering Impact <span class="hero-highlight">Across Rail Networks</span></h1>
-        <p>Over 350+ stations commissioned and hundreds of kilometers of Automatic Block Signalling designed and verified across India.</p>
+        <p class="eyebrow plain"><span class="hero-bar"></span> PROVEN PROJECT PORTFOLIO</p>
+        <h1>Engineering Safer, Faster Corridors Across <span class="hero-highlight">Indian Railways</span></h1>
+        <p>Over 350+ stations commissioned, 85+ RKM of Automatic Block Signalling, and turnkey Electronic Interlocking proof consultancy delivered across dedicated freight and passenger corridors.</p>
+        
+        <!-- Filter Tabs -->
+        <div class="news-filter-pills-bar" role="tablist" aria-label="Project Category Filters">
+          <button class="filter-pill-btn active" data-category="all" role="tab" aria-selected="true">All Corridors (6)</button>
+          <button class="filter-pill-btn" data-category="abs" role="tab" aria-selected="false">Automatic Block Signalling</button>
+          <button class="filter-pill-btn" data-category="station" role="tab" aria-selected="false">Station Modernization</button>
+          <button class="filter-pill-btn" data-category="viaduct" role="tab" aria-selected="false">High-Speed Viaducts</button>
+          <button class="filter-pill-btn" data-category="yard" role="tab" aria-selected="false">Yard Verification &amp; IV&amp;V</button>
+        </div>
       </div>
     </section>
 
-    <!-- Projects Grid Section -->
-    <section class="section" style="background: #ffffff;">
+    <!-- Landmark Case Study Showcase Card -->
+    <section class="landmark-showcase-section">
       <div class="content">
-        <div class="projects-grid-page">
-          <!-- Project 1 -->
-          <article class="project-card-full">
-            <div class="project-card-thumb">
-              <img src="/assets/images/proj_station_redev.jpg" alt="Station Redevelopment Support">
-              <span class="project-card-badge">Redevelopment</span>
+        <article class="landmark-case-card" data-category="abs">
+          <div class="landmark-media-col">
+            <img src="/assets/images/proj_signalling_abs.jpg" alt="Automatic Block Signalling Mainline Corridor" loading="lazy">
+            <div class="landmark-overlay-tag">LANDMARK CORRIDOR</div>
+          </div>
+          <div class="landmark-info-col">
+            <div class="landmark-meta-row">
+              <span class="service-tag-chip tag-red">ABS SIGNALLING • 85+ RKM</span>
+              <span class="landmark-zone">Central Rail Network</span>
+              <span class="landmark-duration">• 2022 – 2024</span>
             </div>
-            <div class="project-card-body">
-              <div class="project-card-meta">Southern Railway • Station Modernization</div>
-              <h3>Station Redevelopment Support - South India</h3>
-              <p>Turnkey Signalling Interlocking Plan (SIP) preparation, Table of Control generation, and complete circuit diagrams for major junction station redevelopments.</p>
-              <div class="project-card-footer">
-                <span>Southern Railway Zone</span>
-                <a href="contact.html" class="view-link">Details <span class="arrow">→</span></a>
+            <h2 class="landmark-title">Automatic Block Signalling (ABS) Corridor Engineering</h2>
+            <p class="landmark-desc">
+              Complete turnkey design, circuit diagrams, application logic, and technical assurance delivered for dense mainline automatic block sections. Replaced absolute block working with 4-aspect automatic signalling, increasing line capacity by 28%.
+            </p>
+            <div class="landmark-metrics-grid">
+              <div class="lmetric-box">
+                <span class="lmetric-val">85+ RKM</span>
+                <span class="lmetric-lbl">Double Line Track</span>
+              </div>
+              <div class="lmetric-box">
+                <span class="lmetric-val">+ 28%</span>
+                <span class="lmetric-lbl">Headway Gain</span>
+              </div>
+              <div class="lmetric-box">
+                <span class="lmetric-val">100%</span>
+                <span class="lmetric-lbl">CRS Approval</span>
+              </div>
+              <div class="lmetric-box">
+                <span class="lmetric-val">Multi-OEM</span>
+                <span class="lmetric-lbl">Interlocking Logic</span>
+              </div>
+            </div>
+            <div class="landmark-actions">
+              <a href="contact.html" class="round-button dark">Request Project Case Study <span class="arrow">→</span></a>
+              <span class="landmark-assurance-note">Independent Safety Assessment (ISA) Verified</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Main Projects Portfolio Grid -->
+    <section class="projects-portfolio-section">
+      <div class="content">
+        <div class="projects-portfolio-grid" id="projectsGrid">
+          <!-- Project 1: Station Redevelopment -->
+          <article class="proj-portfolio-card" data-category="station">
+            <div class="proj-port-thumb">
+              <img src="/assets/images/proj_station_redev.jpg" alt="Station Redevelopment South India" loading="lazy">
+              <span class="proj-pill-tag tag-yellow">STATION REDEV</span>
+            </div>
+            <div class="proj-port-body">
+              <div class="proj-port-meta">Southern Railway • 12 Stations</div>
+              <h3 class="proj-port-title">Station Redevelopment &amp; Yard Remodelling</h3>
+              <p class="proj-port-desc">
+                Comprehensive Signal Interlocking Plan (SIP), dog charts, and turnkey drawing validation for high-capacity junction stations across Southern Railway corridors.
+              </p>
+              <div class="proj-port-specs">
+                <div class="pspec-chip"><b>12</b> Stations</div>
+                <div class="pspec-chip"><b>2021 – 2023</b></div>
+                <div class="pspec-chip"><b>EI</b> Medha &amp; Kyosan</div>
+              </div>
+              <div class="proj-port-footer">
+                <span class="port-client">Southern Railway</span>
+                <a href="contact.html" class="news-inline-link">Inquire <span class="arrow">→</span></a>
               </div>
             </div>
           </article>
 
-          <!-- Project 2 -->
-          <article class="project-card-full">
-            <div class="project-card-thumb">
-              <img src="/assets/images/proj_signalling_abs.jpg" alt="Automatic Block Signalling Corridor">
-              <span class="project-card-badge">ABS Corridor</span>
+          <!-- Project 2: High-Speed Viaduct -->
+          <article class="proj-port-card" data-category="viaduct">
+            <div class="proj-port-thumb">
+              <img src="/assets/images/featured_viaduct_clean.jpg" alt="High-Speed Viaduct Integration" loading="lazy">
+              <span class="proj-pill-tag tag-blue">VIADUCT &amp; S&amp;T</span>
             </div>
-            <div class="project-card-body">
-              <div class="project-card-meta">Indian Railways • 85+ RKM Route</div>
-              <h3>Automatic Block Signalling (ABS) Corridor Engineering</h3>
-              <p>End-to-end design, circuit diagrams, application logic, and technical assurance for high-density railway line sections with multi-aspect automatic signalling.</p>
-              <div class="project-card-footer">
-                <span>Central Rail Corridor</span>
-                <a href="contact.html" class="view-link">Details <span class="arrow">→</span></a>
+            <div class="proj-port-body">
+              <div class="proj-port-meta">Western Corridor • High-Speed Project</div>
+              <h3 class="proj-port-title">High-Speed Viaduct Coordination &amp; Cable Routing</h3>
+              <p class="proj-port-desc">
+                Multi-span elevated rail viaduct design support, cable trough routing schematics, track circuit bonding schemes, and proof consultancy verification for 160+ kmph readiness.
+              </p>
+              <div class="proj-port-specs">
+                <div class="pspec-chip"><b>160+ kmph</b> Speed</div>
+                <div class="pspec-chip"><b>2023 – Present</b></div>
+                <div class="pspec-chip"><b>Zero</b> Clash</div>
+              </div>
+              <div class="proj-port-footer">
+                <span class="port-client">High-Speed Rail</span>
+                <a href="contact.html" class="news-inline-link">Inquire <span class="arrow">→</span></a>
               </div>
             </div>
           </article>
 
-          <!-- Project 3 -->
-          <article class="project-card-full">
-            <div class="project-card-thumb">
-              <img src="/assets/images/proj_viaduct_infra.jpg" alt="High-Speed Viaduct Integration">
-              <span class="project-card-badge">Viaduct &amp; S&amp;T</span>
+          <!-- Project 3: Yard Verification -->
+          <article class="proj-port-card" data-category="yard">
+            <div class="proj-port-thumb">
+              <img src="/assets/images/about_tracks.jpg" alt="Yard Modelling & Interlocking Verification" loading="lazy">
+              <span class="proj-pill-tag tag-green">IV&amp;V PROOF</span>
             </div>
-            <div class="project-card-body">
-              <div class="project-card-meta">Dedicated Corridors • Civil-S&amp;T Integration</div>
-              <h3>High-Speed Viaduct &amp; Cable Route Planning</h3>
-              <p>Multi-span elevated rail viaduct coordination, specialized cable trough layouts, track circuit bond planning, and proof consultancy verification.</p>
-              <div class="project-card-footer">
-                <span>High-Speed Rail Network</span>
-                <a href="contact.html" class="view-link">Details <span class="arrow">→</span></a>
+            <div class="proj-port-body">
+              <div class="proj-port-meta">Pan-India Railways • 100+ Yards</div>
+              <h3 class="proj-port-title">Independent Verification &amp; Validation (IV&amp;V)</h3>
+              <p class="proj-port-desc">
+                Independent verification and validation of bit chart logic, station data tables, square sheets, and fail-safe safety protocols across 100+ station yards with zero defects.
+              </p>
+              <div class="proj-port-specs">
+                <div class="pspec-chip"><b>100+</b> Yards</div>
+                <div class="pspec-chip"><b>2021 – 2024</b></div>
+                <div class="pspec-chip"><b>Multi-OEM</b> Logic</div>
+              </div>
+              <div class="proj-port-footer">
+                <span class="port-client">Zonal Railways</span>
+                <a href="contact.html" class="news-inline-link">Inquire <span class="arrow">→</span></a>
               </div>
             </div>
           </article>
 
-          <!-- Project 4 -->
-          <article class="project-card-full">
-            <div class="project-card-thumb">
-              <img src="/assets/images/about_tracks.jpg" alt="Electronic Interlocking Validation">
-              <span class="project-card-badge">EI Validation</span>
+          <!-- Project 4: Freight Corridor Civil-S&T -->
+          <article class="proj-port-card" data-category="viaduct">
+            <div class="proj-port-thumb">
+              <img src="/assets/images/project_bridge_viaduct.jpg" alt="Freight Corridor Civil-S&T Integration" loading="lazy">
+              <span class="proj-pill-tag tag-purple">FREIGHT CORRIDOR</span>
             </div>
-            <div class="project-card-body">
-              <div class="project-card-meta">Multi-OEM • Proof Consultancy</div>
-              <h3>Electronic Interlocking (EI) Software Verification</h3>
-              <p>Independent verification and validation (IV&amp;V) of station data tables, square sheets, and fail-safe safety logic across 100+ yards.</p>
-              <div class="project-card-footer">
-                <span>Pan-India Zonal Railways</span>
-                <a href="contact.html" class="view-link">Details <span class="arrow">→</span></a>
+            <div class="proj-port-body">
+              <div class="proj-port-meta">Dedicated Freight Corridors • 60+ RKM</div>
+              <h3 class="proj-port-title">Heavy-Haul Freight Corridor Cable Routing</h3>
+              <p class="proj-port-desc">
+                Cable trough cross-sections, track circuit bonding schemes, and foundation clearance validation under 25kV heavy-axle freight operating conditions.
+              </p>
+              <div class="proj-port-specs">
+                <div class="pspec-chip"><b>60+ RKM</b> Alignment</div>
+                <div class="pspec-chip"><b>2022 – 2024</b></div>
+                <div class="pspec-chip"><b>Heavy Haul</b> Ready</div>
+              </div>
+              <div class="proj-port-footer">
+                <span class="port-client">DFCCIL Partners</span>
+                <a href="contact.html" class="news-inline-link">Inquire <span class="arrow">→</span></a>
               </div>
             </div>
           </article>
+
+          <!-- Project 5: Junction Yard Remodelling -->
+          <article class="proj-port-card" data-category="yard">
+            <div class="proj-port-thumb">
+              <img src="/assets/images/news_card_center.jpg" alt="Junction Yard Remodelling" loading="lazy">
+              <span class="proj-pill-tag tag-teal">JUNCTION UPGRADE</span>
+            </div>
+            <div class="proj-port-body">
+              <div class="proj-port-meta">Central Corridors • 4 Junctions</div>
+              <h3 class="proj-port-title">Junction Yard Remodelling &amp; Route Expansion</h3>
+              <p class="proj-port-desc">
+                Upgraded aging mechanical levers to state-of-the-art Electronic Interlocking systems with VDU route controls and automated flank protection circuits.
+              </p>
+              <div class="proj-port-specs">
+                <div class="pspec-chip"><b>32 Routes</b> Yard</div>
+                <div class="pspec-chip"><b>2022 – 2023</b></div>
+                <div class="pspec-chip"><b>Siemens</b> EI</div>
+              </div>
+              <div class="proj-port-footer">
+                <span class="port-client">Central Railway</span>
+                <a href="contact.html" class="news-inline-link">Inquire <span class="arrow">→</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: ATP / Kavach Survey -->
+          <article class="proj-port-card" data-category="abs">
+            <div class="proj-port-thumb">
+              <img src="/assets/images/news_abs.jpg" alt="Kavach ATP Trackside Integration" loading="lazy">
+              <span class="proj-pill-tag tag-red">ATP / KAVACH</span>
+            </div>
+            <div class="proj-port-body">
+              <div class="proj-port-meta">National Corridor • 120+ RKM</div>
+              <h3 class="proj-port-title">Kavach / TCAS Trackside Interface Engineering</h3>
+              <p class="proj-port-desc">
+                Stationary Kavach radio unit interfacing, locomotive RFID tag coordinate validation, and signal aspect interface circuits along dense mainline corridors.
+              </p>
+              <div class="proj-port-specs">
+                <div class="pspec-chip"><b>120+ RKM</b> Survey</div>
+                <div class="pspec-chip"><b>2023 – Present</b></div>
+                <div class="pspec-chip"><b>Kavach</b> V3.2</div>
+              </div>
+              <div class="proj-port-footer">
+                <span class="port-client">Indian Railways</span>
+                <a href="contact.html" class="news-inline-link">Inquire <span class="arrow">→</span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Corridor Impact Numbers Bar -->
+    <section class="corridor-impact-section">
+      <div class="content">
+        <div class="impact-stats-card">
+          <div class="istat-item">
+            <span class="istat-val">350+</span>
+            <span class="istat-lbl">Stations Commissioned</span>
+          </div>
+          <div class="istat-sep"></div>
+          <div class="istat-item">
+            <span class="istat-val">85+ RKM</span>
+            <span class="istat-lbl">Dense Mainline ABS Signalling</span>
+          </div>
+          <div class="istat-sep"></div>
+          <div class="istat-item">
+            <span class="istat-val">100+</span>
+            <span class="istat-lbl">Yards Independently Verified</span>
+          </div>
+          <div class="istat-sep"></div>
+          <div class="istat-item">
+            <span class="istat-val">100%</span>
+            <span class="istat-lbl">First-Time CRS Approvals</span>
+          </div>
         </div>
       </div>
     </section>
@@ -160,7 +317,7 @@
     <footer>
       <div class="footer-main">
         <div class="footer-brand">
-          <img src="/assets/images/logo_full.png" alt="AAV Works Private Limited">
+          <img src="/assets/images/logo.svg" alt="AAV Works Private Limited">
           <p>Railway S&amp;T Design &amp; Drawings.</p>
         </div>
         <div class="footer-col">
@@ -200,6 +357,36 @@
     </footer>
   </div>
 
+  <!-- Scripts -->
   <script type="module" src="/src/js/main.js"></script>
+  <script>
+    // Project Category Filter
+    document.addEventListener('DOMContentLoaded', () => {
+      const pills = document.querySelectorAll('.filter-pill-btn');
+      const cards = document.querySelectorAll('.proj-port-card, .landmark-case-card');
+
+      pills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          pills.forEach(p => {
+            p.classList.remove('active');
+            p.setAttribute('aria-selected', 'false');
+          });
+          pill.classList.add('active');
+          pill.setAttribute('aria-selected', 'true');
+
+          const cat = pill.getAttribute('data-category');
+
+          cards.forEach(card => {
+            const cardCat = card.getAttribute('data-category');
+            if (cat === 'all' || cardCat === cat) {
+              card.style.display = card.classList.contains('landmark-case-card') ? 'grid' : 'flex';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
 </body>
 </html>
