@@ -1,0 +1,120 @@
+/* ==========================================================================
+   THEME: header toggle + dark gray base tokens.
+   The bulk of the dark overrides live in dark-theme.css (generated).
+   ========================================================================== */
+
+.header-actions {
+  grid-column: 3;
+  justify-self: end;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 1px solid var(--line-border);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+  border-color: var(--ink-subtle);
+  transform: rotate(12deg);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 2px;
+}
+
+.theme-toggle svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* light theme shows the moon (switch to dark), dark theme shows the sun */
+.theme-toggle .icon-sun { display: none; }
+html[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+html[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+
+@media (max-width: 980px) {
+  .header-actions {
+    margin-left: auto;
+  }
+  .mobile-menu-btn {
+    margin-left: 4px;
+  }
+}
+
+/* ---------- Dark gray theme ---------- */
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #f4f4f6;
+  --ink-muted: #c9c9d0;
+  --ink-subtle: #9b9ba4;
+  --muted: #b8b8c0;
+  --paper: #19191c;
+  --line: #2f2f34;
+  --line-border: #3a3a3f;
+}
+
+html[data-theme="dark"],
+html[data-theme="dark"] body {
+  background: #19191c !important;
+  color: var(--ink);
+}
+
+html[data-theme="dark"] ::selection {
+  background: rgba(237, 40, 50, 0.45);
+  color: #ffffff;
+}
+
+/* logo: swap the dark wordmark for the white one */
+html[data-theme="dark"] img[src$="logo.svg"] {
+  content: url("/assets/images/logo-white.svg");
+}
+
+/* keep photography from glaring on a dark page */
+html[data-theme="dark"] img:not([src$=".svg"]) {
+  filter: brightness(0.9) contrast(1.02);
+}
+
+html[data-theme="dark"] .site-header.scrolled {
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
+}
+
+/* document sheets stay paper-coloured on the dark page */
+html[data-theme="dark"] body .doc-paper::before { background: #e4e4e9 !important; }
+html[data-theme="dark"] body .doc-paper-lines { background: repeating-linear-gradient(to bottom, #b4b4bd 0 3px, transparent 3px 9px) !important; }
+html[data-theme="dark"] body .doc-fold { background: linear-gradient(45deg, #a9a9b2 50%, transparent 50%) !important; }
+html[data-theme="dark"] body .doc-preview { background: #ffffff !important; border-color: #4a4a50 !important; }
+
+/* decorative SVG ribbons / tracks drawn with very light strokes */
+html[data-theme="dark"] body svg [stroke="#edf2f7"],
+html[data-theme="dark"] body svg [stroke="#e2e8f0"],
+html[data-theme="dark"] body svg [stroke="#cbd5e1"] { stroke: #34343a !important; }
+
+/* tinted pills / chips: brighten the text so it reads on dark tints */
+html[data-theme="dark"] body .catalog-card-pill.pill-red,
+html[data-theme="dark"] body .service-tag-chip.tag-red { color: #fca5a5 !important; }
+html[data-theme="dark"] body .catalog-card-pill.pill-yellow,
+html[data-theme="dark"] body .service-tag-chip.tag-yellow { color: #fcd34d !important; }
+html[data-theme="dark"] body .catalog-card-pill.pill-green,
+html[data-theme="dark"] body .service-tag-chip.tag-green { color: #6ee7b7 !important; }
+html[data-theme="dark"] body .catalog-card-pill.pill-orange { color: #fdba74 !important; }
+html[data-theme="dark"] body .catalog-card-pill.pill-blue,
+html[data-theme="dark"] body .service-tag-chip.tag-blue { color: #7dd3fc !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-toggle { transition: none; }
+  .theme-toggle:hover { transform: none; }
+}
