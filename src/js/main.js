@@ -3,6 +3,8 @@
  * High-performance, vanilla ES6 modular interactivity
  */
 
+import './back-to-top.js';
+
 document.addEventListener('DOMContentLoaded', () => {
   initHeaderScroll();
   initMobileDrawer();

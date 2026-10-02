@@ -1534,6 +1534,13 @@ html[data-theme="dark"] .pitem-metric {
   border: 1px solid #38383d !important;
   background: #19191c !important;
 }
+html[data-theme="dark"] .to-top {
+  background: #2b2b2f !important;
+}
+html[data-theme="dark"][data-theme="dark"] .to-top {
+  background: #2b2b2f !important;
+  border-color: #38383d !important;
+}
 /* ---- from src/css/animations.css ---- */
 html[data-theme="dark"] .speed-line {
   background: linear-gradient(90deg, transparent, #1f1f22, transparent) !important;
