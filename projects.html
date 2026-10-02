@@ -11,6 +11,7 @@
   <script>try{var t=localStorage.getItem('aav-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
   <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
   <link rel="stylesheet" href="/src/css/main.css">
+  <link rel="stylesheet" href="/src/css/icons.css">
   <link rel="stylesheet" href="/src/css/theme.css">
   <link rel="stylesheet" href="/src/css/dark-theme.css">
 </head>
@@ -66,215 +67,239 @@
         <p class="eyebrow plain"><span class="hero-bar"></span> PROVEN PROJECT PORTFOLIO</p>
         <h1>Engineering Safer, Faster Corridors Across <span class="hero-highlight">Indian Railways</span></h1>
         <p>Over 350+ stations commissioned, 85+ RKM of Automatic Block Signalling, and turnkey Electronic Interlocking proof consultancy delivered across dedicated freight and passenger corridors.</p>
-        
-        <!-- Filter Tabs -->
-        <div class="news-filter-pills-bar" role="tablist" aria-label="Project Category Filters">
-          <button class="filter-pill-btn active" data-category="all" role="tab" aria-selected="true">All Corridors (6)</button>
-          <button class="filter-pill-btn" data-category="abs" role="tab" aria-selected="false">Automatic Block Signalling</button>
-          <button class="filter-pill-btn" data-category="station" role="tab" aria-selected="false">Station Modernization</button>
-          <button class="filter-pill-btn" data-category="viaduct" role="tab" aria-selected="false">High-Speed Viaducts</button>
-          <button class="filter-pill-btn" data-category="yard" role="tab" aria-selected="false">Yard Verification &amp; IV&amp;V</button>
-        </div>
-      </div>
+</div>
     </section>
 
     <!-- Landmark Case Study Showcase Card -->
-    <section class="landmark-showcase-section">
+    <!-- Projects (tabbed by category) -->
+    <section class="proj-browser" id="projects-list" data-tabs>
       <div class="content">
-        <article class="landmark-case-card" data-category="abs">
-          <div class="landmark-media-col">
-            <img src="/assets/images/proj_signalling_abs.jpg" alt="Automatic Block Signalling Mainline Corridor" loading="lazy">
-            <div class="landmark-overlay-tag">LANDMARK CORRIDOR</div>
+        <div class="docs-tabs" role="tablist" aria-label="Project categories">
+          <button type="button" class="docs-tab" role="tab" id="tab-signalling" aria-controls="signalling" aria-selected="true" tabindex="0" data-tab="signalling" style="--accent:#ed2832">
+            <span class="docs-tab-num">01</span>
+            <span class="docs-tab-label">Signalling &amp; Kavach</span>
+            <span class="docs-tab-count">2 projects</span>
+          </button>
+          <button type="button" class="docs-tab" role="tab" id="tab-stations" aria-controls="stations" aria-selected="false" tabindex="-1" data-tab="stations" style="--accent:#f59e0b">
+            <span class="docs-tab-num">02</span>
+            <span class="docs-tab-label">Station Modernization</span>
+            <span class="docs-tab-count">1 project</span>
+          </button>
+          <button type="button" class="docs-tab" role="tab" id="tab-corridors" aria-controls="corridors" aria-selected="false" tabindex="-1" data-tab="corridors" style="--accent:#0ea5e9">
+            <span class="docs-tab-num">03</span>
+            <span class="docs-tab-label">Viaducts &amp; Corridors</span>
+            <span class="docs-tab-count">2 projects</span>
+          </button>
+          <button type="button" class="docs-tab" role="tab" id="tab-yards" aria-controls="yards" aria-selected="false" tabindex="-1" data-tab="yards" style="--accent:#10b981">
+            <span class="docs-tab-num">04</span>
+            <span class="docs-tab-label">Yard IV&amp;V</span>
+            <span class="docs-tab-count">2 projects</span>
+          </button>
+        </div>
+        <div class="proj-panel" role="tabpanel" id="signalling" aria-labelledby="tab-signalling" style="--accent:#ed2832">
+          <div class="docs-panel-head">
+            <h2>Automatic Block Signalling &amp; Kavach</h2>
+            <p>Automatic block signalling corridors and Kavach / TCAS trackside interface engineering.</p>
           </div>
-          <div class="landmark-info-col">
-            <div class="landmark-meta-row">
-              <span class="service-tag-chip tag-red">ABS SIGNALLING • 85+ RKM</span>
-              <span class="landmark-zone">Central Rail Network</span>
-              <span class="landmark-duration">• 2022 – 2024</span>
+          <div class="pitem-list">
+          <article class="pitem">
+            <div class="pitem-media">
+              <img src="/assets/images/proj-abs-corridor.jpg" alt="Automatic Block Signalling (ABS) Corridor Engineering" loading="lazy">
+              <span class="pitem-badge">LANDMARK CORRIDOR</span>
             </div>
-            <h2 class="landmark-title">Automatic Block Signalling (ABS) Corridor Engineering</h2>
-            <p class="landmark-desc">
-              Complete turnkey design, circuit diagrams, application logic, and technical assurance delivered for dense mainline automatic block sections. Replaced absolute block working with 4-aspect automatic signalling, increasing line capacity by 28%.
-            </p>
-            <div class="landmark-metrics-grid">
-              <div class="lmetric-box">
-                <span class="lmetric-val">85+ RKM</span>
-                <span class="lmetric-lbl">Double Line Track</span>
+            <div class="pitem-body">
+              <div class="pitem-meta">
+                <span class="service-tag-chip tag-red">ABS SIGNALLING • 85+ RKM</span>
+                <span class="pitem-where"><span class="ic ic-pin" aria-hidden="true"></span>Central Rail Network</span>
+                <span class="pitem-when"><span class="ic ic-calendar" aria-hidden="true"></span>2022 – 2024</span>
               </div>
-              <div class="lmetric-box">
-                <span class="lmetric-val">+ 28%</span>
-                <span class="lmetric-lbl">Headway Gain</span>
+              <h3>Automatic Block Signalling (ABS) Corridor Engineering</h3>
+              <p>Complete turnkey design, circuit diagrams, application logic, and technical assurance delivered for dense mainline automatic block sections. Replaced absolute block working with 4-aspect automatic signalling, increasing line capacity by 28%.</p>
+              <div class="pitem-metrics">
+                <div class="pitem-metric"><b>85+ RKM</b><span>Double Line Track</span></div>
+                <div class="pitem-metric"><b>+ 28%</b><span>Headway Gain</span></div>
+                <div class="pitem-metric"><b>100%</b><span>CRS Approval</span></div>
+                <div class="pitem-metric"><b>Multi-OEM</b><span>Interlocking Logic</span></div>
               </div>
-              <div class="lmetric-box">
-                <span class="lmetric-val">100%</span>
-                <span class="lmetric-lbl">CRS Approval</span>
-              </div>
-              <div class="lmetric-box">
-                <span class="lmetric-val">Multi-OEM</span>
-                <span class="lmetric-lbl">Interlocking Logic</span>
+              <div class="pitem-foot">
+                <a href="contact.html" class="round-button dark">Request Case Study <span class="arrow">→</span></a>
+                <span class="pitem-note">Independent Safety Assessment (ISA) Verified</span>
               </div>
             </div>
-            <div class="landmark-actions">
-              <a href="contact.html" class="round-button dark">Request Project Case Study <span class="arrow">→</span></a>
-              <span class="landmark-assurance-note">Independent Safety Assessment (ISA) Verified</span>
+          </article>
+          <article class="pitem">
+            <div class="pitem-media">
+              <img src="/assets/images/proj-kavach-trackside.jpg" alt="Kavach / TCAS Trackside Interface Engineering" loading="lazy">
+              
             </div>
+            <div class="pitem-body">
+              <div class="pitem-meta">
+                <span class="service-tag-chip tag-green">ATP / KAVACH • 120+ RKM</span>
+                <span class="pitem-where"><span class="ic ic-pin" aria-hidden="true"></span>National Corridor</span>
+                <span class="pitem-when"><span class="ic ic-calendar" aria-hidden="true"></span>2023 – Present</span>
+              </div>
+              <h3>Kavach / TCAS Trackside Interface Engineering</h3>
+              <p>Stationary Kavach radio unit interfacing, locomotive RFID tag coordinate validation, and signal aspect interface circuits along dense mainline corridors.</p>
+              <div class="pitem-metrics">
+                <div class="pitem-metric"><b>120+ RKM</b><span>Survey</span></div>
+                <div class="pitem-metric"><b>Kavach</b><span>V3.2</span></div>
+                <div class="pitem-metric"><b>Indian</b><span>Railways</span></div>
+              </div>
+              <div class="pitem-foot">
+                <a href="contact.html" class="round-button dark">Inquire <span class="arrow">→</span></a>
+                
+              </div>
+            </div>
+          </article>
           </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Main Projects Portfolio Grid -->
-    <section class="projects-portfolio-section">
-      <div class="content">
-        <div class="projects-portfolio-grid" id="projectsGrid">
-          <!-- Project 1: Station Redevelopment -->
-          <article class="proj-portfolio-card" data-category="station">
-            <div class="proj-port-thumb">
-              <img src="/assets/images/proj_station_redev.jpg" alt="Station Redevelopment South India" loading="lazy">
-              <span class="proj-pill-tag tag-yellow">STATION REDEV</span>
+        </div>
+        <div class="proj-panel" role="tabpanel" id="stations" aria-labelledby="tab-stations" style="--accent:#f59e0b">
+          <div class="docs-panel-head">
+            <h2>Station Modernization</h2>
+            <p>Signal interlocking plans, dog charts and drawing validation for high-capacity junction stations.</p>
+          </div>
+          <div class="pitem-list">
+          <article class="pitem">
+            <div class="pitem-media">
+              <img src="/assets/images/project_station_redev.jpg" alt="Station Redevelopment &amp; Yard Remodelling" loading="lazy">
+              
             </div>
-            <div class="proj-port-body">
-              <div class="proj-port-meta">Southern Railway • 12 Stations</div>
-              <h3 class="proj-port-title">Station Redevelopment &amp; Yard Remodelling</h3>
-              <p class="proj-port-desc">
-                Comprehensive Signal Interlocking Plan (SIP), dog charts, and turnkey drawing validation for high-capacity junction stations across Southern Railway corridors.
-              </p>
-              <div class="proj-port-specs">
-                <div class="pspec-chip"><b>12</b> Stations</div>
-                <div class="pspec-chip"><b>2021 – 2023</b></div>
-                <div class="pspec-chip"><b>EI</b> Medha &amp; Kyosan</div>
+            <div class="pitem-body">
+              <div class="pitem-meta">
+                <span class="service-tag-chip tag-yellow">STATION REDEV • 12 STATIONS</span>
+                <span class="pitem-where"><span class="ic ic-pin" aria-hidden="true"></span>Southern Railway</span>
+                <span class="pitem-when"><span class="ic ic-calendar" aria-hidden="true"></span>2021 – 2023</span>
               </div>
-              <div class="proj-port-footer">
-                <span class="port-client">Southern Railway</span>
-                <a href="contact.html" class="news-inline-link">Inquire <span class="arrow">→</span></a>
+              <h3>Station Redevelopment &amp; Yard Remodelling</h3>
+              <p>Comprehensive Signal Interlocking Plan (SIP), dog charts, and turnkey drawing validation for high-capacity junction stations across Southern Railway corridors.</p>
+              <div class="pitem-metrics">
+                <div class="pitem-metric"><b>12</b><span>Stations</span></div>
+                <div class="pitem-metric"><b>EI</b><span>Medha &amp; Kyosan</span></div>
+                <div class="pitem-metric"><b>Southern</b><span>Railway</span></div>
               </div>
-            </div>
-          </article>
-
-          <!-- Project 2: High-Speed Viaduct -->
-          <article class="proj-port-card" data-category="viaduct">
-            <div class="proj-port-thumb">
-              <img src="/assets/images/featured_viaduct_clean.jpg" alt="High-Speed Viaduct Integration" loading="lazy">
-              <span class="proj-pill-tag tag-blue">VIADUCT &amp; S&amp;T</span>
-            </div>
-            <div class="proj-port-body">
-              <div class="proj-port-meta">Western Corridor • High-Speed Project</div>
-              <h3 class="proj-port-title">High-Speed Viaduct Coordination &amp; Cable Routing</h3>
-              <p class="proj-port-desc">
-                Multi-span elevated rail viaduct design support, cable trough routing schematics, track circuit bonding schemes, and proof consultancy verification for 160+ kmph readiness.
-              </p>
-              <div class="proj-port-specs">
-                <div class="pspec-chip"><b>160+ kmph</b> Speed</div>
-                <div class="pspec-chip"><b>2023 – Present</b></div>
-                <div class="pspec-chip"><b>Zero</b> Clash</div>
-              </div>
-              <div class="proj-port-footer">
-                <span class="port-client">High-Speed Rail</span>
-                <a href="contact.html" class="news-inline-link">Inquire <span class="arrow">→</span></a>
+              <div class="pitem-foot">
+                <a href="contact.html" class="round-button dark">Inquire <span class="arrow">→</span></a>
+                
               </div>
             </div>
           </article>
-
-          <!-- Project 3: Yard Verification -->
-          <article class="proj-port-card" data-category="yard">
-            <div class="proj-port-thumb">
-              <img src="/assets/images/about_tracks.jpg" alt="Yard Modelling & Interlocking Verification" loading="lazy">
-              <span class="proj-pill-tag tag-green">IV&amp;V PROOF</span>
+          </div>
+        </div>
+        <div class="proj-panel" role="tabpanel" id="corridors" aria-labelledby="tab-corridors" style="--accent:#0ea5e9">
+          <div class="docs-panel-head">
+            <h2>High-Speed Viaducts &amp; Freight Corridors</h2>
+            <p>S&amp;T coordination for high-speed viaducts and heavy-haul dedicated freight alignments.</p>
+          </div>
+          <div class="pitem-list">
+          <article class="pitem">
+            <div class="pitem-media">
+              <img src="/assets/images/proj-viaduct.jpg" alt="High-Speed Viaduct Coordination &amp; Cable Routing" loading="lazy">
+              
             </div>
-            <div class="proj-port-body">
-              <div class="proj-port-meta">Pan-India Railways • 100+ Yards</div>
-              <h3 class="proj-port-title">Independent Verification &amp; Validation (IV&amp;V)</h3>
-              <p class="proj-port-desc">
-                Independent verification and validation of bit chart logic, station data tables, square sheets, and fail-safe safety protocols across 100+ station yards with zero defects.
-              </p>
-              <div class="proj-port-specs">
-                <div class="pspec-chip"><b>100+</b> Yards</div>
-                <div class="pspec-chip"><b>2021 – 2024</b></div>
-                <div class="pspec-chip"><b>Multi-OEM</b> Logic</div>
+            <div class="pitem-body">
+              <div class="pitem-meta">
+                <span class="service-tag-chip tag-blue">VIADUCT &amp; S&amp;T</span>
+                <span class="pitem-where"><span class="ic ic-pin" aria-hidden="true"></span>Western Corridor • High-Speed Project</span>
+                <span class="pitem-when"><span class="ic ic-calendar" aria-hidden="true"></span>2023 – Present</span>
               </div>
-              <div class="proj-port-footer">
-                <span class="port-client">Zonal Railways</span>
-                <a href="contact.html" class="news-inline-link">Inquire <span class="arrow">→</span></a>
+              <h3>High-Speed Viaduct Coordination &amp; Cable Routing</h3>
+              <p>Multi-span elevated rail viaduct design support, cable trough routing schematics, track circuit bonding schemes, and proof consultancy verification for 160+ kmph readiness.</p>
+              <div class="pitem-metrics">
+                <div class="pitem-metric"><b>160+ kmph</b><span>Speed</span></div>
+                <div class="pitem-metric"><b>Zero</b><span>Clash</span></div>
+                <div class="pitem-metric"><b>High-Speed</b><span>Rail</span></div>
               </div>
-            </div>
-          </article>
-
-          <!-- Project 4: Freight Corridor Civil-S&T -->
-          <article class="proj-port-card" data-category="viaduct">
-            <div class="proj-port-thumb">
-              <img src="/assets/images/project_bridge_viaduct.jpg" alt="Freight Corridor Civil-S&T Integration" loading="lazy">
-              <span class="proj-pill-tag tag-purple">FREIGHT CORRIDOR</span>
-            </div>
-            <div class="proj-port-body">
-              <div class="proj-port-meta">Dedicated Freight Corridors • 60+ RKM</div>
-              <h3 class="proj-port-title">Heavy-Haul Freight Corridor Cable Routing</h3>
-              <p class="proj-port-desc">
-                Cable trough cross-sections, track circuit bonding schemes, and foundation clearance validation under 25kV heavy-axle freight operating conditions.
-              </p>
-              <div class="proj-port-specs">
-                <div class="pspec-chip"><b>60+ RKM</b> Alignment</div>
-                <div class="pspec-chip"><b>2022 – 2024</b></div>
-                <div class="pspec-chip"><b>Heavy Haul</b> Ready</div>
-              </div>
-              <div class="proj-port-footer">
-                <span class="port-client">DFCCIL Partners</span>
-                <a href="contact.html" class="news-inline-link">Inquire <span class="arrow">→</span></a>
+              <div class="pitem-foot">
+                <a href="contact.html" class="round-button dark">Inquire <span class="arrow">→</span></a>
+                
               </div>
             </div>
           </article>
-
-          <!-- Project 5: Junction Yard Remodelling -->
-          <article class="proj-port-card" data-category="yard">
-            <div class="proj-port-thumb">
-              <img src="/assets/images/news_card_center.jpg" alt="Junction Yard Remodelling" loading="lazy">
-              <span class="proj-pill-tag tag-teal">JUNCTION UPGRADE</span>
+          <article class="pitem">
+            <div class="pitem-media">
+              <img src="/assets/images/proj-freight-corridor.jpg" alt="Heavy-Haul Freight Corridor Cable Routing" loading="lazy">
+              
             </div>
-            <div class="proj-port-body">
-              <div class="proj-port-meta">Central Corridors • 4 Junctions</div>
-              <h3 class="proj-port-title">Junction Yard Remodelling &amp; Route Expansion</h3>
-              <p class="proj-port-desc">
-                Upgraded aging mechanical levers to state-of-the-art Electronic Interlocking systems with VDU route controls and automated flank protection circuits.
-              </p>
-              <div class="proj-port-specs">
-                <div class="pspec-chip"><b>32 Routes</b> Yard</div>
-                <div class="pspec-chip"><b>2022 – 2023</b></div>
-                <div class="pspec-chip"><b>Siemens</b> EI</div>
+            <div class="pitem-body">
+              <div class="pitem-meta">
+                <span class="service-tag-chip tag-yellow">FREIGHT CORRIDOR • 60+ RKM</span>
+                <span class="pitem-where"><span class="ic ic-pin" aria-hidden="true"></span>Dedicated Freight Corridors</span>
+                <span class="pitem-when"><span class="ic ic-calendar" aria-hidden="true"></span>2022 – 2024</span>
               </div>
-              <div class="proj-port-footer">
-                <span class="port-client">Central Railway</span>
-                <a href="contact.html" class="news-inline-link">Inquire <span class="arrow">→</span></a>
+              <h3>Heavy-Haul Freight Corridor Cable Routing</h3>
+              <p>Cable trough cross-sections, track circuit bonding schemes, and foundation clearance validation under 25kV heavy-axle freight operating conditions.</p>
+              <div class="pitem-metrics">
+                <div class="pitem-metric"><b>60+ RKM</b><span>Alignment</span></div>
+                <div class="pitem-metric"><b>Heavy Haul</b><span>Ready</span></div>
+                <div class="pitem-metric"><b>DFCCIL</b><span>Partners</span></div>
               </div>
-            </div>
-          </article>
-
-          <!-- Project 6: ATP / Kavach Survey -->
-          <article class="proj-port-card" data-category="abs">
-            <div class="proj-port-thumb">
-              <img src="/assets/images/news_abs.jpg" alt="Kavach ATP Trackside Integration" loading="lazy">
-              <span class="proj-pill-tag tag-red">ATP / KAVACH</span>
-            </div>
-            <div class="proj-port-body">
-              <div class="proj-port-meta">National Corridor • 120+ RKM</div>
-              <h3 class="proj-port-title">Kavach / TCAS Trackside Interface Engineering</h3>
-              <p class="proj-port-desc">
-                Stationary Kavach radio unit interfacing, locomotive RFID tag coordinate validation, and signal aspect interface circuits along dense mainline corridors.
-              </p>
-              <div class="proj-port-specs">
-                <div class="pspec-chip"><b>120+ RKM</b> Survey</div>
-                <div class="pspec-chip"><b>2023 – Present</b></div>
-                <div class="pspec-chip"><b>Kavach</b> V3.2</div>
-              </div>
-              <div class="proj-port-footer">
-                <span class="port-client">Indian Railways</span>
-                <a href="contact.html" class="news-inline-link">Inquire <span class="arrow">→</span></a>
+              <div class="pitem-foot">
+                <a href="contact.html" class="round-button dark">Inquire <span class="arrow">→</span></a>
+                
               </div>
             </div>
           </article>
+          </div>
+        </div>
+        <div class="proj-panel" role="tabpanel" id="yards" aria-labelledby="tab-yards" style="--accent:#10b981">
+          <div class="docs-panel-head">
+            <h2>Yard Verification &amp; IV&amp;V</h2>
+            <p>Independent verification of interlocking logic, and electronic interlocking upgrades for junction yards.</p>
+          </div>
+          <div class="pitem-list">
+          <article class="pitem">
+            <div class="pitem-media">
+              <img src="/assets/images/about_tracks.jpg" alt="Independent Verification &amp; Validation (IV&amp;V)" loading="lazy">
+              
+            </div>
+            <div class="pitem-body">
+              <div class="pitem-meta">
+                <span class="service-tag-chip tag-green">IV&amp;V PROOF • 100+ YARDS</span>
+                <span class="pitem-where"><span class="ic ic-pin" aria-hidden="true"></span>Pan-India Railways</span>
+                <span class="pitem-when"><span class="ic ic-calendar" aria-hidden="true"></span>2021 – 2024</span>
+              </div>
+              <h3>Independent Verification &amp; Validation (IV&amp;V)</h3>
+              <p>Independent verification and validation of bit chart logic, station data tables, square sheets, and fail-safe safety protocols across 100+ station yards with zero defects.</p>
+              <div class="pitem-metrics">
+                <div class="pitem-metric"><b>100+</b><span>Yards</span></div>
+                <div class="pitem-metric"><b>Multi-OEM</b><span>Logic</span></div>
+                <div class="pitem-metric"><b>Zonal</b><span>Railways</span></div>
+              </div>
+              <div class="pitem-foot">
+                <a href="contact.html" class="round-button dark">Inquire <span class="arrow">→</span></a>
+                
+              </div>
+            </div>
+          </article>
+          <article class="pitem">
+            <div class="pitem-media">
+              <img src="/assets/images/proj-junction-yard.jpg" alt="Junction Yard Remodelling &amp; Route Expansion" loading="lazy">
+              
+            </div>
+            <div class="pitem-body">
+              <div class="pitem-meta">
+                <span class="service-tag-chip tag-red">JUNCTION UPGRADE • 4 JUNCTIONS</span>
+                <span class="pitem-where"><span class="ic ic-pin" aria-hidden="true"></span>Central Corridors</span>
+                <span class="pitem-when"><span class="ic ic-calendar" aria-hidden="true"></span>2022 – 2023</span>
+              </div>
+              <h3>Junction Yard Remodelling &amp; Route Expansion</h3>
+              <p>Upgraded aging mechanical levers to state-of-the-art Electronic Interlocking systems with VDU route controls and automated flank protection circuits.</p>
+              <div class="pitem-metrics">
+                <div class="pitem-metric"><b>32 Routes</b><span>Yard</span></div>
+                <div class="pitem-metric"><b>Siemens</b><span>EI</span></div>
+                <div class="pitem-metric"><b>Central</b><span>Railway</span></div>
+              </div>
+              <div class="pitem-foot">
+                <a href="contact.html" class="round-button dark">Inquire <span class="arrow">→</span></a>
+                
+              </div>
+            </div>
+          </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Corridor Impact Numbers Bar -->
     <section class="corridor-impact-section">
       <div class="content">
         <div class="impact-stats-card">
@@ -365,34 +390,6 @@
   <!-- Scripts -->
   <script type="module" src="/src/js/main.js"></script>
   <script type="module" src="/src/js/theme.js"></script>
-  <script>
-    // Project Category Filter
-    document.addEventListener('DOMContentLoaded', () => {
-      const pills = document.querySelectorAll('.filter-pill-btn');
-      const cards = document.querySelectorAll('.proj-port-card, .landmark-case-card');
-
-      pills.forEach(pill => {
-        pill.addEventListener('click', () => {
-          pills.forEach(p => {
-            p.classList.remove('active');
-            p.setAttribute('aria-selected', 'false');
-          });
-          pill.classList.add('active');
-          pill.setAttribute('aria-selected', 'true');
-
-          const cat = pill.getAttribute('data-category');
-
-          cards.forEach(card => {
-            const cardCat = card.getAttribute('data-category');
-            if (cat === 'all' || cardCat === cat) {
-              card.style.display = card.classList.contains('landmark-case-card') ? 'grid' : 'flex';
-            } else {
-              card.style.display = 'none';
-            }
-          });
-        });
-      });
-    });
-  </script>
+  <script type="module" src="/src/js/tabs.js"></script>
 </body>
 </html>
