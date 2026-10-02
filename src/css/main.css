@@ -2517,7 +2517,7 @@
       position: relative;
       background:
         linear-gradient(90deg, rgba(6, 16, 26, 0.94) 0%, rgba(6, 16, 26, 0.78) 50%, rgba(6, 16, 26, 0.92) 100%),
-        url("/assets/images/cta_rail_bridge.jpg") center/cover no-repeat;
+        url("/assets/images/cta-bridge.jpg") center/cover no-repeat;
       border-radius: 24px;
       padding: 56px 64px;
       display: flex;
@@ -7615,7 +7615,7 @@ footer {
   border-radius: 20px;
   background:
     linear-gradient(90deg, rgba(6, 16, 26, 0.94) 0%, rgba(6, 16, 26, 0.82) 50%, rgba(6, 16, 26, 0.92) 100%),
-    url("/assets/images/cta_rail_bridge.jpg") center/cover no-repeat;
+    url("/assets/images/cta-bridge.jpg") center/cover no-repeat;
   box-shadow: 0 16px 40px rgba(6, 16, 26, 0.12);
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
