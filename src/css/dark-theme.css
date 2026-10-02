@@ -1469,6 +1469,34 @@ html[data-theme="dark"] .doc-preview {
   background: #1f1f22 !important;
   border: 1px solid #38383d !important;
 }
+html[data-theme="dark"] .docs-browser {
+  background: #19191c !important;
+  border-bottom: 1px solid #38383d !important;
+}
+html[data-theme="dark"] .docs-tabs {
+  border-bottom: 1px solid #38383d !important;
+}
+html[data-theme="dark"] .docs-tab {
+  border: 1px solid #38383d !important;
+  background: #1f1f22 !important;
+}
+html[data-theme="dark"] .docs-tab[aria-selected="true"] {
+  background: color-mix(in srgb, var(--accent) 10%, #1f1f22) !important;
+}
+html[data-theme="dark"] .docs-tab-count {
+  background: #2a2a2e !important;
+}
+html[data-theme="dark"] .doc-mini {
+  background: color-mix(in srgb, var(--accent) 14%, #1f1f22) !important;
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, #38383d) !important;
+}
+html[data-theme="dark"] .docs-browser .doc-card.compact:not(.is-pending) {
+  background: #1f1f22 !important;
+}
+html[data-theme="dark"] .docs-soon {
+  border: 1px solid #38383d !important;
+  background: #1f1f22 !important;
+}
 /* ---- from src/css/animations.css ---- */
 html[data-theme="dark"] .speed-line {
   background: linear-gradient(90deg, transparent, #1f1f22, transparent) !important;
