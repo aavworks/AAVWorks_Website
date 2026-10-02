@@ -1557,6 +1557,37 @@ html[data-theme="dark"] .about-expertise-list li {
 html[data-theme="dark"] .about-expertise-list li:hover {
   border-color: #38383d !important;
 }
+@media (max-width: 768px) {
+  html[data-theme="dark"] .mobile-nav-drawer .nav-link {
+    border-bottom: 1px solid #38383d !important;
+  }
+  html[data-theme="dark"].page-home .hero-stage > .hero {
+    background: #2b2b2f !important;
+  }
+  html[data-theme="dark"].page-home .hero-actions .round-button.dark {
+    background: #1f1f22 !important;
+    color: #f4f4f6 !important;
+    border-color: #38383d !important;
+  }
+  html[data-theme="dark"].page-home .hero-actions .watch-story {
+    background: rgba(31, 31, 34, 0.08) !important;
+  }
+  html[data-theme="dark"] .services-col {
+    border: 1px solid #38383d !important;
+    background: #1f1f22 !important;
+  }
+  html[data-theme="dark"] .milestone-item {
+    border: 1px solid #38383d !important;
+  }
+  html[data-theme="dark"] .proj-list-item {
+    border: 1px solid #38383d !important;
+    background: #1f1f22 !important;
+  }
+  html[data-theme="dark"] .trust-stat-box {
+    border: 1px solid #38383d !important;
+    background: #19191c !important;
+  }
+}
 /* ---- from src/css/animations.css ---- */
 html[data-theme="dark"] .speed-line {
   background: linear-gradient(90deg, transparent, #1f1f22, transparent) !important;

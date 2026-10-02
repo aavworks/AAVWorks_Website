@@ -117,6 +117,21 @@ html[data-theme="dark"] body .client-tile img { filter: none !important; }
 html[data-theme="dark"] body .client-tile span,
 html[data-theme="dark"] body .client-tile p { color: #19191c !important; }
 
+/* phone hero sits on a dark photo in both themes: keep its main button white */
+@media (max-width: 768px) {
+  html[data-theme="dark"] body.page-home .hero-actions .round-button.dark,
+  html[data-theme="dark"].page-home .hero-actions .round-button.dark {
+    background: #ffffff !important;
+    color: #0b1623 !important;
+    border-color: #ffffff !important;
+  }
+  html[data-theme="dark"].page-home .hero-actions .watch-story {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+  }
+}
+
 /* tinted pills / chips: brighten the text so it reads on dark tints */
 html[data-theme="dark"] body .catalog-card-pill.pill-red,
 html[data-theme="dark"] body .service-tag-chip.tag-red { color: #fca5a5 !important; }
