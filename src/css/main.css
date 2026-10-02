@@ -8067,3 +8067,69 @@ small, .meta, .date, .pincode, .footer-bottom, .cmetric-label {
   .catalog-card-docs .doc-paper-back  { transform: translateX(-54px) rotate(-11deg); }
   .catalog-card-docs .doc-paper-mid   { transform: translateX(54px) rotate(11deg); }
 }
+
+/* Document cards backed by a real PDF: drawing preview instead of the paper icon */
+.doc-card.has-preview .doc-card-thumb {
+  padding: 30px 20px 16px;
+  height: auto;
+}
+
+.doc-preview {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.414;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 4px;
+  box-shadow: 0 8px 18px -6px rgba(15, 23, 42, 0.25);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
+}
+
+.doc-preview img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top left;
+}
+
+.doc-preview .doc-paper-badge {
+  right: 8px;
+  bottom: 8px;
+}
+
+.doc-card:hover .doc-preview,
+.doc-card:focus-visible .doc-preview {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 14px 26px -8px rgba(15, 23, 42, 0.32);
+}
+
+.doc-card.has-preview .doc-card-idx {
+  top: 10px;
+  left: 20px;
+  z-index: 1;
+}
+
+.doc-card.has-preview .doc-card-body p {
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+}
+
+.doc-card-meta {
+  font-family: var(--font-mono);
+  font-size: var(--text-small);
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  color: var(--ink-subtle);
+  text-transform: uppercase;
+}
+
+.doc-card.is-pending .doc-card-meta {
+  display: none;
+}
+
+.doc-card.is-pending .doc-preview {
+  opacity: 0.55;
+}

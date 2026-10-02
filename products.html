@@ -8,8 +8,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>try{var t=localStorage.getItem('aav-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
   <link rel="icon" type="image/svg+xml" href="/assets/images/logo.svg">
   <link rel="stylesheet" href="/src/css/main.css">
+  <link rel="stylesheet" href="/src/css/theme.css">
+  <link rel="stylesheet" href="/src/css/dark-theme.css">
 </head>
 <body>
   <div class="page">
@@ -27,7 +30,13 @@
           <a href="projects.html">Projects</a>
           <a href="contact.html">Contact</a>
         </nav>
-        <a class="round-button dark contact-top" href="contact.html">Get in Touch <span class="arrow">→</span></a>
+        <div class="header-actions">
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" aria-label="Switch to dark theme" title="Switch to dark theme">
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          </button>
+          <a class="round-button dark contact-top" href="contact.html">Get in Touch <span class="arrow">→</span></a>
+        </div>
         <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Open Menu">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
         </button>
@@ -101,31 +110,33 @@
                 <span class="doc-card-state" hidden>PDF coming soon</span>
               </div>
             </a>
-            <a class="doc-card" href="documents/core-signaling/signal-interlocking-plan.pdf" data-doc="documents/core-signaling/signal-interlocking-plan.pdf" target="_blank" rel="noopener" style="--accent:#ed2832">
+            <a class="doc-card has-preview" href="documents/core-signaling/signal-interlocking-plan.pdf" data-doc="documents/core-signaling/signal-interlocking-plan.pdf" target="_blank" rel="noopener" style="--accent:#ed2832">
               <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#ed2832" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">SIP</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
+                <span class="doc-preview"><img src="/documents/previews/signal-interlocking-plan.jpg" width="720" alt="Preview of Signal Interlocking Plan (SIP)" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
                 <span class="doc-card-idx">02</span>
               </div>
               <div class="doc-card-body">
                 <h3>Signal Interlocking Plan (SIP)</h3>
-                <p>Baseline yard signaling schemes specifying signal locations, aspects, track configurations, fouling marks, points, and route limits.</p>
+                <p>Station yard Signal Interlocking Plan for Renigunta Jn. showing the main, loop and goods lines, signal and level-crossing positions, with the track sections table, supervisory track sections table, aspect sequence chart, system of block working and C.R.S. approval block.</p>
               </div>
               <div class="doc-card-foot">
                 <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-meta">Large format • 1 sheet • 711 KB</span>
                 <span class="doc-card-state" hidden>PDF coming soon</span>
               </div>
             </a>
-            <a class="doc-card" href="documents/core-signaling/table-of-control-route-control-chart.pdf" data-doc="documents/core-signaling/table-of-control-route-control-chart.pdf" target="_blank" rel="noopener" style="--accent:#ed2832">
+            <a class="doc-card has-preview" href="documents/core-signaling/table-of-control-route-control-chart.pdf" data-doc="documents/core-signaling/table-of-control-route-control-chart.pdf" target="_blank" rel="noopener" style="--accent:#ed2832">
               <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#ed2832" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">TOC / RCC</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
+                <span class="doc-preview"><img src="/documents/previews/table-of-control-route-control-chart.jpg" width="720" alt="Preview of Table of Control / Route Control Chart (TOC / RCC)" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
                 <span class="doc-card-idx">03</span>
               </div>
               <div class="doc-card-body">
                 <h3>Table of Control / Route Control Chart (TOC / RCC)</h3>
-                <p>Complete interlocking logic matrices establishing route locking, overlap conditions, flank protection, conflicting routes, and route-release parameters.</p>
+                <p>Route Control Chart listing, for every signal and route, the destination, points set and locked, track circuits to be clear, other controls, approach locking, back locking by track circuit, and overlap and release conditions.</p>
               </div>
               <div class="doc-card-foot">
                 <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-meta">A3 • 1 sheet • 115 KB</span>
                 <span class="doc-card-state" hidden>PDF coming soon</span>
               </div>
             </a>
@@ -157,17 +168,18 @@
                 <span class="doc-card-state" hidden>PDF coming soon</span>
               </div>
             </a>
-            <a class="doc-card" href="documents/core-signaling/location-box-particulars.pdf" data-doc="documents/core-signaling/location-box-particulars.pdf" target="_blank" rel="noopener" style="--accent:#ed2832">
+            <a class="doc-card has-preview" href="documents/core-signaling/location-box-particulars.pdf" data-doc="documents/core-signaling/location-box-particulars.pdf" target="_blank" rel="noopener" style="--accent:#ed2832">
               <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#ed2832" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">LOC BOX</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
+                <span class="doc-preview"><img src="/documents/previews/location-box-particulars.jpg" width="720" alt="Preview of Location Box Particulars" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
                 <span class="doc-card-idx">06</span>
               </div>
               <div class="doc-card-body">
                 <h3>Location Box Particulars</h3>
-                <p>Equipment rack layouts, transformer feed arrangements, fuse arrays, and terminal wiring schedules inside trackside apparatus cases.</p>
+                <p>Location box wiring sheets for signal units (for example the S25 advance starter and S1 home signal boxes), showing the signal relays, terminal rows and 12C cable terminations to the relay room.</p>
               </div>
               <div class="doc-card-foot">
                 <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-meta">A3 • 3 sheets • 278 KB</span>
                 <span class="doc-card-state" hidden>PDF coming soon</span>
               </div>
             </a>
@@ -227,17 +239,18 @@
                 <span class="doc-card-state" hidden>PDF coming soon</span>
               </div>
             </a>
-            <a class="doc-card" href="documents/core-signaling/earthing-and-surge-protection-diagrams.pdf" data-doc="documents/core-signaling/earthing-and-surge-protection-diagrams.pdf" target="_blank" rel="noopener" style="--accent:#ed2832">
+            <a class="doc-card has-preview" href="documents/core-signaling/earthing-and-surge-protection-diagrams.pdf" data-doc="documents/core-signaling/earthing-and-surge-protection-diagrams.pdf" target="_blank" rel="noopener" style="--accent:#ed2832">
               <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#ed2832" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">EARTH</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
+                <span class="doc-preview"><img src="/documents/previews/earthing-and-surge-protection-diagrams.jpg" width="720" alt="Preview of Earthing &amp; Surge Protection Diagrams" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
                 <span class="doc-card-idx">11</span>
               </div>
               <div class="doc-card-body">
                 <h3>Earthing &amp; Surge Protection Diagrams</h3>
-                <p>Earth pit matrices, copper ring layouts, and Class B &amp; C surge protection schematics to safeguard mission-critical signaling equipment.</p>
+                <p>Earthing and bonding layout for the ABS equipment hut: perimeter ring conductor, GI copper plate earth pits, equipotential busbars and Class A protection, with special notes, general notes (Class A, B &amp; D SPDs as per RDSO spec) and abbreviations.</p>
               </div>
               <div class="doc-card-foot">
                 <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-meta">A3 • 1 sheet • 217 KB</span>
                 <span class="doc-card-state" hidden>PDF coming soon</span>
               </div>
             </a>
@@ -312,59 +325,63 @@
                 <span class="doc-card-state" hidden>PDF coming soon</span>
               </div>
             </a>
-            <a class="doc-card" href="documents/auto-section-abs/abs-location-particulars.pdf" data-doc="documents/auto-section-abs/abs-location-particulars.pdf" target="_blank" rel="noopener" style="--accent:#f59e0b">
+            <a class="doc-card has-preview" href="documents/auto-section-abs/abs-location-particulars.pdf" data-doc="documents/auto-section-abs/abs-location-particulars.pdf" target="_blank" rel="noopener" style="--accent:#f59e0b">
               <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#f59e0b" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">ABS LOC</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
+                <span class="doc-preview"><img src="/documents/previews/abs-location-particulars.jpg" width="720" alt="Preview of ABS Location Particulars" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
                 <span class="doc-card-idx">04</span>
               </div>
               <div class="doc-card-body">
                 <h3>ABS Location Particulars</h3>
-                <p>Equipment configurations, battery charger housings, and terminal strip allocations within mid-section trackside boxes.</p>
+                <p>Floor plan for the ABS hut with the relay room and IPS room: dimensions, relay racks, C.T. racks, NV MUX, power rack, battery charger, VRLA batteries, MSDAC, UFSBI and CCTV rack positions.</p>
               </div>
               <div class="doc-card-foot">
                 <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-meta">A3 • 1 sheet • 94 KB</span>
                 <span class="doc-card-state" hidden>PDF coming soon</span>
               </div>
             </a>
-            <a class="doc-card" href="documents/auto-section-abs/abs-ct-rack-and-relay-rack-particulars.pdf" data-doc="documents/auto-section-abs/abs-ct-rack-and-relay-rack-particulars.pdf" target="_blank" rel="noopener" style="--accent:#f59e0b">
+            <a class="doc-card has-preview" href="documents/auto-section-abs/abs-ct-rack-and-relay-rack-particulars.pdf" data-doc="documents/auto-section-abs/abs-ct-rack-and-relay-rack-particulars.pdf" target="_blank" rel="noopener" style="--accent:#f59e0b">
               <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#f59e0b" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">ABS CT / RR</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
+                <span class="doc-preview"><img src="/documents/previews/abs-ct-rack-and-relay-rack-particulars.jpg" width="720" alt="Preview of ABS CT Rack &amp; Relay Rack Particulars" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
                 <span class="doc-card-idx">05</span>
               </div>
               <div class="doc-card-body">
                 <h3>ABS CT Rack &amp; Relay Rack Particulars</h3>
-                <p>Termination profiling, fuse distribution, and relay arrangement sheets designed for mid-section huts.</p>
+                <p>C.T. Rack-1 particulars with terminal rows A to D and 12C cable terminations to the relay room and SM room, plus the Relay Rack-1 relay arrangement for the ABS hut.</p>
               </div>
               <div class="doc-card-foot">
                 <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-meta">A3 • 5 sheets • 683 KB</span>
                 <span class="doc-card-state" hidden>PDF coming soon</span>
               </div>
             </a>
-            <a class="doc-card" href="documents/auto-section-abs/abs-interface-circuits.pdf" data-doc="documents/auto-section-abs/abs-interface-circuits.pdf" target="_blank" rel="noopener" style="--accent:#f59e0b">
+            <a class="doc-card has-preview" href="documents/auto-section-abs/abs-interface-circuits.pdf" data-doc="documents/auto-section-abs/abs-interface-circuits.pdf" target="_blank" rel="noopener" style="--accent:#f59e0b">
               <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#f59e0b" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">ABS I/F</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
+                <span class="doc-preview"><img src="/documents/previews/abs-interface-circuits.jpg" width="720" alt="Preview of ABS Interface Circuits" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
                 <span class="doc-card-idx">06</span>
               </div>
               <div class="doc-card-body">
                 <h3>ABS Interface Circuits</h3>
-                <p>Vital directional logic, aspect change circuits, and train detection cut-section integration.</p>
+                <p>ABS hut interface circuits: main functions of the ABS equipment hut (SIL-4 / UFSBI-4) with inputs and outputs between hut and relay room, and the ABS equipment hut to EI rack input and output connections.</p>
               </div>
               <div class="doc-card-foot">
                 <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-meta">A3 • 3 sheets • 333 KB</span>
                 <span class="doc-card-state" hidden>PDF coming soon</span>
               </div>
             </a>
-            <a class="doc-card" href="documents/auto-section-abs/abs-data-logger-circuits.pdf" data-doc="documents/auto-section-abs/abs-data-logger-circuits.pdf" target="_blank" rel="noopener" style="--accent:#f59e0b">
+            <a class="doc-card has-preview" href="documents/auto-section-abs/abs-data-logger-circuits.pdf" data-doc="documents/auto-section-abs/abs-data-logger-circuits.pdf" target="_blank" rel="noopener" style="--accent:#f59e0b">
               <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#f59e0b" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">ABS LOG</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
+                <span class="doc-preview"><img src="/documents/previews/abs-data-logger-circuits.jpg" width="720" alt="Preview of ABS Data Logger Circuits" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
                 <span class="doc-card-idx">07</span>
               </div>
               <div class="doc-card-body">
                 <h3>ABS Data Logger Circuits</h3>
-                <p>Digital and analog input wiring layouts for remote fault detection and health monitoring of mid-section gear.</p>
+                <p>Data logger wiring for the ABS hut: door lock, relay contact and ACPR inputs, and UFSBI system A / system B status points such as CPU fail, link fail and power off.</p>
               </div>
               <div class="doc-card-foot">
                 <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-meta">A3 • 1 sheet • 123 KB</span>
                 <span class="doc-card-state" hidden>PDF coming soon</span>
               </div>
             </a>
@@ -382,17 +399,18 @@
                 <span class="doc-card-state" hidden>PDF coming soon</span>
               </div>
             </a>
-            <a class="doc-card" href="documents/auto-section-abs/nv-mux-circuits.pdf" data-doc="documents/auto-section-abs/nv-mux-circuits.pdf" target="_blank" rel="noopener" style="--accent:#f59e0b">
+            <a class="doc-card has-preview" href="documents/auto-section-abs/nv-mux-circuits.pdf" data-doc="documents/auto-section-abs/nv-mux-circuits.pdf" target="_blank" rel="noopener" style="--accent:#f59e0b">
               <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#f59e0b" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">NV MUX</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
+                <span class="doc-preview"><img src="/documents/previews/nv-mux-circuits.jpg" width="720" alt="Preview of Network / Voice Multiplexer (NV Mux) Circuits" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
                 <span class="doc-card-idx">09</span>
               </div>
               <div class="doc-card-body">
                 <h3>Network / Voice Multiplexer (NV Mux) Circuits</h3>
-                <p>Interface wiring and channelization diagrams ensuring fail-safe, redundant block communication over OFC networks.</p>
+                <p>Relay rack to NV MUX wiring: main and redundant NV-MUX input cards and output cards, with WAGO numbering and MSDAC connections.</p>
               </div>
               <div class="doc-card-foot">
                 <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-meta">A3 • 3 sheets • 349 KB</span>
                 <span class="doc-card-state" hidden>PDF coming soon</span>
               </div>
             </a>
@@ -439,45 +457,48 @@
                 <span class="doc-card-state" hidden>PDF coming soon</span>
               </div>
             </a>
-            <a class="doc-card" href="documents/kavach/rfid-tag-tin-layouts.pdf" data-doc="documents/kavach/rfid-tag-tin-layouts.pdf" target="_blank" rel="noopener" style="--accent:#10b981">
+            <a class="doc-card has-preview" href="documents/kavach/rfid-tag-tin-layouts.pdf" data-doc="documents/kavach/rfid-tag-tin-layouts.pdf" target="_blank" rel="noopener" style="--accent:#10b981">
               <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#10b981" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">RFID TIN</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
+                <span class="doc-preview"><img src="/documents/previews/rfid-tag-tin-layouts.jpg" width="720" alt="Preview of RFID Tag-TIN Layouts" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
                 <span class="doc-card-idx">03</span>
               </div>
               <div class="doc-card-body">
                 <h3>RFID Tag-TIN Layouts</h3>
-                <p>Precise yard-chainage placement plans for Track Identification Node (TIN) tags, signal approach tags, and boundary identification tags.</p>
+                <p>Kavach RFID tag layouts for the station yard and the block section: normal, signal foot, communication entry / exit, adjacent line, adjustment / junction, dead-stop and turnout / TIN discrimination tags, with OHE mast numbers, chainage, supervisory track sections and total tag count, updated per the latest TAN guidelines and LiDAR survey.</p>
               </div>
               <div class="doc-card-foot">
                 <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-meta">Large format • 2 sheets • 524 KB</span>
                 <span class="doc-card-state" hidden>PDF coming soon</span>
               </div>
             </a>
-            <a class="doc-card" href="documents/kavach/kavach-table-of-control.pdf" data-doc="documents/kavach/kavach-table-of-control.pdf" target="_blank" rel="noopener" style="--accent:#10b981">
+            <a class="doc-card has-preview" href="documents/kavach/kavach-table-of-control.pdf" data-doc="documents/kavach/kavach-table-of-control.pdf" target="_blank" rel="noopener" style="--accent:#10b981">
               <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#10b981" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">K-TOC</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
+                <span class="doc-preview"><img src="/documents/previews/kavach-table-of-control.jpg" width="720" alt="Preview of Kavach Table of Control (TOC)" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
                 <span class="doc-card-idx">04</span>
               </div>
               <div class="doc-card-body">
                 <h3>Kavach Table of Control (TOC)</h3>
-                <p>Comprehensive rulebase linking signal aspect sequences, target distance calculations, and movement authority parameters.</p>
+                <p>Kavach Table of Control for the station: entry and exit signals, line, signal aspects, points and track circuits required in route, TINs required, RFID check sequence, entry-to-exit tag distance, movement authority and authorised speed.</p>
               </div>
               <div class="doc-card-foot">
                 <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-meta">A3 • 3 sheets • 311 KB</span>
                 <span class="doc-card-state" hidden>PDF coming soon</span>
               </div>
             </a>
-            <a class="doc-card" href="documents/kavach/rfid-tag-data-engineering.pdf" data-doc="documents/kavach/rfid-tag-data-engineering.pdf" target="_blank" rel="noopener" style="--accent:#10b981">
+            <a class="doc-card has-preview" href="documents/kavach/rfid-tag-data-engineering.pdf" data-doc="documents/kavach/rfid-tag-data-engineering.pdf" target="_blank" rel="noopener" style="--accent:#10b981">
               <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#10b981" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">TAG DATA</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
+                <span class="doc-preview"><img src="/documents/previews/rfid-tag-data-engineering.jpg" width="720" alt="Preview of RFID Tag Data Engineering" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
                 <span class="doc-card-idx">05</span>
               </div>
               <div class="doc-card-body">
                 <h3>RFID Tag Data Engineering</h3>
-                <p>Structured data files and spreadsheets defining encoded tag ID numbers, track IDs, link distances, gradients, and turnout directions.</p>
+                <p>Kavach tag data sheets (Rev 2.0.0): 64-bit X / Y fields for normal tags and adjacent line tags covering tag type, Kavach version (Spec 3.2 / 4.0), RFID tag ID, absolute location, TIN, station IDs, section type, tag duplication, CRC and page X / page Y.</p>
               </div>
               <div class="doc-card-foot">
                 <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-meta">A3 • 6 sheets • 550 KB</span>
                 <span class="doc-card-state" hidden>PDF coming soon</span>
               </div>
             </a>
@@ -495,17 +516,18 @@
                 <span class="doc-card-state" hidden>PDF coming soon</span>
               </div>
             </a>
-            <a class="doc-card" href="documents/kavach/interface-circuits-and-contact-analysis.pdf" data-doc="documents/kavach/interface-circuits-and-contact-analysis.pdf" target="_blank" rel="noopener" style="--accent:#10b981">
+            <a class="doc-card has-preview" href="documents/kavach/interface-circuits-and-contact-analysis.pdf" data-doc="documents/kavach/interface-circuits-and-contact-analysis.pdf" target="_blank" rel="noopener" style="--accent:#10b981">
               <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#10b981" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">I/F + CA</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
+                <span class="doc-preview"><img src="/documents/previews/interface-circuits-and-contact-analysis.jpg" width="720" alt="Preview of Interface Circuits &amp; Contact Analysis" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
                 <span class="doc-card-idx">07</span>
               </div>
               <div class="doc-card-body">
                 <h3>Interface Circuits &amp; Contact Analysis</h3>
-                <p>Fail-safe hardware interface schemes connecting Kavach cabinets with station interlocking (Relay/EI), backed by complete potential-free contact analysis charts.</p>
+                <p>S-Kavach interface diagram connecting relay contacts to the Kavach terminals (B1 to B6, N1 to N6), together with the contact analysis sheets for the interlocking relays.</p>
               </div>
               <div class="doc-card-foot">
                 <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-meta">A3 • 2 sheets • 228 KB</span>
                 <span class="doc-card-state" hidden>PDF coming soon</span>
               </div>
             </a>
@@ -575,6 +597,7 @@
   </div>
 
   <script type="module" src="/src/js/main.js"></script>
+  <script type="module" src="/src/js/theme.js"></script>
   <script type="module" src="/src/js/documents.js"></script>
 </body>
 </html>
