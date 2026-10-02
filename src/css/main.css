@@ -9166,3 +9166,29 @@ html.page-home .about-variant {
     font-size: 44px;
   }
 }
+
+/* home: Projects and News size themselves to the screen height so they never spill past one screen */
+html.page-home .projects-dashboard-section {
+  padding: 20px 0;
+}
+
+html.page-home .proj-hero-card {
+  min-height: clamp(280px, calc(100vh - 380px), 420px);
+  min-height: clamp(280px, calc(100dvh - 380px), 420px);
+}
+
+@media (max-height: 820px) {
+  html.page-home .proj-dash-topbar {
+    margin-bottom: 22px;
+  }
+  html.page-home .proj-dash-grid {
+    margin-bottom: 16px;
+  }
+  html.page-home .proj-dash-bottom-row {
+    margin-top: 12px;
+  }
+}
+
+html.page-home .news-carousel-section {
+  padding: 24px 0 20px;
+}
