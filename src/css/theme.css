@@ -103,6 +103,14 @@ html[data-theme="dark"] body svg [stroke="#edf2f7"],
 html[data-theme="dark"] body svg [stroke="#e2e8f0"],
 html[data-theme="dark"] body svg [stroke="#cbd5e1"] { stroke: #34343a !important; }
 
+/* India map on the contact page */
+html[data-theme="dark"] .map-state.state-general { fill: #37373d !important; stroke: #62626b !important; }
+html[data-theme="dark"] .map-state:hover { fill: #46464e !important; stroke: #9a9aa3 !important; }
+html[data-theme="dark"] .map-state.state-tg { fill: #5c2a2e !important; stroke: #ea3829 !important; }
+html[data-theme="dark"] .map-state.state-tg.active { fill: #6b2c30 !important; stroke: #f05a4e !important; }
+html[data-theme="dark"] .map-state.state-ap { fill: #5f4a16 !important; stroke: #d97706 !important; }
+html[data-theme="dark"] .map-state.state-ap.active { fill: #6b5418 !important; stroke: #f59e0b !important; }
+
 /* tinted pills / chips: brighten the text so it reads on dark tints */
 html[data-theme="dark"] body .catalog-card-pill.pill-red,
 html[data-theme="dark"] body .service-tag-chip.tag-red { color: #fca5a5 !important; }
