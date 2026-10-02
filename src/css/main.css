@@ -8133,3 +8133,23 @@ small, .meta, .date, .pincode, .footer-bottom, .cmetric-label {
 .doc-card.is-pending .doc-preview {
   opacity: 0.55;
 }
+
+/* Home carousel: fan of real PDF previews */
+.catalog-card-docs .doc-preview {
+  position: absolute;
+  width: 132px;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.catalog-card-docs .doc-preview .doc-paper-badge {
+  right: 5px;
+  bottom: 5px;
+  font-size: 9px;
+  padding: 1px 5px;
+}
+
+@media (max-width: 640px) {
+  .catalog-card-docs .doc-preview {
+    width: 112px;
+  }
+}
