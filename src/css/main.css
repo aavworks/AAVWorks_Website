@@ -8941,8 +8941,7 @@ html.page-home .services-screen,
 html.page-home .products-catalog-section,
 html.page-home .projects-dashboard-section,
 html.page-home .news-carousel-section,
-html.page-home .clients-section,
-html.page-home .final-screen {
+html.page-home .closing-screen {
   min-height: calc(100vh - 54px);
   min-height: calc(100dvh - 54px);
   scroll-snap-align: start;
@@ -8951,23 +8950,29 @@ html.page-home .final-screen {
 html.page-home .services-screen,
 html.page-home .products-catalog-section,
 html.page-home .projects-dashboard-section,
-html.page-home .news-carousel-section,
-html.page-home .clients-section {
+html.page-home .news-carousel-section {
   display: grid;
   align-content: center;
   /* a single column that may shrink: wide children (marquee, carousels) must not stretch it */
   grid-template-columns: minmax(0, 1fr);
 }
 
-html.page-home .final-screen {
+/* closing screen: trusted partners, call to action and footer as one section */
+html.page-home .closing-screen {
   display: flex;
   flex-direction: column;
 }
 
-html.page-home .final-screen .cta-banner-section {
+html.page-home .closing-screen .clients-section {
   flex: 1 1 auto;
   display: grid;
   align-content: center;
+  grid-template-columns: minmax(0, 1fr);
+  padding: 28px 0 24px;
+}
+
+html.page-home .closing-screen .cta-banner-section {
+  flex: 0 0 auto;
 }
 
 html.page-home .hero-stage {
@@ -9017,4 +9022,18 @@ html.page-home .products-catalog-section {
     padding: 0 24px;
     box-sizing: border-box;
   }
+}
+
+/* closing screen: compact vertical rhythm so partners + CTA + footer fit one screen */
+html.page-home .closing-screen .clients-section .section-top {
+  margin-bottom: 20px;
+}
+
+html.page-home .closing-screen .client-trust-stats {
+  margin-top: 22px;
+  padding-top: 20px;
+}
+
+html.page-home .closing-screen .cta-banner-section {
+  margin: 20px auto 24px !important;
 }
