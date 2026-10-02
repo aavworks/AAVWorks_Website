@@ -9,10 +9,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <script>try{var t=localStorage.getItem('aav-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
-  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
-  <script type="module" crossorigin src="./assets/products-C7HT_ORs.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/theme-Ckm7MHIs.js">
-  <link rel="stylesheet" crossorigin href="./assets/theme-8eI_Gcrk.css">
+  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+  <script type="module" crossorigin src="./assets/products-BnrT0Zbu.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/theme-MNCRo_16.js">
+  <link rel="stylesheet" crossorigin href="./assets/theme-OYvFJtX0.css">
 </head>
 <body>
   <div class="page">
@@ -85,35 +85,35 @@
       </div>
     </section>
 
-    <!-- Documents: Core Signaling & Interlocking -->
-    <section id="core" class="docs-section">
+    <!-- Documents (tabbed by category) -->
+    <section class="docs-browser" id="documents">
       <div class="content">
-        <div class="docs-section-head">
-          <div class="docs-section-titles">
-            <span class="service-tag-chip tag-red">CATEGORY 01 • 12 DOCUMENTS</span>
-            <h2>Core Railway Signaling &amp; Interlocking Drawings</h2>
-            <p>Complete drawing packages for conventional yard signaling and electronic interlocking, from estimation to as-made records.</p>
-          </div>
+        <div class="docs-tabs" role="tablist" aria-label="Document categories">
+      <button type="button" class="docs-tab" role="tab" id="tab-core" aria-controls="core" aria-selected="true" tabindex="0" data-tab="core" style="--accent:#ed2832">
+        <span class="docs-tab-num">01</span>
+        <span class="docs-tab-label">Core Signaling &amp; Interlocking</span>
+        <span class="docs-tab-count">4 of 12 PDFs</span>
+      </button>
+      <button type="button" class="docs-tab" role="tab" id="tab-abs" aria-controls="abs" aria-selected="false" tabindex="-1" data-tab="abs" style="--accent:#f59e0b">
+        <span class="docs-tab-num">02</span>
+        <span class="docs-tab-label">Auto Section (ABS)</span>
+        <span class="docs-tab-count">5 of 9 PDFs</span>
+      </button>
+      <button type="button" class="docs-tab" role="tab" id="tab-kavach" aria-controls="kavach" aria-selected="false" tabindex="-1" data-tab="kavach" style="--accent:#10b981">
+        <span class="docs-tab-num">03</span>
+        <span class="docs-tab-label">Kavach (Indigenous ATP)</span>
+        <span class="docs-tab-count">4 of 7 PDFs</span>
+      </button>
+        </div>
+    <div class="docs-panel" role="tabpanel" id="core" aria-labelledby="tab-core">
+        <div class="docs-panel-head">
+          <h2>Core Railway Signaling &amp; Interlocking Drawings</h2>
+          <p>Complete drawing packages for conventional yard signaling and electronic interlocking, from estimation to as-made records.</p>
         </div>
         <div class="docs-grid">
-            <a class="doc-card" href="documents/core-signaling/s-and-t-estimation.pdf" data-doc="documents/core-signaling/s-and-t-estimation.pdf" target="_blank" rel="noopener" style="--accent:#ed2832">
-              <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#ed2832" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">EST</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">01</span>
-              </div>
-              <div class="doc-card-body">
-                <h3>S&amp;T Estimation</h3>
-                <p>Comprehensive bill of quantities (BOQ), material take-offs, and cost estimations for project budgeting, tendering, and execution.</p>
-              </div>
-              <div class="doc-card-foot">
-                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
-                <span class="doc-card-state" hidden>PDF coming soon</span>
-              </div>
-            </a>
             <a class="doc-card has-preview" href="documents/core-signaling/signal-interlocking-plan.pdf" data-doc="documents/core-signaling/signal-interlocking-plan.pdf" target="_blank" rel="noopener" style="--accent:#ed2832">
               <div class="doc-card-thumb">
                 <span class="doc-preview"><img src="./documents/previews/signal-interlocking-plan.jpg" width="720" alt="Preview of Signal Interlocking Plan (SIP)" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">02</span>
               </div>
               <div class="doc-card-body">
                 <h3>Signal Interlocking Plan (SIP)</h3>
@@ -128,7 +128,6 @@
             <a class="doc-card has-preview" href="documents/core-signaling/table-of-control-route-control-chart.pdf" data-doc="documents/core-signaling/table-of-control-route-control-chart.pdf" target="_blank" rel="noopener" style="--accent:#ed2832">
               <div class="doc-card-thumb">
                 <span class="doc-preview"><img src="./documents/previews/table-of-control-route-control-chart.jpg" width="720" alt="Preview of Table of Control / Route Control Chart (TOC / RCC)" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">03</span>
               </div>
               <div class="doc-card-body">
                 <h3>Table of Control / Route Control Chart (TOC / RCC)</h3>
@@ -140,38 +139,9 @@
                 <span class="doc-card-state" hidden>PDF coming soon</span>
               </div>
             </a>
-            <a class="doc-card" href="documents/core-signaling/cable-route-and-cable-core-plans.pdf" data-doc="documents/core-signaling/cable-route-and-cable-core-plans.pdf" target="_blank" rel="noopener" style="--accent:#ed2832">
-              <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#ed2832" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">CABLE</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">04</span>
-              </div>
-              <div class="doc-card-body">
-                <h3>Cable Route &amp; Cable Core Plans</h3>
-                <p>Systematic line diagrams detailing trench alignments, cable track crossings, junction box positions, core sizing, and core distribution schedules with spare allocations.</p>
-              </div>
-              <div class="doc-card-foot">
-                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
-                <span class="doc-card-state" hidden>PDF coming soon</span>
-              </div>
-            </a>
-            <a class="doc-card" href="documents/core-signaling/track-bonding-plans.pdf" data-doc="documents/core-signaling/track-bonding-plans.pdf" target="_blank" rel="noopener" style="--accent:#ed2832">
-              <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#ed2832" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">BOND</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">05</span>
-              </div>
-              <div class="doc-card-body">
-                <h3>Track Bonding Plans</h3>
-                <p>High-accuracy bonding drawings for DC track circuits, AFTC, and axle counters, ensuring uninterrupted traction return paths and reliable train detection.</p>
-              </div>
-              <div class="doc-card-foot">
-                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
-                <span class="doc-card-state" hidden>PDF coming soon</span>
-              </div>
-            </a>
             <a class="doc-card has-preview" href="documents/core-signaling/location-box-particulars.pdf" data-doc="documents/core-signaling/location-box-particulars.pdf" target="_blank" rel="noopener" style="--accent:#ed2832">
               <div class="doc-card-thumb">
                 <span class="doc-preview"><img src="./documents/previews/location-box-particulars.jpg" width="720" alt="Preview of Location Box Particulars" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">06</span>
               </div>
               <div class="doc-card-body">
                 <h3>Location Box Particulars</h3>
@@ -183,66 +153,9 @@
                 <span class="doc-card-state" hidden>PDF coming soon</span>
               </div>
             </a>
-            <a class="doc-card" href="documents/core-signaling/ct-rack-and-relay-rack-particulars.pdf" data-doc="documents/core-signaling/ct-rack-and-relay-rack-particulars.pdf" target="_blank" rel="noopener" style="--accent:#ed2832">
-              <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#ed2832" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">CT / RELAY</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">07</span>
-              </div>
-              <div class="doc-card-body">
-                <h3>CT Rack &amp; Relay Rack Particulars</h3>
-                <p>Detailed profiling of Cable Termination (CT) racks, tag blocks, bus-bar configurations, and relay shelf allocations.</p>
-              </div>
-              <div class="doc-card-foot">
-                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
-                <span class="doc-card-state" hidden>PDF coming soon</span>
-              </div>
-            </a>
-            <a class="doc-card" href="documents/core-signaling/level-crossing-gate-circuits.pdf" data-doc="documents/core-signaling/level-crossing-gate-circuits.pdf" target="_blank" rel="noopener" style="--accent:#ed2832">
-              <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#ed2832" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">LC GATE</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">08</span>
-              </div>
-              <div class="doc-card-body">
-                <h3>Level Crossing (LC) Gate Circuits</h3>
-                <p>Fail-safe control circuits for manned and interlocked gates, including approach locking, road signal controls, and warning bell interfaces.</p>
-              </div>
-              <div class="doc-card-foot">
-                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
-                <span class="doc-card-state" hidden>PDF coming soon</span>
-              </div>
-            </a>
-            <a class="doc-card" href="documents/core-signaling/station-working-rule-diagrams.pdf" data-doc="documents/core-signaling/station-working-rule-diagrams.pdf" target="_blank" rel="noopener" style="--accent:#ed2832">
-              <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#ed2832" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">SWRD</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">09</span>
-              </div>
-              <div class="doc-card-body">
-                <h3>Station Working Rule Diagrams (SWRD)</h3>
-                <p>Contact-to-contact circuit diagrams detailing operating relays, point machine circuits, and signal lighting control logic.</p>
-              </div>
-              <div class="doc-card-foot">
-                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
-                <span class="doc-card-state" hidden>PDF coming soon</span>
-              </div>
-            </a>
-            <a class="doc-card" href="documents/core-signaling/data-logger-circuits.pdf" data-doc="documents/core-signaling/data-logger-circuits.pdf" target="_blank" rel="noopener" style="--accent:#ed2832">
-              <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#ed2832" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">DATA LOG</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">10</span>
-              </div>
-              <div class="doc-card-body">
-                <h3>Data Logger Circuits</h3>
-                <p>Wiring and channel allocation diagrams for real-time monitoring of relay contacts, power supply voltages, and field inputs.</p>
-              </div>
-              <div class="doc-card-foot">
-                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
-                <span class="doc-card-state" hidden>PDF coming soon</span>
-              </div>
-            </a>
             <a class="doc-card has-preview" href="documents/core-signaling/earthing-and-surge-protection-diagrams.pdf" data-doc="documents/core-signaling/earthing-and-surge-protection-diagrams.pdf" target="_blank" rel="noopener" style="--accent:#ed2832">
               <div class="doc-card-thumb">
                 <span class="doc-preview"><img src="./documents/previews/earthing-and-surge-protection-diagrams.jpg" width="720" alt="Preview of Earthing &amp; Surge Protection Diagrams" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">11</span>
               </div>
               <div class="doc-card-body">
                 <h3>Earthing &amp; Surge Protection Diagrams</h3>
@@ -254,81 +167,110 @@
                 <span class="doc-card-state" hidden>PDF coming soon</span>
               </div>
             </a>
-            <a class="doc-card" href="documents/core-signaling/as-made-circuit-documentation.pdf" data-doc="documents/core-signaling/as-made-circuit-documentation.pdf" target="_blank" rel="noopener" style="--accent:#ed2832">
-              <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#ed2832" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">AS-MADE</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">12</span>
+        </div>
+        <details class="docs-soon">
+          <summary><span class="docs-soon-title">Coming soon</span><span class="docs-soon-count">8 more documents</span><span class="docs-soon-chevron" aria-hidden="true"></span></summary>
+          <div class="docs-grid docs-grid-compact">
+            <a class="doc-card compact is-pending" data-doc="documents/core-signaling/s-and-t-estimation.pdf" aria-disabled="true" style="--accent:#ed2832">
+              <span class="doc-mini" aria-hidden="true"><b>PDF</b></span>
+              <div class="doc-card-body">
+                <h3>S&amp;T Estimation</h3>
+                <p>Comprehensive bill of quantities (BOQ), material take-offs, and cost estimations for project budgeting, tendering, and execution.</p>
               </div>
+              <div class="doc-card-foot">
+                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-state">PDF coming soon</span>
+              </div>
+            </a>
+            <a class="doc-card compact is-pending" data-doc="documents/core-signaling/cable-route-and-cable-core-plans.pdf" aria-disabled="true" style="--accent:#ed2832">
+              <span class="doc-mini" aria-hidden="true"><b>PDF</b></span>
+              <div class="doc-card-body">
+                <h3>Cable Route &amp; Cable Core Plans</h3>
+                <p>Systematic line diagrams detailing trench alignments, cable track crossings, junction box positions, core sizing, and core distribution schedules with spare allocations.</p>
+              </div>
+              <div class="doc-card-foot">
+                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-state">PDF coming soon</span>
+              </div>
+            </a>
+            <a class="doc-card compact is-pending" data-doc="documents/core-signaling/track-bonding-plans.pdf" aria-disabled="true" style="--accent:#ed2832">
+              <span class="doc-mini" aria-hidden="true"><b>PDF</b></span>
+              <div class="doc-card-body">
+                <h3>Track Bonding Plans</h3>
+                <p>High-accuracy bonding drawings for DC track circuits, AFTC, and axle counters, ensuring uninterrupted traction return paths and reliable train detection.</p>
+              </div>
+              <div class="doc-card-foot">
+                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-state">PDF coming soon</span>
+              </div>
+            </a>
+            <a class="doc-card compact is-pending" data-doc="documents/core-signaling/ct-rack-and-relay-rack-particulars.pdf" aria-disabled="true" style="--accent:#ed2832">
+              <span class="doc-mini" aria-hidden="true"><b>PDF</b></span>
+              <div class="doc-card-body">
+                <h3>CT Rack &amp; Relay Rack Particulars</h3>
+                <p>Detailed profiling of Cable Termination (CT) racks, tag blocks, bus-bar configurations, and relay shelf allocations.</p>
+              </div>
+              <div class="doc-card-foot">
+                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-state">PDF coming soon</span>
+              </div>
+            </a>
+            <a class="doc-card compact is-pending" data-doc="documents/core-signaling/level-crossing-gate-circuits.pdf" aria-disabled="true" style="--accent:#ed2832">
+              <span class="doc-mini" aria-hidden="true"><b>PDF</b></span>
+              <div class="doc-card-body">
+                <h3>Level Crossing (LC) Gate Circuits</h3>
+                <p>Fail-safe control circuits for manned and interlocked gates, including approach locking, road signal controls, and warning bell interfaces.</p>
+              </div>
+              <div class="doc-card-foot">
+                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-state">PDF coming soon</span>
+              </div>
+            </a>
+            <a class="doc-card compact is-pending" data-doc="documents/core-signaling/station-working-rule-diagrams.pdf" aria-disabled="true" style="--accent:#ed2832">
+              <span class="doc-mini" aria-hidden="true"><b>PDF</b></span>
+              <div class="doc-card-body">
+                <h3>Station Working Rule Diagrams (SWRD)</h3>
+                <p>Contact-to-contact circuit diagrams detailing operating relays, point machine circuits, and signal lighting control logic.</p>
+              </div>
+              <div class="doc-card-foot">
+                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-state">PDF coming soon</span>
+              </div>
+            </a>
+            <a class="doc-card compact is-pending" data-doc="documents/core-signaling/data-logger-circuits.pdf" aria-disabled="true" style="--accent:#ed2832">
+              <span class="doc-mini" aria-hidden="true"><b>PDF</b></span>
+              <div class="doc-card-body">
+                <h3>Data Logger Circuits</h3>
+                <p>Wiring and channel allocation diagrams for real-time monitoring of relay contacts, power supply voltages, and field inputs.</p>
+              </div>
+              <div class="doc-card-foot">
+                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-state">PDF coming soon</span>
+              </div>
+            </a>
+            <a class="doc-card compact is-pending" data-doc="documents/core-signaling/as-made-circuit-documentation.pdf" aria-disabled="true" style="--accent:#ed2832">
+              <span class="doc-mini" aria-hidden="true"><b>PDF</b></span>
               <div class="doc-card-body">
                 <h3>As-Made Circuit Documentation</h3>
                 <p>Final, site-verified drawing sets reconciling all field commissioning changes into official permanent records.</p>
               </div>
               <div class="doc-card-foot">
                 <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
-                <span class="doc-card-state" hidden>PDF coming soon</span>
+                <span class="doc-card-state">PDF coming soon</span>
               </div>
             </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Documents: Auto Section (ABS) -->
-    <section id="abs" class="docs-section">
-      <div class="content">
-        <div class="docs-section-head">
-          <div class="docs-section-titles">
-            <span class="service-tag-chip tag-yellow">CATEGORY 02 • 9 DOCUMENTS</span>
-            <h2>Drawings in Auto Section (Automatic Block Signaling - ABS)</h2>
-            <p>Mid-section drawing sets for Automatic Block Signaling: signal spacing, cabling, huts, interface circuits and block communication.</p>
           </div>
+        </details>
+    </div>
+    <div class="docs-panel" role="tabpanel" id="abs" aria-labelledby="tab-abs">
+        <div class="docs-panel-head">
+          <h2>Drawings in Auto Section (Automatic Block Signaling - ABS)</h2>
+          <p>Mid-section drawing sets for Automatic Block Signaling: signal spacing, cabling, huts, interface circuits and block communication.</p>
         </div>
         <div class="docs-grid">
-            <a class="doc-card" href="documents/auto-section-abs/auto-section-sip.pdf" data-doc="documents/auto-section-abs/auto-section-sip.pdf" target="_blank" rel="noopener" style="--accent:#f59e0b">
-              <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#f59e0b" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">AUTO SIP</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">01</span>
-              </div>
-              <div class="doc-card-body">
-                <h3>Auto Section SIP</h3>
-                <p>Comprehensive layout plans depicting automatic signal spacing, braking distance calculations, aspect sequence controls, and cut-section demarcations.</p>
-              </div>
-              <div class="doc-card-foot">
-                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
-                <span class="doc-card-state" hidden>PDF coming soon</span>
-              </div>
-            </a>
-            <a class="doc-card" href="documents/auto-section-abs/abs-cable-route-plan.pdf" data-doc="documents/auto-section-abs/abs-cable-route-plan.pdf" target="_blank" rel="noopener" style="--accent:#f59e0b">
-              <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#f59e0b" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">ABS ROUTE</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">02</span>
-              </div>
-              <div class="doc-card-body">
-                <h3>ABS Cable Route Plan</h3>
-                <p>Longitudinal trenching alignments detailing power, quad, signaling, and optical fiber cables running across mid-sections.</p>
-              </div>
-              <div class="doc-card-foot">
-                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
-                <span class="doc-card-state" hidden>PDF coming soon</span>
-              </div>
-            </a>
-            <a class="doc-card" href="documents/auto-section-abs/abs-cable-core-plan.pdf" data-doc="documents/auto-section-abs/abs-cable-core-plan.pdf" target="_blank" rel="noopener" style="--accent:#f59e0b">
-              <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#f59e0b" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">ABS CORE</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">03</span>
-              </div>
-              <div class="doc-card-body">
-                <h3>ABS Cable Core Plan</h3>
-                <p>Core distribution, line drop calculations, and spare core assignments between mid-section apparatus cases and huts.</p>
-              </div>
-              <div class="doc-card-foot">
-                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
-                <span class="doc-card-state" hidden>PDF coming soon</span>
-              </div>
-            </a>
             <a class="doc-card has-preview" href="documents/auto-section-abs/abs-location-particulars.pdf" data-doc="documents/auto-section-abs/abs-location-particulars.pdf" target="_blank" rel="noopener" style="--accent:#f59e0b">
               <div class="doc-card-thumb">
                 <span class="doc-preview"><img src="./documents/previews/abs-location-particulars.jpg" width="720" alt="Preview of ABS Location Particulars" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">04</span>
               </div>
               <div class="doc-card-body">
                 <h3>ABS Location Particulars</h3>
@@ -343,7 +285,6 @@
             <a class="doc-card has-preview" href="documents/auto-section-abs/abs-ct-rack-and-relay-rack-particulars.pdf" data-doc="documents/auto-section-abs/abs-ct-rack-and-relay-rack-particulars.pdf" target="_blank" rel="noopener" style="--accent:#f59e0b">
               <div class="doc-card-thumb">
                 <span class="doc-preview"><img src="./documents/previews/abs-ct-rack-and-relay-rack-particulars.jpg" width="720" alt="Preview of ABS CT Rack &amp; Relay Rack Particulars" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">05</span>
               </div>
               <div class="doc-card-body">
                 <h3>ABS CT Rack &amp; Relay Rack Particulars</h3>
@@ -358,7 +299,6 @@
             <a class="doc-card has-preview" href="documents/auto-section-abs/abs-interface-circuits.pdf" data-doc="documents/auto-section-abs/abs-interface-circuits.pdf" target="_blank" rel="noopener" style="--accent:#f59e0b">
               <div class="doc-card-thumb">
                 <span class="doc-preview"><img src="./documents/previews/abs-interface-circuits.jpg" width="720" alt="Preview of ABS Interface Circuits" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">06</span>
               </div>
               <div class="doc-card-body">
                 <h3>ABS Interface Circuits</h3>
@@ -373,7 +313,6 @@
             <a class="doc-card has-preview" href="documents/auto-section-abs/abs-data-logger-circuits.pdf" data-doc="documents/auto-section-abs/abs-data-logger-circuits.pdf" target="_blank" rel="noopener" style="--accent:#f59e0b">
               <div class="doc-card-thumb">
                 <span class="doc-preview"><img src="./documents/previews/abs-data-logger-circuits.jpg" width="720" alt="Preview of ABS Data Logger Circuits" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">07</span>
               </div>
               <div class="doc-card-body">
                 <h3>ABS Data Logger Circuits</h3>
@@ -385,24 +324,9 @@
                 <span class="doc-card-state" hidden>PDF coming soon</span>
               </div>
             </a>
-            <a class="doc-card" href="documents/auto-section-abs/ufsbi-system-configuration.pdf" data-doc="documents/auto-section-abs/ufsbi-system-configuration.pdf" target="_blank" rel="noopener" style="--accent:#f59e0b">
-              <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#f59e0b" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">UFSBI</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">08</span>
-              </div>
-              <div class="doc-card-body">
-                <h3>UFSBI System Configuration</h3>
-                <p>Port configurations, vital I/O bit allocation, and hardware settings for Universal Fail-Safe Block Interface (UFSBI) systems.</p>
-              </div>
-              <div class="doc-card-foot">
-                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
-                <span class="doc-card-state" hidden>PDF coming soon</span>
-              </div>
-            </a>
             <a class="doc-card has-preview" href="documents/auto-section-abs/nv-mux-circuits.pdf" data-doc="documents/auto-section-abs/nv-mux-circuits.pdf" target="_blank" rel="noopener" style="--accent:#f59e0b">
               <div class="doc-card-thumb">
                 <span class="doc-preview"><img src="./documents/previews/nv-mux-circuits.jpg" width="720" alt="Preview of Network / Voice Multiplexer (NV Mux) Circuits" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">09</span>
               </div>
               <div class="doc-card-body">
                 <h3>Network / Voice Multiplexer (NV Mux) Circuits</h3>
@@ -415,52 +339,65 @@
               </div>
             </a>
         </div>
-      </div>
-    </section>
-
-    <!-- Documents: Kavach (Indigenous ATP) -->
-    <section id="kavach" class="docs-section">
-      <div class="content">
-        <div class="docs-section-head">
-          <div class="docs-section-titles">
-            <span class="service-tag-chip tag-green">CATEGORY 03 • 7 DOCUMENTS</span>
-            <h2>Specialized Drawings in Kavach (Indigenous ATP System)</h2>
-            <p>Specialized drawing and data packages for the indigenous Automatic Train Protection system, from relay rooms to RFID tag engineering.</p>
+        <details class="docs-soon">
+          <summary><span class="docs-soon-title">Coming soon</span><span class="docs-soon-count">4 more documents</span><span class="docs-soon-chevron" aria-hidden="true"></span></summary>
+          <div class="docs-grid docs-grid-compact">
+            <a class="doc-card compact is-pending" data-doc="documents/auto-section-abs/auto-section-sip.pdf" aria-disabled="true" style="--accent:#f59e0b">
+              <span class="doc-mini" aria-hidden="true"><b>PDF</b></span>
+              <div class="doc-card-body">
+                <h3>Auto Section SIP</h3>
+                <p>Comprehensive layout plans depicting automatic signal spacing, braking distance calculations, aspect sequence controls, and cut-section demarcations.</p>
+              </div>
+              <div class="doc-card-foot">
+                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-state">PDF coming soon</span>
+              </div>
+            </a>
+            <a class="doc-card compact is-pending" data-doc="documents/auto-section-abs/abs-cable-route-plan.pdf" aria-disabled="true" style="--accent:#f59e0b">
+              <span class="doc-mini" aria-hidden="true"><b>PDF</b></span>
+              <div class="doc-card-body">
+                <h3>ABS Cable Route Plan</h3>
+                <p>Longitudinal trenching alignments detailing power, quad, signaling, and optical fiber cables running across mid-sections.</p>
+              </div>
+              <div class="doc-card-foot">
+                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-state">PDF coming soon</span>
+              </div>
+            </a>
+            <a class="doc-card compact is-pending" data-doc="documents/auto-section-abs/abs-cable-core-plan.pdf" aria-disabled="true" style="--accent:#f59e0b">
+              <span class="doc-mini" aria-hidden="true"><b>PDF</b></span>
+              <div class="doc-card-body">
+                <h3>ABS Cable Core Plan</h3>
+                <p>Core distribution, line drop calculations, and spare core assignments between mid-section apparatus cases and huts.</p>
+              </div>
+              <div class="doc-card-foot">
+                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-state">PDF coming soon</span>
+              </div>
+            </a>
+            <a class="doc-card compact is-pending" data-doc="documents/auto-section-abs/ufsbi-system-configuration.pdf" aria-disabled="true" style="--accent:#f59e0b">
+              <span class="doc-mini" aria-hidden="true"><b>PDF</b></span>
+              <div class="doc-card-body">
+                <h3>UFSBI System Configuration</h3>
+                <p>Port configurations, vital I/O bit allocation, and hardware settings for Universal Fail-Safe Block Interface (UFSBI) systems.</p>
+              </div>
+              <div class="doc-card-foot">
+                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-state">PDF coming soon</span>
+              </div>
+            </a>
           </div>
+        </details>
+    </div>
+    <div class="docs-panel" role="tabpanel" id="kavach" aria-labelledby="tab-kavach">
+        <div class="docs-panel-head">
+          <h2>Specialized Drawings in Kavach (Indigenous ATP System)</h2>
+          <p>Specialized drawing and data packages for the indigenous Automatic Train Protection system, from relay rooms to RFID tag engineering.</p>
         </div>
         <div class="docs-grid">
-            <a class="doc-card" href="documents/kavach/relay-room-floor-plan.pdf" data-doc="documents/kavach/relay-room-floor-plan.pdf" target="_blank" rel="noopener" style="--accent:#10b981">
-              <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#10b981" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">RELAY RM</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">01</span>
-              </div>
-              <div class="doc-card-body">
-                <h3>Relay Room Floor Plan</h3>
-                <p>Equipment layout diagrams detailing Stationary Kavach sub-rack cabinets, power supply units (SMPS/UPS), and cable entry points within relay rooms.</p>
-              </div>
-              <div class="doc-card-foot">
-                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
-                <span class="doc-card-state" hidden>PDF coming soon</span>
-              </div>
-            </a>
-            <a class="doc-card" href="documents/kavach/kavach-cable-route-plan.pdf" data-doc="documents/kavach/kavach-cable-route-plan.pdf" target="_blank" rel="noopener" style="--accent:#10b981">
-              <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#10b981" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">K-ROUTE</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">02</span>
-              </div>
-              <div class="doc-card-body">
-                <h3>Kavach Cable Route Plan</h3>
-                <p>Trackside cabling paths running to Stationary Kavach transponders, towers, and track interfaces.</p>
-              </div>
-              <div class="doc-card-foot">
-                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
-                <span class="doc-card-state" hidden>PDF coming soon</span>
-              </div>
-            </a>
             <a class="doc-card has-preview" href="documents/kavach/rfid-tag-tin-layouts.pdf" data-doc="documents/kavach/rfid-tag-tin-layouts.pdf" target="_blank" rel="noopener" style="--accent:#10b981">
               <div class="doc-card-thumb">
                 <span class="doc-preview"><img src="./documents/previews/rfid-tag-tin-layouts.jpg" width="720" alt="Preview of RFID Tag-TIN Layouts" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">03</span>
               </div>
               <div class="doc-card-body">
                 <h3>RFID Tag-TIN Layouts</h3>
@@ -475,7 +412,6 @@
             <a class="doc-card has-preview" href="documents/kavach/kavach-table-of-control.pdf" data-doc="documents/kavach/kavach-table-of-control.pdf" target="_blank" rel="noopener" style="--accent:#10b981">
               <div class="doc-card-thumb">
                 <span class="doc-preview"><img src="./documents/previews/kavach-table-of-control.jpg" width="720" alt="Preview of Kavach Table of Control (TOC)" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">04</span>
               </div>
               <div class="doc-card-body">
                 <h3>Kavach Table of Control (TOC)</h3>
@@ -490,7 +426,6 @@
             <a class="doc-card has-preview" href="documents/kavach/rfid-tag-data-engineering.pdf" data-doc="documents/kavach/rfid-tag-data-engineering.pdf" target="_blank" rel="noopener" style="--accent:#10b981">
               <div class="doc-card-thumb">
                 <span class="doc-preview"><img src="./documents/previews/rfid-tag-data-engineering.jpg" width="720" alt="Preview of RFID Tag Data Engineering" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">05</span>
               </div>
               <div class="doc-card-body">
                 <h3>RFID Tag Data Engineering</h3>
@@ -502,24 +437,9 @@
                 <span class="doc-card-state" hidden>PDF coming soon</span>
               </div>
             </a>
-            <a class="doc-card" href="documents/kavach/track-profile-tables.pdf" data-doc="documents/kavach/track-profile-tables.pdf" target="_blank" rel="noopener" style="--accent:#10b981">
-              <div class="doc-card-thumb">
-                <span class="doc-paper " style="--accent:#10b981" aria-hidden="true"><i class="doc-fold"></i><b class="doc-paper-code">PROFILE</b><span class="doc-paper-lines"></span><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">06</span>
-              </div>
-              <div class="doc-card-body">
-                <h3>Track Profile Tables</h3>
-                <p>Detailed alignment profiles recording gradients, horizontal curves, permanent speed restrictions (PSR), neutral sections, and level crossings.</p>
-              </div>
-              <div class="doc-card-foot">
-                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
-                <span class="doc-card-state" hidden>PDF coming soon</span>
-              </div>
-            </a>
             <a class="doc-card has-preview" href="documents/kavach/interface-circuits-and-contact-analysis.pdf" data-doc="documents/kavach/interface-circuits-and-contact-analysis.pdf" target="_blank" rel="noopener" style="--accent:#10b981">
               <div class="doc-card-thumb">
                 <span class="doc-preview"><img src="./documents/previews/interface-circuits-and-contact-analysis.jpg" width="720" alt="Preview of Interface Circuits &amp; Contact Analysis" loading="lazy"><em class="doc-paper-badge">PDF</em></span>
-                <span class="doc-card-idx">07</span>
               </div>
               <div class="doc-card-body">
                 <h3>Interface Circuits &amp; Contact Analysis</h3>
@@ -532,6 +452,45 @@
               </div>
             </a>
         </div>
+        <details class="docs-soon">
+          <summary><span class="docs-soon-title">Coming soon</span><span class="docs-soon-count">3 more documents</span><span class="docs-soon-chevron" aria-hidden="true"></span></summary>
+          <div class="docs-grid docs-grid-compact">
+            <a class="doc-card compact is-pending" data-doc="documents/kavach/relay-room-floor-plan.pdf" aria-disabled="true" style="--accent:#10b981">
+              <span class="doc-mini" aria-hidden="true"><b>PDF</b></span>
+              <div class="doc-card-body">
+                <h3>Relay Room Floor Plan</h3>
+                <p>Equipment layout diagrams detailing Stationary Kavach sub-rack cabinets, power supply units (SMPS/UPS), and cable entry points within relay rooms.</p>
+              </div>
+              <div class="doc-card-foot">
+                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-state">PDF coming soon</span>
+              </div>
+            </a>
+            <a class="doc-card compact is-pending" data-doc="documents/kavach/kavach-cable-route-plan.pdf" aria-disabled="true" style="--accent:#10b981">
+              <span class="doc-mini" aria-hidden="true"><b>PDF</b></span>
+              <div class="doc-card-body">
+                <h3>Kavach Cable Route Plan</h3>
+                <p>Trackside cabling paths running to Stationary Kavach transponders, towers, and track interfaces.</p>
+              </div>
+              <div class="doc-card-foot">
+                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-state">PDF coming soon</span>
+              </div>
+            </a>
+            <a class="doc-card compact is-pending" data-doc="documents/kavach/track-profile-tables.pdf" aria-disabled="true" style="--accent:#10b981">
+              <span class="doc-mini" aria-hidden="true"><b>PDF</b></span>
+              <div class="doc-card-body">
+                <h3>Track Profile Tables</h3>
+                <p>Detailed alignment profiles recording gradients, horizontal curves, permanent speed restrictions (PSR), neutral sections, and level crossings.</p>
+              </div>
+              <div class="doc-card-foot">
+                <span class="doc-card-action"><span class="doc-act-label">View PDF</span> <span class="doc-act-arrow">→</span></span>
+                <span class="doc-card-state">PDF coming soon</span>
+              </div>
+            </a>
+          </div>
+        </details>
+    </div>
       </div>
     </section>
 
@@ -595,6 +554,6 @@
       </div>
     </footer>
   </div>
-
+
 </body>
 </html>
