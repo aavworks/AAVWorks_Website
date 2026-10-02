@@ -1,17 +1,17 @@
 
     :root {
       /* Typography Families */
-      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      --font-display: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      --font-mono: 'Space Grotesk', -apple-system, monospace;
+      --font-main: 'Bahnschrift Condensed', 'Bahnschrift', 'Barlow Condensed', 'Arial Narrow', sans-serif;
+      --font-display: 'Bahnschrift Condensed', 'Bahnschrift', 'Barlow Condensed', 'Arial Narrow', sans-serif;
+      --font-mono: 'Bahnschrift Condensed', 'Bahnschrift', 'Barlow Condensed', 'Arial Narrow', sans-serif;
 
       /* UX RULE: 3 Primary Semantic Typography Tiers */
       --text-display: clamp(24px, 2.4vw, 32px); /* Tier 1: Page & Hero Titles */
       --text-heading: clamp(18px, 1.8vw, 22px); /* Tier 1b: Major Section Headings */
-      --text-title: 15px;                       /* Tier 1c: Card Titles & Dialog Headers */
-      --text-body: 13px;                        /* Tier 2: Primary Body, Inputs, Buttons */
-      --text-small: 11px;                       /* Tier 3: Metadata, Captions, Subtext */
-      --text-micro: 10px;                       /* Accent: Tracked Eyebrows & Badges */
+      --text-title: 17px;                       /* Tier 1c: Card Titles & Dialog Headers */
+      --text-body: 15px;                        /* Tier 2: Primary Body, Inputs, Buttons */
+      --text-small: 12.5px;                       /* Tier 3: Metadata, Captions, Subtext */
+      --text-micro: 11.5px;                       /* Accent: Tracked Eyebrows & Badges */
 
       /* Line Heights */
       --lh-tight: 1.2;
@@ -49,7 +49,7 @@
       font-family: var(--font-main);
       font-weight: 400;
       line-height: 1.55;
-      letter-spacing: -0.012em;
+      letter-spacing: 0;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       text-rendering: optimizeLegibility;
@@ -250,7 +250,7 @@
       font-size: 38px;
       font-weight: 600;
       line-height: 1.16;
-      letter-spacing: -1.4px;
+      letter-spacing: 0;
       color: #0d1721;
       margin-bottom: 20px;
     }
@@ -336,7 +336,7 @@
       font-weight: 600;
       color: #0c1822;
       line-height: 1;
-      letter-spacing: -0.6px;
+      letter-spacing: 0;
       font-variant-numeric: tabular-nums;
       display: flex;
       align-items: baseline;
@@ -482,7 +482,7 @@
       font-weight: 600;
       line-height: 1.35;
       color: #ffffff;
-      letter-spacing: -0.2px;
+      letter-spacing: 0;
       margin: 0;
     }
 
@@ -510,7 +510,7 @@
       margin-top: 14px;
       font-size: 38px;
       font-weight: 550;
-      letter-spacing: -1.4px;
+      letter-spacing: 0;
       line-height: 1.12;
       color: #0c1822;
     }
@@ -613,7 +613,7 @@
     .services-heading-wrap h2 {
       font-size: 38px;
       font-weight: 600;
-      letter-spacing: -1.4px;
+      letter-spacing: 0;
       line-height: 1.15;
       color: #0c1822;
       margin-top: 12px;
@@ -706,7 +706,7 @@
       font-weight: 300;
       color: #edf2f7;
       line-height: 1;
-      letter-spacing: -2px;
+      letter-spacing: 0;
       text-align: center;
       margin-bottom: -18px;
       user-select: none;
@@ -783,7 +783,7 @@
       color: #0c1822;
       margin: 0 0 10px;
       line-height: 1.25;
-      letter-spacing: -0.3px;
+      letter-spacing: 0;
     }
 
     .services-col p {
@@ -953,7 +953,7 @@
     .products-catalog-intro h2 {
       font-size: 38px;
       font-weight: 600;
-      letter-spacing: -1.3px;
+      letter-spacing: 0;
       line-height: 1.14;
       color: #0c1822;
       margin-top: 12px;
@@ -1115,7 +1115,7 @@
       font-weight: 600;
       color: #0c1822;
       margin: 0 0 3px;
-      letter-spacing: -0.4px;
+      letter-spacing: 0;
     }
 
     .catalog-card-content h4 {
@@ -1393,7 +1393,7 @@
     .proj-dash-title {
       font-size: 42px !important;
       font-weight: 600 !important;
-      letter-spacing: -1.3px !important;
+      letter-spacing: 0 !important;
       line-height: 1.14 !important;
       color: #0f172a;
       margin: 0;
@@ -1632,7 +1632,7 @@
       color: #ffffff !important;
       font-size: 24px !important;
       font-weight: 600 !important;
-      letter-spacing: -0.4px !important;
+      letter-spacing: 0 !important;
       line-height: 1.25 !important;
       margin: 0 0 8px 0 !important;
     }
@@ -2024,7 +2024,7 @@
     .news-main-title {
       font-size: 38px !important;
       font-weight: 600 !important;
-      letter-spacing: -1.2px !important;
+      letter-spacing: 0 !important;
       line-height: 1.15 !important;
       color: #0f172a;
       margin: 0 0 12px 0;
@@ -2186,7 +2186,7 @@
       font-weight: 550 !important;
       color: #0f172a;
       line-height: 1.35 !important;
-      letter-spacing: -0.3px !important;
+      letter-spacing: 0 !important;
       margin: 0 0 8px 0;
     }
 
@@ -2371,7 +2371,7 @@
     .clients-section .section-heading h2 {
       font-size: 38px;
       font-weight: 550;
-      letter-spacing: -1.3px;
+      letter-spacing: 0;
       line-height: 1.15;
       color: #0c1822;
       margin-top: 12px;
@@ -2492,7 +2492,7 @@
       font-size: 32px;
       font-weight: 550;
       color: #0c1822;
-      letter-spacing: -1px;
+      letter-spacing: 0;
       line-height: 1;
     }
 
@@ -2531,7 +2531,7 @@
     .cta-banner-text h2 {
       font-size: 36px;
       font-weight: 550;
-      letter-spacing: -1.3px;
+      letter-spacing: 0;
       line-height: 1.15;
       color: #ffffff;
     }
@@ -3075,7 +3075,7 @@ body {
 .page-header-clean h1 {
   font-size: 26px;
   font-weight: 600;
-  letter-spacing: -0.8px;
+  letter-spacing: 0;
   line-height: 1.2;
   color: var(--ink);
   margin-top: 8px;
@@ -3123,7 +3123,7 @@ h2,
 .product-detail-copy h2 {
   font-size: 23px !important;
   font-weight: 550 !important;
-  letter-spacing: -0.6px !important;
+  letter-spacing: 0 !important;
   line-height: 1.25 !important;
 }
 
@@ -3135,7 +3135,7 @@ h3,
 .testimonial-quote h3 {
   font-size: 15.5px !important;
   font-weight: 550 !important;
-  letter-spacing: -0.3px !important;
+  letter-spacing: 0 !important;
   line-height: 1.35 !important;
 }
 
@@ -3144,10 +3144,10 @@ h3,
   font-size: 38px !important;
   font-weight: 600 !important;
   line-height: 1.15 !important;
-  letter-spacing: -1px !important;
+  letter-spacing: 0 !important;
   margin-bottom: 10px !important;
   line-height: 1.16 !important;
-  letter-spacing: -1.3px !important;
+  letter-spacing: 0 !important;
   margin-bottom: 20px !important;
 }
 
@@ -3601,7 +3601,7 @@ p,
 
 .cta-banner-text h2 {
   font-size: 26px;
-  letter-spacing: -0.8px;
+  letter-spacing: 0;
 }
 
 .cta-banner-text p {
@@ -3929,7 +3929,7 @@ footer {
   font-weight: 650;
   color: var(--ink);
   line-height: 1.2;
-  letter-spacing: -0.8px;
+  letter-spacing: 0;
   margin: 0 0 8px;
   text-align: left;
 }
@@ -4148,7 +4148,7 @@ footer {
   font-size: 26px;
   font-weight: 600;
   color: #0f172a;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   margin-top: 8px;
 }
 
@@ -4365,7 +4365,7 @@ footer {
   font-weight: 600;
   color: #ffffff;
   margin-top: 10px;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .lifecycle-header p {
@@ -4534,7 +4534,7 @@ footer {
   font-size: clamp(28px, 3vw, 36px);
   font-weight: 600;
   color: #0f172a;
-  letter-spacing: -0.8px;
+  letter-spacing: 0;
   margin-bottom: 12px;
 }
 
@@ -4828,7 +4828,7 @@ footer {
   font-weight: 600;
   color: #0f172a;
   margin-top: 8px;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .comparison-matrix-wrap {
@@ -4966,7 +4966,7 @@ footer {
   color: #0f172a;
   line-height: 1.25;
   margin-bottom: 12px;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .landmark-desc {
@@ -5247,7 +5247,7 @@ footer {
   color: #0f172a;
   line-height: 1.3;
   margin-bottom: 14px;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
 }
 
 .featured-summary {
@@ -5508,7 +5508,7 @@ footer {
   font-weight: 600;
   color: #0f172a;
   margin: 12px 0 8px;
-  letter-spacing: -0.6px;
+  letter-spacing: 0;
 }
 
 .culture-main-desc {
@@ -5596,7 +5596,7 @@ footer {
   font-size: 26px;
   font-weight: 600;
   color: #0f172a;
-  letter-spacing: -0.5px;
+  letter-spacing: 0;
   margin-top: 6px;
 }
 
@@ -6004,7 +6004,7 @@ footer {
   font-weight: 600;
   color: #ffffff;
   margin-top: 10px;
-  letter-spacing: -0.6px;
+  letter-spacing: 0;
 }
 
 .matrix-main-title {
@@ -6012,7 +6012,7 @@ footer {
   font-weight: 600;
   color: #0f172a;
   margin-top: 10px;
-  letter-spacing: -0.6px;
+  letter-spacing: 0;
 }
 
 .lifecycle-main-desc,
@@ -6701,7 +6701,7 @@ footer {
   font-weight: 650;
   color: #09141f;
   line-height: 1.15;
-  letter-spacing: -0.8px;
+  letter-spacing: 0;
   margin-bottom: 8px;
 }
 
@@ -6988,7 +6988,7 @@ footer {
   color: #0f172a;
   margin-bottom: 2px;
   line-height: 1.2;
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
 }
 
 .office-address-text {
@@ -7083,7 +7083,7 @@ footer {
 }
 
 .handwritten-text {
-  font-family: 'Caveat', 'Patrick Hand', 'Comic Sans MS', cursive;
+  font-family: var(--font-main);
   font-size: 13.5px;
   color: #64748b;
   line-height: 1.25;
@@ -7130,7 +7130,7 @@ footer {
   font-weight: 650;
   color: #0f172a;
   margin-bottom: 3px;
-  letter-spacing: -0.4px;
+  letter-spacing: 0;
 }
 
 .cform-sub-desc {
@@ -7617,7 +7617,7 @@ footer {
 .cta-banner-text h2 {
   font-size: var(--text-heading);
   font-weight: 600;
-  letter-spacing: -0.6px;
+  letter-spacing: 0;
   line-height: var(--lh-tight);
 }
 
@@ -7632,21 +7632,21 @@ footer {
 h1, .hero-copy h1, .contact-hero-title, .page-header-clean h1 {
   font-size: var(--text-display) !important;
   font-weight: 600 !important;
-  letter-spacing: -0.8px !important;
+  letter-spacing: 0 !important;
   line-height: var(--lh-tight) !important;
 }
 
 h2, .section-title, .about-variant-copy h2, .timeline-main-title {
   font-size: var(--text-heading) !important;
   font-weight: 600 !important;
-  letter-spacing: -0.5px !important;
+  letter-spacing: 0 !important;
   line-height: var(--lh-snug) !important;
 }
 
 h3, .card-title, .office-city-title, .cform-main-title, .press-copy h3, .modal-header h3 {
   font-size: var(--text-title) !important;
   font-weight: 600 !important;
-  letter-spacing: -0.2px !important;
+  letter-spacing: 0 !important;
 }
 
 p, .lead, .hero-copy p, .subpage-arch-desc, .contact-hero-desc, .office-address-text, .cform-sub-desc {
