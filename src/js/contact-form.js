@@ -38,7 +38,7 @@ function initDirectConsultationForm() {
     const name = document.getElementById('cformName')?.value.trim();
     const email = document.getElementById('cformEmail')?.value.trim();
     const phone = document.getElementById('cformPhone')?.value.trim();
-    const subject = document.getElementById('cformSubject')?.value || 'S&T Circuit Design & Drawings';
+    const subject = 'S&T Circuit Design & Drawings'; // the only service offered, so there is no subject field
     const message = document.getElementById('cformMessage')?.value.trim();
     const submitBtn = document.getElementById('cformSubmitBtn');
     const successAlert = document.getElementById('cformSuccessAlert');
