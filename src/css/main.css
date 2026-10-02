@@ -9192,3 +9192,14 @@ html.page-home .proj-hero-card {
 html.page-home .news-carousel-section {
   padding: 24px 0 20px;
 }
+
+/* footer email link: same look as the other footer text */
+.footer-col a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+  color: var(--red);
+}
