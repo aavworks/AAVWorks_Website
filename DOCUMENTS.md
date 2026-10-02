@@ -4,7 +4,7 @@ Each card on the Products page links to a PDF in `public/documents/<folder>/<fil
 Drop a PDF in with the **exact file name** below and its card switches from
 **PDF coming soon** to **View PDF** automatically (see `src/js/documents.js`).
 To show a drawing preview on the card, also add `public/documents/previews/<file>.jpg` (720 px wide)
-and use the `has-preview` card markup in `products.html` (ask Claude, or copy an existing card).
+and use the `has-preview` card markup in `products.html` (copy an existing card in products.html).
 
 ## Core Railway Signaling & Interlocking Drawings
 
