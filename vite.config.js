@@ -1,7 +1,23 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
 
+
+// Serve /about as about.html in dev and preview, like GitHub Pages does in production (clean URLs)
+const cleanUrls = {
+  name: 'clean-urls',
+  configureServer(server) { server.middlewares.use(rewrite); },
+  configurePreviewServer(server) { server.middlewares.use(rewrite); },
+};
+function rewrite(req, _res, next) {
+  const [path, query = ''] = (req.url || '').split('?');
+  if (/^\/(about|services|products|projects|contact)\/?$/.test(path)) {
+    req.url = path.replace(/\/$/, '') + '.html' + (query ? '?' + query : '');
+  }
+  next();
+}
+
 export default defineConfig({
+  plugins: [cleanUrls],
   root: '.',
   base: './',
   build: {
