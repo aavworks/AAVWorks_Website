@@ -9,9 +9,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <script>try{var t=localStorage.getItem('aav-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
-  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
-  <script type="module" crossorigin src="./assets/theme-CaSbDHFN.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/theme-IySgDhjZ.css">
+  <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+  <script type="module" crossorigin src="./assets/theme-CyJQOpqY.js"></script>
+  <script type="module" crossorigin src="./assets/tabs-B1x0_1n8.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/theme-D6HQIHqL.css">
 </head>
 <body>
   <div class="page">
@@ -88,347 +89,251 @@
       </div>
     </section>
 
-    <!-- Discipline 01: Engineering -->
-    <section id="engineering" class="service-dash-section">
+    <!-- Disciplines (tabbed) -->
+    <section class="svc-browser" id="disciplines" data-tabs>
       <div class="content">
-        <div class="service-dash-card">
-          <div class="service-dash-header">
-            <div class="sdash-title-left">
+        <div class="docs-tabs" role="tablist" aria-label="Service disciplines">
+          <button type="button" class="docs-tab" role="tab" id="tab-engineering" aria-controls="engineering" aria-selected="true" tabindex="0" data-tab="engineering" style="--accent:#ed2832">
+            <span class="docs-tab-num">01</span>
+            <span class="docs-tab-label">Circuit Engineering</span>
+          </button>
+          <button type="button" class="docs-tab" role="tab" id="tab-commissioning" aria-controls="commissioning" aria-selected="false" tabindex="-1" data-tab="commissioning" style="--accent:#f59e0b">
+            <span class="docs-tab-num">02</span>
+            <span class="docs-tab-label">Turnkey Commissioning</span>
+          </button>
+          <button type="button" class="docs-tab" role="tab" id="tab-assurance" aria-controls="assurance" aria-selected="false" tabindex="-1" data-tab="assurance" style="--accent:#10b981">
+            <span class="docs-tab-num">03</span>
+            <span class="docs-tab-label">RAMS & Safety</span>
+          </button>
+          <button type="button" class="docs-tab" role="tab" id="tab-software" aria-controls="software" aria-selected="false" tabindex="-1" data-tab="software" style="--accent:#0ea5e9">
+            <span class="docs-tab-num">04</span>
+            <span class="docs-tab-label">Rail Automation</span>
+          </button>
+        </div>
+        <div class="svc-panel" role="tabpanel" id="engineering" aria-labelledby="tab-engineering" style="--accent:#ed2832">
+          <div class="svc-main">
+            <div class="svc-head">
               <span class="service-tag-chip tag-red">DISCIPLINE 01 • VITAL CIRCUITS</span>
-              <h2>Railway Signalling &amp; Circuit Engineering</h2>
+              <span class="svc-badge">RDSO &amp; IRS COMPLIANT</span>
             </div>
-            <div class="sdash-badge-right">
-              <span>RDSO &amp; IRS COMPLIANT</span>
-            </div>
-          </div>
-
-          <div class="service-dash-grid">
-            <!-- Col 1: Scope Details -->
-            <div class="sdash-col-scope">
-              <p class="sdash-lead-text">
-                Our proficient engineering team specializes in crafting fail-safe circuits that serve as the bedrock of modern Indian Railways infrastructure across all major electronic interlocking systems:
-              </p>
-              <div class="sdash-features-list">
-                <div class="sdash-feat-item">
-                  <div class="sfeat-icon red">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="2"></rect><line x1="9" y1="9" x2="15" y2="15"></line><line x1="15" y1="9" x2="9" y2="15"></line></svg>
-                  </div>
-                  <div>
-                    <h4>Electronic Interlocking (EI) Application Logic</h4>
-                    <p>Scheme plans, Selection tables (Table of Control), VDU Control layouts, Application Logic, and Interface Circuits for Medha, Kyosan, Siemens, and Ansaldo/Hitachi.</p>
-                  </div>
-                </div>
-
-                <div class="sdash-feat-item">
-                  <div class="sfeat-icon yellow">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-                  </div>
-                  <div>
-                    <h4>ATP &amp; Kavach / TCAS Modernization</h4>
-                    <p>Kavach / TCAS trackside integration, ETCS Level 1 &amp; 2 circuit design, PTC interfaces, and Communication-Based Train Control (CBTC) compatibility.</p>
-                  </div>
-                </div>
-
-                <div class="sdash-feat-item">
-                  <div class="sfeat-icon green">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  </div>
-                  <div>
-                    <h4>Independent Proof Consultancy (IV&amp;V)</h4>
-                    <p>Licensed IRSE / IRSTELO consultants who have completed 100+ Independent Verification and Validation activities across Indian Railways with zero rework.</p>
-                  </div>
+            <h2>Railway Signalling &amp; Circuit Engineering</h2>
+            <p class="svc-lead">Our proficient engineering team specializes in crafting fail-safe circuits that serve as the bedrock of modern Indian Railways infrastructure across all major electronic interlocking systems:</p>
+            <div class="svc-feats">
+              <div class="svc-feat">
+                <div class="sfeat-icon red"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="4" y="4" width="16" height="16" rx="2"></rect><line x1="9" y1="9" x2="15" y2="15"></line><line x1="15" y1="9" x2="9" y2="15"></line></svg></div>
+                <div>
+                  <h4>Electronic Interlocking (EI) Application Logic</h4>
+                  <p>Scheme plans, Selection tables (Table of Control), VDU Control layouts, Application Logic, and Interface Circuits for Medha, Kyosan, Siemens, and Ansaldo/Hitachi.</p>
                 </div>
               </div>
-            </div>
-
-            <!-- Col 2: Media Showcase -->
-            <div class="sdash-col-media">
-              <div class="sdash-img-frame">
-                <img src="./assets/images/proj_signalling_abs.jpg" alt="Railway Signalling Engineering" loading="lazy">
-                <div class="sdash-img-overlay">
-                  <span class="overlay-pill">Corridor Signalling</span>
-                  <div class="overlay-stats">
-                    <div><b>85+ RKM</b> ABS Line</div>
-                    <div><b>SIL-4</b> Safety</div>
-                  </div>
+              <div class="svc-feat">
+                <div class="sfeat-icon yellow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></div>
+                <div>
+                  <h4>ATP &amp; Kavach / TCAS Modernization</h4>
+                  <p>Kavach / TCAS trackside integration, ETCS Level 1 &amp; 2 circuit design, PTC interfaces, and Communication-Based Train Control (CBTC) compatibility.</p>
                 </div>
               </div>
-            </div>
-
-            <!-- Col 3: Deliverables Checklist -->
-            <div class="sdash-col-checklist">
-              <h4 class="checklist-heading">Verified Deliverables</h4>
-              <ul class="checklist-items">
-                <li><span class="check-icon">✓</span> Signal Interlocking Plan (SIP)</li>
-                <li><span class="check-icon">✓</span> Table of Control / Route Control Chart (TOC / RCC)</li>
-                <li><span class="check-icon">✓</span> Cable Route &amp; Cable Core Plans</li>
-                <li><span class="check-icon">✓</span> Track Bonding Plans</li>
-                <li><span class="check-icon">✓</span> Station Working Rule Diagrams (SWRD)</li>
-                <li><span class="check-icon">✓</span> As-Made Circuit Documentation</li>
-                <li><span class="check-icon">✓</span> Kavach &amp; ABS Drawing Packages</li>
-              </ul>
-              <div class="checklist-cta">
-                <a href="contact.html" class="round-button dark w-full">Inquire About Engineering <span class="arrow">→</span></a>
+              <div class="svc-feat">
+                <div class="sfeat-icon green"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"></polyline></svg></div>
+                <div>
+                  <h4>Independent Proof Consultancy (IV&amp;V)</h4>
+                  <p>Licensed IRSE / IRSTELO consultants who have completed 100+ Independent Verification and Validation activities across Indian Railways with zero rework.</p>
+                </div>
               </div>
             </div>
           </div>
+          <aside class="svc-side">
+            <div class="svc-img">
+              <img src="./assets/images/proj_signalling_abs.jpg" alt="Railway Signalling Engineering" loading="lazy">
+              <div class="svc-img-overlay">
+                <span class="overlay-pill">Corridor Signalling</span>
+                <div class="svc-stats">
+                <div><b>85+ RKM</b> ABS Line</div>
+                <div><b>SIL-4</b> Safety</div>
+                </div>
+              </div>
+            </div>
+            <h4 class="checklist-heading">Verified Deliverables</h4>
+            <ul class="svc-checks">
+              <li><span class="check-icon">✓</span> Signal Interlocking Plan (SIP)</li>
+              <li><span class="check-icon">✓</span> Table of Control / Route Control Chart (TOC / RCC)</li>
+              <li><span class="check-icon">✓</span> Cable Route &amp; Cable Core Plans</li>
+              <li><span class="check-icon">✓</span> Track Bonding Plans</li>
+              <li><span class="check-icon">✓</span> Station Working Rule Diagrams (SWRD)</li>
+              <li><span class="check-icon">✓</span> As-Made Circuit Documentation</li>
+              <li><span class="check-icon">✓</span> Kavach &amp; ABS Drawing Packages</li>
+            </ul>
+            <a href="contact.html" class="round-button dark w-full">Inquire About Engineering <span class="arrow">→</span></a>
+          </aside>
         </div>
-      </div>
-    </section>
-
-    <!-- Discipline 02: Turnkey Commissioning -->
-    <section id="commissioning" class="service-dash-section">
-      <div class="content">
-        <div class="service-dash-card">
-          <div class="service-dash-header">
-            <div class="sdash-title-left">
+        <div class="svc-panel" role="tabpanel" id="commissioning" aria-labelledby="tab-commissioning" style="--accent:#f59e0b">
+          <div class="svc-main">
+            <div class="svc-head">
               <span class="service-tag-chip tag-yellow">DISCIPLINE 02 • SITE EXECUTION</span>
-              <h2>Turnkey Projects &amp; Station Commissioning</h2>
+              <span class="svc-badge">350+ STATIONS COMMISSIONED</span>
             </div>
-            <div class="sdash-badge-right">
-              <span>350+ STATIONS COMMISSIONED</span>
-            </div>
-          </div>
-
-          <div class="service-dash-grid">
-            <div class="sdash-col-scope">
-              <p class="sdash-lead-text">
-                Our dedicated field deployment engineers have successfully installed, tested, and commissioned more than <strong>350+ stations</strong> across India under active rail traffic conditions:
-              </p>
-              <div class="sdash-features-list">
-                <div class="sdash-feat-item">
-                  <div class="sfeat-icon yellow">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
-                  </div>
-                  <div>
-                    <h4>Outdoor &amp; Indoor Gear Installation</h4>
-                    <p>Track circuits, digital axle counters (HASSDAC/MSDAC), electric point machines, signal units, and high-density relay racks with zero cabling clashes.</p>
-                  </div>
-                </div>
-
-                <div class="sdash-feat-item">
-                  <div class="sfeat-icon green">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-                  </div>
-                  <div>
-                    <h4>Site Acceptance Testing (SAT)</h4>
-                    <p>Rigorous live simulation, interlocking square sheets, route locking cross-checks, and parallel testing protocols without disrupting train operations.</p>
-                  </div>
-                </div>
-
-                <div class="sdash-feat-item">
-                  <div class="sfeat-icon red">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-                  </div>
-                  <div>
-                    <h4>Safety Audits &amp; CRS Regulatory Signoff</h4>
-                    <p>End-to-end preparation of Commissioner of Railway Safety (CRS) sanction dossiers, safety certification documentation, and final handover audits.</p>
-                  </div>
+            <h2>Turnkey Projects &amp; Station Commissioning</h2>
+            <p class="svc-lead">Our dedicated field deployment engineers have successfully installed, tested, and commissioned more than <strong>350+ stations</strong> across India under active rail traffic conditions:</p>
+            <div class="svc-feats">
+              <div class="svc-feat">
+                <div class="sfeat-icon yellow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg></div>
+                <div>
+                  <h4>Outdoor &amp; Indoor Gear Installation</h4>
+                  <p>Track circuits, digital axle counters (HASSDAC/MSDAC), electric point machines, signal units, and high-density relay racks with zero cabling clashes.</p>
                 </div>
               </div>
-            </div>
-
-            <div class="sdash-col-media">
-              <div class="sdash-img-frame">
-                <img src="./assets/images/proj_station_redev.jpg" alt="Station Installation &amp; Commissioning" loading="lazy">
-                <div class="sdash-img-overlay">
-                  <span class="overlay-pill">Turnkey Interlocking</span>
-                  <div class="overlay-stats">
-                    <div><b>350+</b> Stations</div>
-                    <div><b>100%</b> CRS Pass</div>
-                  </div>
+              <div class="svc-feat">
+                <div class="sfeat-icon green"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></div>
+                <div>
+                  <h4>Site Acceptance Testing (SAT)</h4>
+                  <p>Rigorous live simulation, interlocking square sheets, route locking cross-checks, and parallel testing protocols without disrupting train operations.</p>
                 </div>
               </div>
-            </div>
-
-            <div class="sdash-col-checklist">
-              <h4 class="checklist-heading">Commissioning Assets</h4>
-              <ul class="checklist-items">
-                <li><span class="check-icon">✓</span> Site Acceptance Test (SAT) Protocols</li>
-                <li><span class="check-icon">✓</span> Verified Square Sheets (Bell Test)</li>
-                <li><span class="check-icon">✓</span> Relay Rack &amp; Fuse Alarms Layouts</li>
-                <li><span class="check-icon">✓</span> Axle Counter Reset Circuits</li>
-                <li><span class="check-icon">✓</span> Emergency Operation Panels</li>
-                <li><span class="check-icon">✓</span> Turnkey CRS Handover Dossier</li>
-              </ul>
-              <div class="checklist-cta">
-                <a href="contact.html" class="round-button dark w-full">Engage Commissioning Team <span class="arrow">→</span></a>
+              <div class="svc-feat">
+                <div class="sfeat-icon red"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
+                <div>
+                  <h4>Safety Audits &amp; CRS Regulatory Signoff</h4>
+                  <p>End-to-end preparation of Commissioner of Railway Safety (CRS) sanction dossiers, safety certification documentation, and final handover audits.</p>
+                </div>
               </div>
             </div>
           </div>
+          <aside class="svc-side">
+            <div class="svc-img">
+              <img src="./assets/images/proj_station_redev.jpg" alt="Station Installation &amp; Commissioning" loading="lazy">
+              <div class="svc-img-overlay">
+                <span class="overlay-pill">Turnkey Interlocking</span>
+                <div class="svc-stats">
+                <div><b>350+</b> Stations</div>
+                <div><b>100%</b> CRS Pass</div>
+                </div>
+              </div>
+            </div>
+            <h4 class="checklist-heading">Commissioning Assets</h4>
+            <ul class="svc-checks">
+              <li><span class="check-icon">✓</span> Site Acceptance Test (SAT) Protocols</li>
+              <li><span class="check-icon">✓</span> Verified Square Sheets (Bell Test)</li>
+              <li><span class="check-icon">✓</span> Relay Rack &amp; Fuse Alarms Layouts</li>
+              <li><span class="check-icon">✓</span> Axle Counter Reset Circuits</li>
+              <li><span class="check-icon">✓</span> Emergency Operation Panels</li>
+              <li><span class="check-icon">✓</span> Turnkey CRS Handover Dossier</li>
+            </ul>
+            <a href="contact.html" class="round-button dark w-full">Engage Commissioning Team <span class="arrow">→</span></a>
+          </aside>
         </div>
-      </div>
-    </section>
-
-    <!-- Discipline 03: RAMS & Safety -->
-    <section id="assurance" class="service-dash-section">
-      <div class="content">
-        <div class="service-dash-card">
-          <div class="service-dash-header">
-            <div class="sdash-title-left">
+        <div class="svc-panel" role="tabpanel" id="assurance" aria-labelledby="tab-assurance" style="--accent:#10b981">
+          <div class="svc-main">
+            <div class="svc-head">
               <span class="service-tag-chip tag-green">DISCIPLINE 03 • SYSTEM ASSURANCE</span>
-              <h2>System Assurance &amp; RAMS Management</h2>
+              <span class="svc-badge">CENELEC EN 50126/128/129</span>
             </div>
-            <div class="sdash-badge-right">
-              <span>CENELEC EN 50126/128/129</span>
-            </div>
-          </div>
-
-          <div class="service-dash-grid">
-            <div class="sdash-col-scope">
-              <p class="sdash-lead-text">
-                RAMS (Reliability, Availability, Maintainability, Safety) management stands at the core of our assurance engineering, ensuring fail-safe rail operations to international benchmarks:
-              </p>
-              <div class="sdash-features-list">
-                <div class="sdash-feat-item">
-                  <div class="sfeat-icon green">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-                  </div>
-                  <div>
-                    <h4>CENELEC European Rail Standards Compliance</h4>
-                    <p>EN 50126 (RAMS Lifecycle Process), EN 50128 (Software for Railway Control &amp; Protection), and EN 50129 (Safety-Related Electronic Signalling Systems).</p>
-                  </div>
-                </div>
-
-                <div class="sdash-feat-item">
-                  <div class="sfeat-icon red">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
-                  </div>
-                  <div>
-                    <h4>Hazard Analysis &amp; Safety Cases</h4>
-                    <p>Preliminary Hazard Analysis (PHA), FMECA, Fault Tree Analysis (FTA), Hazard Logs, and preparation of rigorous SIL-4 Safety Cases for independent safety auditors.</p>
-                  </div>
-                </div>
-
-                <div class="sdash-feat-item">
-                  <div class="sfeat-icon blue">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-                  </div>
-                  <div>
-                    <h4>Proven Global MNC Engagements</h4>
-                    <p>Platform Screen Door (PSD) SIL 2 Safety Documentation for BEL, Eastern Dedicated Freight Corridor (EDFC) verification for Siemens, and multi-OEM projects.</p>
-                  </div>
+            <h2>System Assurance &amp; RAMS Management</h2>
+            <p class="svc-lead">RAMS (Reliability, Availability, Maintainability, Safety) management stands at the core of our assurance engineering, ensuring fail-safe rail operations to international benchmarks:</p>
+            <div class="svc-feats">
+              <div class="svc-feat">
+                <div class="sfeat-icon green"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
+                <div>
+                  <h4>CENELEC European Rail Standards Compliance</h4>
+                  <p>EN 50126 (RAMS Lifecycle Process), EN 50128 (Software for Railway Control &amp; Protection), and EN 50129 (Safety-Related Electronic Signalling Systems).</p>
                 </div>
               </div>
-            </div>
-
-            <div class="sdash-col-media">
-              <div class="sdash-img-frame">
-                <img src="./assets/images/proj_viaduct_infra.jpg" alt="Railway System Assurance Viaduct" loading="lazy">
-                <div class="sdash-img-overlay">
-                  <span class="overlay-pill">System Assurance</span>
-                  <div class="overlay-stats">
-                    <div><b>SIL-4</b> Certified</div>
-                    <div><b>Zero</b> Hazard Slips</div>
-                  </div>
+              <div class="svc-feat">
+                <div class="sfeat-icon red"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg></div>
+                <div>
+                  <h4>Hazard Analysis &amp; Safety Cases</h4>
+                  <p>Preliminary Hazard Analysis (PHA), FMECA, Fault Tree Analysis (FTA), Hazard Logs, and preparation of rigorous SIL-4 Safety Cases for independent safety auditors.</p>
                 </div>
               </div>
-            </div>
-
-            <div class="sdash-col-checklist">
-              <h4 class="checklist-heading">Safety Artefacts</h4>
-              <ul class="checklist-items">
-                <li><span class="check-icon">✓</span> RAMS Management Plan (RMP)</li>
-                <li><span class="check-icon">✓</span> Hazard Log &amp; Tracking Matrix (HTM)</li>
-                <li><span class="check-icon">✓</span> FMECA &amp; Quantitative Fault Trees</li>
-                <li><span class="check-icon">✓</span> Software Verification &amp; Validation (V&amp;V)</li>
-                <li><span class="check-icon">✓</span> Safety Case Reports (Generic &amp; Specific)</li>
-                <li><span class="check-icon">✓</span> Independent Safety Assessment (ISA) Pack</li>
-              </ul>
-              <div class="checklist-cta">
-                <a href="contact.html" class="round-button dark w-full">Consult RAMS Specialists <span class="arrow">→</span></a>
+              <div class="svc-feat">
+                <div class="sfeat-icon blue"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
+                <div>
+                  <h4>Proven Global MNC Engagements</h4>
+                  <p>Platform Screen Door (PSD) SIL 2 Safety Documentation for BEL, Eastern Dedicated Freight Corridor (EDFC) verification for Siemens, and multi-OEM projects.</p>
+                </div>
               </div>
             </div>
           </div>
+          <aside class="svc-side">
+            <div class="svc-img">
+              <img src="./assets/images/proj_viaduct_infra.jpg" alt="Railway System Assurance Viaduct" loading="lazy">
+              <div class="svc-img-overlay">
+                <span class="overlay-pill">System Assurance</span>
+                <div class="svc-stats">
+                <div><b>SIL-4</b> Certified</div>
+                <div><b>Zero</b> Hazard Slips</div>
+                </div>
+              </div>
+            </div>
+            <h4 class="checklist-heading">Safety Artefacts</h4>
+            <ul class="svc-checks">
+              <li><span class="check-icon">✓</span> RAMS Management Plan (RMP)</li>
+              <li><span class="check-icon">✓</span> Hazard Log &amp; Tracking Matrix (HTM)</li>
+              <li><span class="check-icon">✓</span> FMECA &amp; Quantitative Fault Trees</li>
+              <li><span class="check-icon">✓</span> Software Verification &amp; Validation (V&amp;V)</li>
+              <li><span class="check-icon">✓</span> Safety Case Reports (Generic &amp; Specific)</li>
+              <li><span class="check-icon">✓</span> Independent Safety Assessment (ISA) Pack</li>
+            </ul>
+            <a href="contact.html" class="round-button dark w-full">Consult RAMS Specialists <span class="arrow">→</span></a>
+          </aside>
         </div>
-      </div>
-    </section>
-
-    <!-- Discipline 04: Rail Software & Automation -->
-    <section id="software" class="service-dash-section">
-      <div class="content">
-        <div class="service-dash-card">
-          <div class="service-dash-header">
-            <div class="sdash-title-left">
+        <div class="svc-panel" role="tabpanel" id="software" aria-labelledby="tab-software" style="--accent:#0ea5e9">
+          <div class="svc-main">
+            <div class="svc-head">
               <span class="service-tag-chip tag-blue">DISCIPLINE 04 • SOFTWARE TOOLS</span>
-              <h2>Rail Software &amp; Signalling Automation</h2>
+              <span class="svc-badge">IN-HOUSE DIGITAL TOOLS</span>
             </div>
-            <div class="sdash-badge-right">
-              <span>IN-HOUSE DIGITAL TOOLS</span>
-            </div>
-          </div>
-
-          <div class="service-dash-grid">
-            <div class="sdash-col-scope">
-              <p class="sdash-lead-text">
-                We develop proprietary software applications that eliminate tedious manual drafting errors, accelerate Table of Control verifications, and stress-test dense railway corridors:
-              </p>
-              <div class="sdash-features-list">
-                <div class="sdash-feat-item">
-                  <div class="sfeat-icon blue">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-                  </div>
-                  <div>
-                    <h4>SENTRIS (Automated Factory Testing Engine)</h4>
-                    <p>Automated Factory Acceptance Testing (A-FAT) application ensuring zero-error validation of Electronic Interlocking data tables in under 4 hours.</p>
-                  </div>
-                </div>
-
-                <div class="sdash-feat-item">
-                  <div class="sfeat-icon red">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-                  </div>
-                  <div>
-                    <h4>SENS Interactive Traffic Simulator</h4>
-                    <p>Micro-simulation tool allowing interlocking designers and railway dispatchers to stress-test timetable headways, route locks, and incident responses.</p>
-                  </div>
-                </div>
-
-                <div class="sdash-feat-item">
-                  <div class="sfeat-icon yellow">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
-                  </div>
-                  <div>
-                    <h4>AutoCAD Logic Compiler (Algen &amp; L2L)</h4>
-                    <p>Transforms station yard schematics into certified Boolean logic equations automatically, cutting manual drafting cycle times by up to 60%.</p>
-                  </div>
+            <h2>Rail Software &amp; Signalling Automation</h2>
+            <p class="svc-lead">We develop proprietary software applications that eliminate tedious manual drafting errors, accelerate Table of Control verifications, and stress-test dense railway corridors:</p>
+            <div class="svc-feats">
+              <div class="svc-feat">
+                <div class="sfeat-icon blue"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
+                <div>
+                  <h4>SENTRIS (Automated Factory Testing Engine)</h4>
+                  <p>Automated Factory Acceptance Testing (A-FAT) application ensuring zero-error validation of Electronic Interlocking data tables in under 4 hours.</p>
                 </div>
               </div>
-            </div>
-
-            <div class="sdash-col-media">
-              <div class="sdash-img-frame">
-                <img src="./assets/images/about_tracks.jpg" alt="Railway Signalling Automation Software" loading="lazy">
-                <div class="sdash-img-overlay">
-                  <span class="overlay-pill">Software Suite</span>
-                  <div class="overlay-stats">
-                    <div><b>&lt; 4 Hours</b> A-FAT</div>
-                    <div><b>60%</b> Faster</div>
-                  </div>
+              <div class="svc-feat">
+                <div class="sfeat-icon red"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></div>
+                <div>
+                  <h4>SENS Interactive Traffic Simulator</h4>
+                  <p>Micro-simulation tool allowing interlocking designers and railway dispatchers to stress-test timetable headways, route locks, and incident responses.</p>
                 </div>
               </div>
-            </div>
-
-            <div class="sdash-col-checklist">
-              <h4 class="checklist-heading">Digital Capabilities</h4>
-              <ul class="checklist-items">
-                <li><span class="check-icon">✓</span> Automated Table of Control Validator</li>
-                <li><span class="check-icon">✓</span> Multi-OEM Interlocking Logic Support</li>
-                <li><span class="check-icon">✓</span> Interactive VDU Dispatcher Consoles</li>
-                <li><span class="check-icon">✓</span> GIS Optical Fiber Cable Tracker</li>
-                <li><span class="check-icon">✓</span> Boolean Equation Auto-Generator</li>
-                <li><span class="check-icon">✓</span> RDSO Formatted Compliance Reports</li>
-              </ul>
-              <div class="checklist-cta">
-                <a href="products.html" class="round-button dark w-full">Explore Product Catalog <span class="arrow">→</span></a>
+              <div class="svc-feat">
+                <div class="sfeat-icon yellow"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></div>
+                <div>
+                  <h4>AutoCAD Logic Compiler (Algen &amp; L2L)</h4>
+                  <p>Transforms station yard schematics into certified Boolean logic equations automatically, cutting manual drafting cycle times by up to 60%.</p>
+                </div>
               </div>
             </div>
           </div>
+          <aside class="svc-side">
+            <div class="svc-img">
+              <img src="./assets/images/about_tracks.jpg" alt="Railway Signalling Automation Software" loading="lazy">
+              <div class="svc-img-overlay">
+                <span class="overlay-pill">Software Suite</span>
+                <div class="svc-stats">
+                <div><b>&lt; 4 Hours</b> A-FAT</div>
+                <div><b>60%</b> Faster</div>
+                </div>
+              </div>
+            </div>
+            <h4 class="checklist-heading">Digital Capabilities</h4>
+            <ul class="svc-checks">
+              <li><span class="check-icon">✓</span> Automated Table of Control Validator</li>
+              <li><span class="check-icon">✓</span> Multi-OEM Interlocking Logic Support</li>
+              <li><span class="check-icon">✓</span> Interactive VDU Dispatcher Consoles</li>
+              <li><span class="check-icon">✓</span> GIS Optical Fiber Cable Tracker</li>
+              <li><span class="check-icon">✓</span> Boolean Equation Auto-Generator</li>
+              <li><span class="check-icon">✓</span> RDSO Formatted Compliance Reports</li>
+            </ul>
+            <a href="products.html" class="round-button dark w-full">Explore Product Catalog <span class="arrow">→</span></a>
+          </aside>
         </div>
       </div>
     </section>
 
-    <!-- 5-Phase Engineering Quality Lifecycle -->
     <section class="lifecycle-flow-section">
       <div class="content">
         <div class="lifecycle-header-center">
@@ -544,6 +449,6 @@
       </div>
     </footer>
   </div>
-
+
 </body>
 </html>
