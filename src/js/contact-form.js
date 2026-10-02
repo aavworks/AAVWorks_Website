@@ -4,10 +4,11 @@
  * - Real-time form validation & digit mask
  * - Live character counter (0/1000)
  * - Interactive India SVG Map state & marker sync
- * - Drag-and-drop file upload with preview and removal
- * - LocalStorage audit preservation
+ * - Real email delivery through Web3Forms (see contact-config.js), mailto: fallback without a key
  * - Inline feedback & global toast notifications
  */
+
+import { CONTACT_CONFIG } from './contact-config.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   initDirectConsultationForm();
@@ -31,7 +32,7 @@ function initDirectConsultationForm() {
     });
   }
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const name = document.getElementById('cformName')?.value.trim();
@@ -39,10 +40,8 @@ function initDirectConsultationForm() {
     const phone = document.getElementById('cformPhone')?.value.trim();
     const subject = document.getElementById('cformSubject')?.value || 'S&T Circuit Design & Drawings';
     const message = document.getElementById('cformMessage')?.value.trim();
-    const fileInput = document.getElementById('cformFileInput');
     const submitBtn = document.getElementById('cformSubmitBtn');
     const successAlert = document.getElementById('cformSuccessAlert');
-    const ticketIdElem = document.getElementById('successTicketId');
 
     // Validation checks
     if (!name || name.length < 2) {
@@ -70,6 +69,24 @@ function initDirectConsultationForm() {
       return;
     }
 
+    // Spam trap: real visitors never tick this hidden box
+    if (document.getElementById('cformBotcheck')?.checked) return;
+
+    const enquiry = { name, email, phone, subject, message };
+
+    // No access key configured yet: hand the enquiry to the visitor's email app instead of losing it
+    if (!CONTACT_CONFIG.accessKey) {
+      const body = `Name: ${name}
+Email: ${email}
+Phone: ${phone}
+Enquiry type: ${subject}
+
+${message}`;
+      window.location.href = `mailto:${CONTACT_CONFIG.recipientEmail}?subject=${encodeURIComponent('AAV Works enquiry: ' + subject)}&body=${encodeURIComponent(body)}`;
+      showToast(`Opening your email app. If nothing opens, please write to ${CONTACT_CONFIG.recipientEmail}.`, 'info');
+      return;
+    }
+
     // Submit state
     const originalContent = submitBtn.innerHTML;
     submitBtn.disabled = true;
@@ -78,58 +95,63 @@ function initDirectConsultationForm() {
         <circle cx="12" cy="12" r="10" stroke-opacity="0.25"></circle>
         <path d="M12 2a10 10 0 0 1 10 10" stroke-linecap="round"></path>
       </svg>
-      <span>Logging Consultation Request...</span>
+      <span>Sending your enquiry...</span>
     `;
+    successAlert && (successAlert.style.display = 'none');
 
-    // Simulated network transmission & ticket creation
-    setTimeout(() => {
-      const ticketNum = 'AAV-' + Math.floor(100000 + Math.random() * 900000);
-      const attachmentName = fileInput?.files[0]?.name || null;
-      const attachmentSize = fileInput?.files[0]?.size ? (fileInput.files[0].size / 1024 / 1024).toFixed(2) + ' MB' : null;
-
-      const inquiryRecord = {
-        ticket: ticketNum,
-        name,
-        email,
-        phone,
-        subject,
-        message,
-        attachmentName,
-        attachmentSize,
-        submittedAt: new Date().toISOString()
-      };
-
-      try {
-        const history = JSON.parse(localStorage.getItem('aav_consultation_inquiries') || '[]');
-        history.unshift(inquiryRecord);
-        localStorage.setItem('aav_consultation_inquiries', JSON.stringify(history));
-      } catch (err) {
-        console.warn('LocalStorage unavailable', err);
-      }
-
-      // Reset button
+    try {
+      await sendEnquiry(enquiry);
+    } catch (err) {
+      console.warn('Enquiry could not be sent', err);
       submitBtn.disabled = false;
       submitBtn.innerHTML = originalContent;
+      showToast(`Sorry, your enquiry could not be sent. Please try again, or email us at ${CONTACT_CONFIG.recipientEmail}.`, 'error');
+      return;
+    }
 
-      // Show inline confirmation
-      if (successAlert) {
-        if (ticketIdElem) ticketIdElem.textContent = `#${ticketNum}`;
-        successAlert.style.display = 'flex';
-        successAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      }
+    submitBtn.disabled = false;
+    submitBtn.innerHTML = originalContent;
 
-      // Reset form controls
-      form.reset();
-      const charCounter = document.getElementById('cformCharCurrent');
-      if (charCounter) charCounter.textContent = '0';
+    if (successAlert) {
+      successAlert.style.display = 'flex';
+      successAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
 
-      // Reset file upload view
-      resetFileUpload();
+    form.reset();
+    const charCounter = document.getElementById('cformCharCurrent');
+    if (charCounter) charCounter.textContent = '0';
 
-      // Show global celebration toast
-      showToast(`Thank you, ${name}! Your consultation request [Ticket: #${ticketNum}] has been registered with AAV Works S&T Directorate.`, 'success');
-    }, 900);
+    showToast(`Thank you, ${name}! Your enquiry has been sent to AAV Works. We will get back to you shortly.`, 'success');
   });
+}
+
+/**
+ * POST the enquiry to Web3Forms, which emails it to the client. Throws if it was not accepted.
+ */
+async function sendEnquiry({ name, email, phone, subject, message }) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), CONTACT_CONFIG.timeoutMs);
+  try {
+    const res = await fetch(CONTACT_CONFIG.endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify({
+        access_key: CONTACT_CONFIG.accessKey,
+        subject: `AAV Works website enquiry: ${subject}`,
+        from_name: 'AAV Works Website',
+        name,
+        email, // also used as the reply-to address
+        phone,
+        enquiry_type: subject,
+        message,
+      }),
+      signal: controller.signal,
+    });
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok || !data.success) throw new Error(data.message || `HTTP ${res.status}`);
+  } finally {
+    clearTimeout(timer);
+  }
 }
 
 /**
@@ -300,11 +322,11 @@ export function showToast(message, type = 'info') {
   }
 
   const toast = document.createElement('div');
-  toast.className = `toast toast-\${type}`;
+  toast.className = `toast toast-${type}`;
   toast.style.borderLeft = type === 'error' ? '4px solid #ed2832' : '4px solid #10b981';
 
   toast.innerHTML = `
-    <div style="flex-grow: 1; line-height: 1.45; font-size: 13px; font-weight: 550;">\${message}</div>
+    <div style="flex-grow: 1; line-height: 1.45; font-size: 13px; font-weight: 550;">${message}</div>
     <button style="background: none; border: none; color: #94A3B8; cursor: pointer; font-size: 1.2rem; padding: 0 4px; line-height: 1;" aria-label="Close">&times;</button>
   `;
 

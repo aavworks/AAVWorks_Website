@@ -1497,6 +1497,10 @@ html[data-theme="dark"] .docs-soon {
   border: 1px solid #38383d !important;
   background: #1f1f22 !important;
 }
+html[data-theme="dark"] .cform-attach-note {
+  border: 1px dashed #38383d !important;
+  color: #c9c9d0 !important;
+}
 /* ---- from src/css/animations.css ---- */
 html[data-theme="dark"] .speed-line {
   background: linear-gradient(90deg, transparent, #1f1f22, transparent) !important;

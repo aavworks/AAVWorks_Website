@@ -8453,3 +8453,19 @@ small, .meta, .date, .pincode, .footer-bottom, .cmetric-label {
 .docs-soon > .docs-grid {
   padding: 4px 16px 16px;
 }
+
+/* Contact form: attachments are sent by email */
+.cform-attach-note {
+  padding: 12px 14px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 10px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: #475569;
+}
+
+.cform-attach-note a {
+  color: var(--red);
+  font-weight: 650;
+  text-decoration: none;
+}
