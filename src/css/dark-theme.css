@@ -1541,6 +1541,22 @@ html[data-theme="dark"][data-theme="dark"] .to-top {
   background: #2b2b2f !important;
   border-color: #38383d !important;
 }
+html[data-theme="dark"].page-home .about-variant {
+  background: radial-gradient(760px 340px at 88% 8%, rgba(237, 40, 50, 0.055), transparent 70%),
+    radial-gradient(700px 360px at 8% 96%, rgba(16, 185, 129, 0.07), transparent 70%),
+    radial-gradient(520px 260px at 60% 100%, rgba(245, 158, 11, 0.06), transparent 70%),
+    #1f1f22 !important;
+}
+html[data-theme="dark"] .about-expertise {
+  border-top: 1px solid #38383d !important;
+}
+html[data-theme="dark"] .about-expertise-list li {
+  border: 1px solid #38383d !important;
+  background: rgba(31, 31, 34, 0.85) !important;
+}
+html[data-theme="dark"] .about-expertise-list li:hover {
+  border-color: #38383d !important;
+}
 /* ---- from src/css/animations.css ---- */
 html[data-theme="dark"] .speed-line {
   background: linear-gradient(90deg, transparent, #1f1f22, transparent) !important;
