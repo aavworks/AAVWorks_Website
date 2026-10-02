@@ -471,7 +471,7 @@ html[data-theme="dark"] body {
   background: #1f1f22 !important;
 }
 html[data-theme="dark"] .site-header {
-  background: #1f1f22 !important;
+  background: rgba(31, 31, 34, 0.96) !important;
   border-bottom: 1px solid #38383d !important;
 }
 html[data-theme="dark"] .site-header .nav a {
@@ -1500,6 +1500,21 @@ html[data-theme="dark"] .docs-soon {
 html[data-theme="dark"] .cform-attach-note {
   border: 1px dashed #38383d !important;
   color: #c9c9d0 !important;
+}
+html[data-theme="dark"] .svc-browser {
+  background: #19191c !important;
+  border-bottom: 1px solid #38383d !important;
+}
+html[data-theme="dark"] .svc-panel {
+  border: 1px solid #38383d !important;
+  background: #1f1f22 !important;
+}
+html[data-theme="dark"] .svc-feat {
+  border: 1px solid #38383d !important;
+  background: #19191c !important;
+}
+html[data-theme="dark"] .svc-img {
+  background: #2b2b2f !important;
 }
 /* ---- from src/css/animations.css ---- */
 html[data-theme="dark"] .speed-line {
