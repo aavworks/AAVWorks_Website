@@ -11,7 +11,7 @@
  * enquiry is never silently lost.
  */
 export const CONTACT_CONFIG = {
-  accessKey: '',
+  accessKey: '139a1399-6b2d-4a46-95fc-93af360a4741',
   recipientEmail: 'info.aavworks@gmail.com',
   endpoint: 'https://api.web3forms.com/submit',
   timeoutMs: 15000,
