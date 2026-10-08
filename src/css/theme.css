@@ -147,3 +147,6 @@ html[data-theme="dark"] body .service-tag-chip.tag-blue { color: #7dd3fc !import
   .theme-toggle { transition: none; }
   .theme-toggle:hover { transform: none; }
 }
+
+html[data-theme="dark"] body .client-tile .client-mono { color: #ffffff !important; }
+html[data-theme="dark"] body .client-tile .client-name { color: #19191c !important; }
