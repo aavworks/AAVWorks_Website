@@ -10088,3 +10088,21 @@ html.page-home .news-carousel-section {
   opacity: 1 !important;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
 }
+
+/* client tiles with a real logo: same footprint as the monogram tiles */
+.client-logo {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 52px;
+}
+
+.client-logo img {
+  max-width: 120px;
+  max-height: 52px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.client-tile .client-mono { margin: 4px 0; }
