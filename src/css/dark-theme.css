@@ -1604,6 +1604,9 @@ html[data-theme="dark"] .team-photo {
 html[data-theme="dark"] .team-tag {
   background: color-mix(in srgb, var(--team-accent) 12%, #1f1f22) !important;
 }
+html[data-theme="dark"] .team-photo {
+  background: #2a2a2e !important;
+}
 /* ---- from src/css/animations.css ---- */
 html[data-theme="dark"] .speed-line {
   background: linear-gradient(90deg, transparent, #1f1f22, transparent) !important;
