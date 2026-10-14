@@ -16,3 +16,5 @@ export const CONTACT_CONFIG = {
   endpoint: 'https://api.web3forms.com/submit',
   timeoutMs: 15000,
 };
+
+
