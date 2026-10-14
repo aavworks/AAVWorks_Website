@@ -1,0 +1,182 @@
+[
+ {
+  "id": "core",
+  "folder": "core-signaling",
+  "accent": "#ed2832",
+  "short": "Core Signaling & Interlocking",
+  "title": "Core Railway Signaling & Interlocking Drawings",
+  "blurb": "Complete drawing packages for conventional yard signaling and electronic interlocking, from estimation to as-made records.",
+  "items": [
+   {
+    "slug": "signal-interlocking-plan",
+    "title": "Signal Interlocking Plan (SIP)",
+    "desc": "Station yard Signal Interlocking Plan for Renigunta Jn. showing the main, loop and goods lines, signal and level-crossing positions, with the track sections table, supervisory track sections table, aspect sequence chart, system of block working and C.R.S. approval block."
+   },
+   {
+    "slug": "table-of-control-route-control-chart",
+    "title": "Table of Control / Route Control Chart (TOC / RCC)",
+    "desc": "Route Control Chart listing, for every signal and route, the destination, points set and locked, track circuits to be clear, other controls, approach locking, back locking by track circuit, and overlap and release conditions."
+   },
+   {
+    "slug": "cable-route-and-cable-core-plans",
+    "title": "Cable Route & Cable Core Plans",
+    "desc": "Cable core plan for the Challavaripalle to Tadipatri ABS section: the ABS hut and location boxes LB5 to LB18, core allocation to the signals (AS / AN series) and the level crossing gate lodges (LC 159 and 160)."
+   },
+   {
+    "slug": "track-bonding-plans",
+    "title": "Track Bonding Plans",
+    "desc": "Track bonding plan for a station yard between SPE (km 8.13) and DVR (km 7.45): up and down lines, points and crossovers, track circuit numbers, TF / TR bonding positions and the positive / negative return legend."
+   },
+   {
+    "slug": "location-box-particulars",
+    "title": "Location Box Particulars",
+    "desc": "Location box wiring sheets for signal units (for example the S25 advance starter and S1 home signal boxes), showing the signal relays, terminal rows and 12C cable terminations to the relay room."
+   },
+   {
+    "slug": "station-working-rule-diagrams",
+    "title": "Station Working Rule Diagrams (SWRD)",
+    "desc": "Station working diagram for an automatic block section with electronic interlocking: up and down main and loop lines, aspect sequence chart, and track section and supervisory track section tables."
+   },
+   {
+    "slug": "earthing-and-surge-protection-diagrams",
+    "title": "Earthing & Surge Protection Diagrams",
+    "desc": "Earthing and bonding layout for the ABS equipment hut: perimeter ring conductor, GI copper plate earth pits, equipotential busbars and Class A protection, with special notes, general notes (Class A, B & D SPDs as per RDSO spec) and abbreviations."
+   },
+   {
+    "slug": "s-and-t-estimation",
+    "title": "S&T Estimation",
+    "desc": "Summary of the project estimate by bill: EI modification and domino panel, supply of cable, supply of material and execution, with the overall total."
+   },
+   {
+    "slug": "ct-rack-and-relay-rack-particulars",
+    "title": "CT Rack & Relay Rack Particulars",
+    "desc": "Detailed profiling of Cable Termination (CT) racks, tag blocks, bus-bar configurations, and relay shelf allocations."
+   },
+   {
+    "slug": "level-crossing-gate-circuits",
+    "title": "Level Crossing (LC) Gate Circuits",
+    "desc": "Level crossing gate control circuits for the relay hut: gate panel, road signals, buzzer switch and outdoor switches, together with the L.C. Gate No. 351 layout covering the approach tracks."
+   },
+   {
+    "slug": "data-logger-circuits",
+    "title": "Data Logger Circuits",
+    "desc": "Wiring and channel allocation diagrams for real-time monitoring of relay contacts, power supply voltages, and field inputs."
+   },
+   {
+    "slug": "as-made-circuit-documentation",
+    "title": "As-Made Circuit Documentation",
+    "desc": "Final, site-verified drawing sets reconciling all field commissioning changes into official permanent records."
+   }
+  ]
+ },
+ {
+  "id": "abs",
+  "folder": "auto-section-abs",
+  "accent": "#f59e0b",
+  "short": "Auto Section (ABS)",
+  "title": "Drawings in Auto Section (Automatic Block Signaling - ABS)",
+  "blurb": "Mid-section drawing sets for Automatic Block Signaling: signal spacing, cabling, huts, interface circuits and block communication.",
+  "items": [
+   {
+    "slug": "auto-section-sip",
+    "title": "Auto Section SIP",
+    "desc": "Auto section Signal Interlocking Plan with the ABS hut controlling gear details for the down and up directions, aspect sequence chart, and track section and supervisory track section tables for both lines."
+   },
+   {
+    "slug": "abs-cable-core-plan",
+    "title": "ABS Cable Core Plan",
+    "desc": "Cable core plan for the Vanganur to Challavaripalle ABS section: the ABS hut (km 357/7-5) with location boxes LB1 to LB12 on the south and north sides, and the cable cores allocated to the automatic signals (AS / AN series)."
+   },
+   {
+    "slug": "abs-floor-plan",
+    "title": "ABS Floor Plan",
+    "desc": "Floor plan for the ABS hut with the relay room and IPS room: dimensions, relay racks, C.T. racks, NV MUX, power rack, battery charger, VRLA batteries, MSDAC, UFSBI and CCTV rack positions."
+   },
+   {
+    "slug": "abs-ct-rack-and-relay-rack-particulars",
+    "title": "ABS CT Rack & Relay Rack Particulars",
+    "desc": "C.T. Rack-1 particulars with terminal rows A to D and 12C cable terminations to the relay room and SM room, plus the Relay Rack-1 relay arrangement for the ABS hut."
+   },
+   {
+    "slug": "abs-interface-circuits",
+    "title": "ABS Interface Circuits",
+    "desc": "ABS equipment hut main functions (SIL-4 / UFSBI-A) with the inputs from and outputs to the hut equipment, and the relay room sheet linking the hut to the EI rack inputs and outputs."
+   },
+   {
+    "slug": "abs-data-logger-circuits",
+    "title": "ABS Data Logger Circuits",
+    "desc": "Data logger wiring for the ABS hut: door lock, relay contact and ACPR inputs, and UFSBI system A / system B status points such as CPU fail, link fail and power off."
+   },
+   {
+    "slug": "nv-mux-circuits",
+    "title": "Network / Voice Multiplexer (NV Mux) Circuits",
+    "desc": "Relay rack to NV MUX wiring: main and redundant NV-MUX input cards and output cards, with WAGO numbering and MSDAC connections."
+   },
+   {
+    "slug": "abs-cable-route-plan",
+    "title": "ABS Cable Route Plan",
+    "desc": "Cable path diagram for the ABS section between km 426/37 and 427/14: up and down main lines, cable alignments inside the railway boundary, trench offsets and distances, culvert crossings and km post references."
+   },
+   {
+    "slug": "ufsbi-system-configuration",
+    "title": "UFSBI System Configuration",
+    "desc": "Port configurations, vital I/O bit allocation, and hardware settings for Universal Fail-Safe Block Interface (UFSBI) systems."
+   },
+   {
+    "slug": "abs-hut-indication-panel",
+    "title": "ABS Hut Indication Panel",
+    "desc": "ABS hut indication panel showing the up and down line track sections with signal aspect lamps and the controlling gears details for the hut."
+   },
+   {
+    "slug": "station-to-station-communication-diagram",
+    "title": "Station to Station Communication Diagram",
+    "desc": "Station-to-station communication diagram: axle counter evaluator cubicles with main and redundant switches linked over OFC and CAT6 cable through FMS boxes."
+   }
+  ]
+ },
+ {
+  "id": "kavach",
+  "folder": "kavach",
+  "accent": "#10b981",
+  "short": "Kavach (Indigenous ATP)",
+  "title": "Specialized Drawings in Kavach (Indigenous ATP System)",
+  "blurb": "Specialized drawing and data packages for the indigenous Automatic Train Protection system, from relay rooms to RFID tag engineering.",
+  "items": [
+   {
+    "slug": "rfid-tag-tin-layouts",
+    "title": "RFID Tag-TIN Layouts",
+    "desc": "Kavach RFID tag layouts for the station yard and the block section: normal, signal foot, communication entry / exit, adjacent line, adjustment / junction, dead-stop and turnout / TIN discrimination tags, with OHE mast numbers, chainage, supervisory track sections and total tag count, updated per the latest TAN guidelines and LiDAR survey."
+   },
+   {
+    "slug": "kavach-table-of-control",
+    "title": "Kavach Table of Control (TOC)",
+    "desc": "Kavach Table of Control for the station: entry and exit signals, line, signal aspects, points and track circuits required in route, TINs required, RFID check sequence, entry-to-exit tag distance, movement authority and authorised speed."
+   },
+   {
+    "slug": "rfid-tag-data-engineering",
+    "title": "RFID Tag Data Engineering",
+    "desc": "Kavach tag data sheets (Rev 2.0.0): 64-bit X / Y fields for normal tags and adjacent line tags covering tag type, Kavach version (Spec 3.2 / 4.0), RFID tag ID, absolute location, TIN, station IDs, section type, tag duplication, CRC and page X / page Y."
+   },
+   {
+    "slug": "track-profile-tables",
+    "title": "Track Profile Tables",
+    "desc": "Stationary Kavach track profile table: entry and exit signals, line, turnout speed, permanent speed restrictions, gradients, level crossing gate details and track conditions with start distance and length."
+   },
+   {
+    "slug": "interface-circuits-and-contact-analysis",
+    "title": "Interface Circuits & Contact Analysis",
+    "desc": "S-Kavach interface diagram connecting relay contacts to the Kavach terminals (B1 to B6, N1 to N6), together with the contact analysis sheets for the interlocking relays."
+   },
+   {
+    "slug": "relay-room-floor-plan",
+    "title": "Relay Room Floor Plan",
+    "desc": "Equipment layout diagrams detailing Stationary Kavach sub-rack cabinets, power supply units (SMPS/UPS), and cable entry points within relay rooms."
+   },
+   {
+    "slug": "kavach-cable-route-plan",
+    "title": "Kavach Cable Route Plan",
+    "desc": "Trackside cabling paths running to Stationary Kavach transponders, towers, and track interfaces."
+   }
+  ]
+ }
+]
