@@ -1,70 +1,56 @@
 /**
  * AAV Works - Featured Projects Architectural Dashboard Controller
  * Matches media_1788555040082.png
- * Manages 5 projects with active item selection, center card updates, and right-panel benefits/metadata sync.
+ * Manages 4 projects with active item selection, center card updates, and right-panel benefits/metadata sync.
  */
 
 const projectsData = [
   {
     idx: "01",
     shortTitle: "Automatic Block Signalling (ABS)",
-    shortLoc: "Pan India • 85+ RKM",
+    shortLoc: "Indian Railways • 150+ RKM",
     badge: "SIGNALLING",
     image: "/assets/images/proj-abs-corridor.jpg",
     title: "Automatic Block Signalling (ABS)",
-    desc: "Design, circuit diagrams, application logic, and technical assurance for 85+ RKM dense mainline block sections.",
+    desc: "Design, circuit diagrams, drawings, and technical assurance for 150+ RKM dense mainline block sections.",
     benefit1: { title: "Enhanced Safety", sub: "Reduced human error" },
     benefit2: { title: "Higher Capacity", sub: "Smoother & faster operations" },
-    benefit3: { title: "Proven Deployment", sub: "85+ RKM across corridors" },
-    location: "Pan India",
-    duration: "2022 – 2024"
+    benefit3: { title: "Proven Deployment", sub: "150+ RKM across Indian Railways" },
+    location: "Indian Railways",
+    duration: "2023 – Present"
   },
   {
     idx: "02",
     shortTitle: "Station Redevelopment",
-    shortLoc: "South India • 12 Stations",
+    shortLoc: "Indian Railways • 50+ Stations",
     badge: "STATION REDEV",
     image: "/assets/images/project_station_redev.jpg",
     title: "Station Redevelopment & Yard Remodelling",
     desc: "Comprehensive Signal Interlocking Plan (SIP), dog charts, and turnkey drawing validation for high-capacity junction stations.",
     benefit1: { title: "Modernized Interlocking", sub: "Fail-safe route assurance" },
     benefit2: { title: "Expanded Junction Flow", sub: "Optimized platform turnaround" },
-    benefit3: { title: "Turnkey Signoff", sub: "Zonal Railway compliance" },
-    location: "South India",
-    duration: "2021 – 2023"
+    benefit3: { title: "Turnkey Signoff", sub: "Indian Railways compliance" },
+    location: "Indian Railways",
+    duration: "2023 – Present"
   },
   {
     idx: "03",
-    shortTitle: "Viaduct & Bridges",
-    shortLoc: "Western Corridor",
-    badge: "VIADUCT & S&T",
-    image: "/assets/images/proj-viaduct.jpg",
-    title: "High-Speed Viaduct & Civil-S&T Integration",
-    desc: "Multi-span elevated rail viaduct design support, cable trough routing schematics, and structural coordination.",
-    benefit1: { title: "Structural Integration", sub: "Zero conduit interference" },
-    benefit2: { title: "Elevated High-Speed", sub: "160+ kmph corridor readiness" },
-    benefit3: { title: "Turnkey Assurance", sub: "Multi-span bridge proofing" },
-    location: "Western Corridor",
+    shortTitle: "Yard Modelling",
+    shortLoc: "Indian Railways",
+    badge: "INTERLOCKING",
+    image: "/assets/images/proj-junction-yard.jpg",
+    title: "Yard Remodelling & Electronic Interlocking",
+    desc: "Independent verification and validation (IV&V) of bit charts, station data tables, square sheets, and fail-safe safety protocols.",
+    benefit1: { title: "Zero Error Design", sub: "Automated bit-chart verification" },
+    benefit2: { title: "Yard Throughput", sub: "Faster marshalling operations" },
+    benefit3: { title: "Multi-OEM Ready", sub: "Design & drawing for all systems" },
+    location: "Indian Railways",
     duration: "2023 – Present"
   },
   {
     idx: "04",
-    shortTitle: "Yard Modelling",
-    shortLoc: "Freight Networks",
-    badge: "INTERLOCKING",
-    image: "/assets/images/proj-junction-yard.jpg",
-    title: "Yard Remodelling & Interlocking Logic",
-    desc: "Independent verification and validation (IV&V) of bit chart logic, station data tables, square sheets, and fail-safe safety protocols.",
-    benefit1: { title: "Zero Error Logic", sub: "Automated bit-chart verification" },
-    benefit2: { title: "Yard Throughput", sub: "Faster marshalling operations" },
-    benefit3: { title: "Multi-OEM Ready", sub: "Universal interlocking formats" },
-    location: "Central & Western Corridors",
-    duration: "2021 – 2024"
-  },
-  {
-    idx: "05",
     shortTitle: "Civil-S&T Integration",
-    shortLoc: "High-Speed Projects",
+    shortLoc: "Indian Railways",
     badge: "CIVIL-S&T",
     image: "/assets/images/proj-freight-corridor.jpg",
     title: "Civil-S&T Integration & Cable Routing",
@@ -72,8 +58,8 @@ const projectsData = [
     benefit1: { title: "EMC Protection", sub: "Shielded cabling pathways" },
     benefit2: { title: "Asset Longevity", sub: "Heavy-duty trough enclosures" },
     benefit3: { title: "Speedy Execution", sub: "Validated clash-free routing" },
-    location: "National High-Speed Projects",
-    duration: "2022 – 2024"
+    location: "Indian Railways",
+    duration: "2023 – Present"
   }
 ];
 
@@ -129,7 +115,7 @@ export function initProjectDashboard() {
       centerImage.alt = p.title;
     }
     if (centerBadge) centerBadge.textContent = p.badge;
-    if (centerCounter) centerCounter.textContent = `${p.idx} / 05`;
+    if (centerCounter) centerCounter.textContent = `${p.idx} / 0${projectsData.length}`;
     if (centerTitle) centerTitle.textContent = p.title;
     if (centerDesc) centerDesc.textContent = p.desc;
 

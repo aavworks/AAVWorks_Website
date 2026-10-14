@@ -10170,3 +10170,10 @@ html.page-home .news-carousel-section {
   border-radius: 50%;
   font-size: 19px;
 }
+
+/* hero stats: three figures now */
+@media (max-width: 768px) {
+  html.page-home .hero-stats-classic {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
