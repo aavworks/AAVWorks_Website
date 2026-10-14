@@ -1594,6 +1594,16 @@ html[data-theme="dark"] .client-tile .client-name {
 html[data-theme="dark"] .client-tile .client-name {
   color: #9b9ba4 !important;
 }
+html[data-theme="dark"] .team-card {
+  border: 1px solid #38383d !important;
+  background: #1f1f22 !important;
+}
+html[data-theme="dark"] .team-photo {
+  background: #2a2a2e !important;
+}
+html[data-theme="dark"] .team-tag {
+  background: color-mix(in srgb, var(--team-accent) 12%, #1f1f22) !important;
+}
 /* ---- from src/css/animations.css ---- */
 html[data-theme="dark"] .speed-line {
   background: linear-gradient(90deg, transparent, #1f1f22, transparent) !important;
@@ -1616,16 +1626,4 @@ html[data-theme="dark"] [style*="border: 1px solid #edf0ee"] {
 }
 html[data-theme="dark"] [style*="color: #556370"] {
   color: #9b9ba4 !important;
-}
-html[data-theme="dark"] [style*="background: #fee2e2"] {
-  background: color-mix(in srgb, #fee2e2 14%, #1f1f22) !important;
-}
-html[data-theme="dark"] [style*="background: #fef3c7"] {
-  background: color-mix(in srgb, #fef3c7 14%, #1f1f22) !important;
-}
-html[data-theme="dark"] [style*="background: #d1fae5"] {
-  background: color-mix(in srgb, #d1fae5 14%, #1f1f22) !important;
-}
-html[data-theme="dark"] [style*="background: #e0f2fe"] {
-  background: color-mix(in srgb, #e0f2fe 14%, #1f1f22) !important;
 }
