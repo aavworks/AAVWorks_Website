@@ -10115,3 +10115,58 @@ html.page-home .news-carousel-section {
 .client-logo img[src*="vrrc"] {
   max-height: 50px;
 }
+
+/* ==========================================================================
+   CLIENTS: logos float on the page, no cards or boxes
+   ========================================================================== */
+.clients-track {
+  gap: 24px;
+  align-items: center;
+}
+
+.client-tile,
+.client-tile:hover {
+  flex: 0 0 200px;
+  height: auto;
+  min-height: 112px;
+  padding: 8px 14px;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  gap: 12px;
+}
+
+.client-tile:hover {
+  transform: translateY(-3px);
+}
+
+.client-tile .client-logo {
+  height: 64px;
+}
+
+.client-tile .client-logo img {
+  max-width: 150px;
+  max-height: 64px;
+  filter: none;
+  opacity: 1;
+}
+
+.client-tile .client-logo img[src*="tracks-and-towers"] {
+  max-width: 180px;
+}
+
+.client-tile .client-name {
+  font-size: 13px;
+  font-weight: 650;
+  letter-spacing: 0.3px;
+  color: #64748b;
+}
+
+.client-tile .client-mono {
+  width: 56px;
+  height: 56px;
+  margin: 4px 0;
+  border-radius: 50%;
+  font-size: 19px;
+}

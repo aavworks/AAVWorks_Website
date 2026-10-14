@@ -1591,6 +1591,9 @@ html[data-theme="dark"] .about-expertise-list li:hover {
 html[data-theme="dark"] .client-tile .client-name {
   color: #f4f4f6 !important;
 }
+html[data-theme="dark"] .client-tile .client-name {
+  color: #9b9ba4 !important;
+}
 /* ---- from src/css/animations.css ---- */
 html[data-theme="dark"] .speed-line {
   background: linear-gradient(90deg, transparent, #1f1f22, transparent) !important;
