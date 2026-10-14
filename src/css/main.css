@@ -10106,3 +10106,12 @@ html.page-home .news-carousel-section {
 }
 
 .client-tile .client-mono { margin: 4px 0; }
+
+/* wide logos get a little more room */
+.client-logo img[src*="tracks-and-towers"] {
+  max-width: 158px;
+}
+
+.client-logo img[src*="vrrc"] {
+  max-height: 50px;
+}
