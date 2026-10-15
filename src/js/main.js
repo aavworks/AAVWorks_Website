@@ -4,6 +4,7 @@
  */
 
 import './back-to-top.js';
+import './hero-slider.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   initHeaderScroll();

@@ -10384,3 +10384,14 @@ html.page-home .news-carousel-section {
     border: 0;
   }
 }
+
+/* ---- home hero: background slider (artwork slides sideways; nothing else changes) ---- */
+.hero-visual .hero-photo.hero-slide {
+  transition: transform 1.1s cubic-bezier(0.65, 0, 0.35, 1);
+  will-change: transform;
+}
+
+.hero-visual .hero-photo.is-active { transform: translateX(0); }
+.hero-visual .hero-photo.is-next { transform: translateX(100%); }
+.hero-visual .hero-photo.is-prev { transform: translateX(-100%); }
+.hero-visual .hero-photo.no-anim { transition: none; }
